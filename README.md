@@ -80,4 +80,41 @@ Delete branchボタンを押し不要になったリモートブランチを削�
 
 `git pull origin master`
 
+
+### 8.ブランチの作成
+
+
+`git checkout -b ＜新しいブランチ名＞`
+
+###　9各グループへ
+
+Backend =      バック
+Frontend =     フロント
+Scenario =     シナリオ
+Character =   キャラクター
+
+それぞれのファイルでデータやファイルを共有大丈夫です、ただしmainブランチにアップするものはあくまで出来上がったもの、
+変更や修正がいるものは新しいブランチを作ってください
+
+
+
+##GitHubコマンド打ちたくない方へ
+
+### オプションは二つあります
+
+#### 1  VSCodeのGithub Extensionをダウンロードしそこから作業する
+
+#### 2  GitHub DesktopをインストールしそこからPull,pushのGitを操作する
+
+
+
+
+### 1.1　Vscodeでやる人はここから
+
+  ![VScode](C:\Users\NHS90324\Desktop\img1.png)
+
+
+
+###2.1　GitHub Desktopでやるかたこちら
+
 ### 1に戻る
