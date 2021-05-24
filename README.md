@@ -88,10 +88,10 @@ Delete branchボタンを押し不要になったリモートブランチを削�
 
 ### 9各グループへ
 
-Backend =      バック
-Frontend =     フロント
-Scenario =     シナリオ
-Character =   キャラクター
+    Backend =      バック
+    Frontend =     フロント
+    Scenario =     シナリオ
+    Character =   キャラクター
 
 それぞれのファイルでデータやファイルを共有大丈夫です、ただしmainブランチにアップするものはあくまで出来上がったもの、
 変更や修正がいるものは新しいブランチを作ってください
