@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ヒントテスト</title>
+        <link rel="stylesheet" href="css/hint.css">
+    </head>
+    <body>
+        <div id="hintDialog">
+            <div>
+                <button id="left" class="left" onclick="hintIn(0)">＜</button>
+                <button id="right" class="right" onclick="hintIn(1)">＞</button>
+                <div class="shadow"></div>
+                <dialog class="dialog" id="hint_1">
+                    <div>説明１</div>
+
+                </dialog>
+                <dialog class="dialog" id="hint_2">説明２</dialog>
+                <dialog class="dialog" id="hint_3">説明３</dialog>
+            </div>
+        </div>
+
+    </body>
+    <script src="js/hint.js"></script>
+</html>
