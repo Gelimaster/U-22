@@ -1,0 +1,9 @@
+[
+    {
+        "image_num": 0,
+        "image_id": "image01",
+        "image_name": "char_1.png",
+        "image_class":"imgwide",
+        "images_html":"images/char_1.png"
+    }
+]

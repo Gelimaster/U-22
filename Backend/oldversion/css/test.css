@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+#toolbox{
+    width: 400px;
+    height: 800px;
+    border: 1px solid #555;
+    margin: 0;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    overflow: auto;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+#assemblybox{
+    width: 400px;
+    height: 800px;
+    border: 1px solid #555;
+    position: fixed;
+    top: 30px;
+    left: 460px;
+    box-sizing: border-box;
+    overflow: auto;
+    z-index: 1;
+}
+
+#htmlbox{
+    width: 400px;
+    height: 800px;
+    border: 1px solid #555;
+    position: fixed;
+    top: 30px;
+    left: 890px;
+    overflow: hidden;
+}
