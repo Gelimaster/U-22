@@ -3,17 +3,17 @@
 ### 約束事
 * masterブランチで作業をしない。作業は必ず自分のブランチをきってから行う。
 * マージ(Merge)はリーダーが行う。
-* `git push origin master`をしない。
+* `git push origin main`をしない。
 
 ### 0.cd カレントフォルダ(HEW2)に移動する
 
-### 1.masterブランチからブランチを作成
+### 1.mainブランチからブランチを作成
 
 `git branch`
 
-（masterブランチにいるか確認する）
+（mainブランチにいるか確認する）
 
-`git pull origin master`
+`git pull origin main`
 
 (ローカルのmasterブランチをpullで更新)
 
@@ -69,16 +69,16 @@ Delete branchボタンを押し不要になったリモートブランチを削�
 </details>
 
 ### 6.ローカルブランチを削除する
-`git checkout master`
+`git checkout main`
 
 `git branch -D ブランチ名(自分の名前)`
 
-### 7.ローカルのmasterブランチをpullで更新
+### 7.ローカルのmainブランチをpullで更新
 `git branch`
 
-（masterブランチにいるか確認する）
+（mainブランチにいるか確認する）
 
-`git pull origin master`
+`git pull origin main`
 
 
 ### 8.ブランチの作成
