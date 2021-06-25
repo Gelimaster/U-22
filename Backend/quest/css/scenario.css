@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* 画面を暗くするcss */
+/* 変更禁止 */
+div#scebox{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    display: none;
+
+}
+
+/* 変更禁止 */
+div#shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    background-color: #000;
+    visibility:hidden;
+    opacity: .6;
+    z-index: 11;
+
+}
+
+/* キャラのみを目立たせるcss */
+div#charbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    z-index: 13;
+}
+
+div#charbox img{
+    width: 20%;
+}
+
+/* セリフボックスのデザイン */
+/* 好きなように変更してください。 position z-index は変更禁止 */
+div#serifubox{
+    position: fixed;
+    top: 65%;
+    left: 5%;
+    
+    width: 90%;
+    height: 30%;
+
+    z-index: 15;
+
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 1.3rem;
+
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* topとleftのみ変更可 positionとz-indexは変更禁止 */
+.leftup{
+    position: fixed;
+    top: 0;
+    left: 5%;
+    z-index: 13;
+}
+
+.leftdown{
+    position: fixed;
+    top: 0;
+    left: 5%;
+    z-index: 10;
+}
+
+.rightup{
+    position: fixed;
+    top: 0;
+    left: 55%;
+    /* transform: scale(-1, 1); */
+    z-index: 13;
+}
+.rightdown{
+    position: fixed;
+    top: 0;
+    left: 55%;
+    /* transform: scale(-1, 1); */
+    z-index: 10;
+}
