@@ -21,16 +21,28 @@
         <!-- ゲーム画面 -->
         <button id="stylebutton" onclick="cssin()">CSS</button>
         <div id="visualbox"></div>
+        
         <div id="hintbox">
+            <!-- ヒントのテキスト -->
+            <div  id="hint_text"></div>
+              <!-- 答えの表示 -->
+              <p id="answer">あなたの答えは。。。</p>
+              <button onclick="checkanswer()">答え</button>
+              <br>
+              <button id="beforestage" onclick="beforestage()"><</button>
+              <button id="nextstage" onclick="nextstage()">></button>
+            <!-- ステージの確認 -->
+            <p class="stage"></p>
+          
             <!-- ヒントの表示 -->
             <button id="close" onclick="closeHint()">とじる</button>
-            何かのヒントを表示する
+       
         </div>
-        
+
         <button id="bt1" onclick="inButton(1)">タグ一覧</button>
         <button id="bt2" onclick="inButton(2)">写真一覧</button>
         <button id="bt3" onclick="inButton(3)">テキスト一覧</button>
-        
+
         <div
             id="toolbox1" class="toolbox"
             ondragover="AllowDrop( event );" ondrop="Delete( event, this ); "
@@ -46,7 +58,7 @@
         <button id="tg1" onclick="inButton2(1)">タグ表記</button>
         <button id="tg2" onclick="inButton2(2)">HTML表記</button>
         <button id="tg3" onclick="inButton2(3)">CSS表記</button>
-        
+
         <!-- css適用ダイアログ -->
         <div id="styledialog">
             <div id="stylelist"></div>
@@ -80,7 +92,7 @@
                 <p>文字</p>
             </div>
         </div>
-        
+
         <div
             id="assemblybox1"
             ondrop="Drop( event, this ); "
@@ -91,8 +103,8 @@
         </div>
         <div id="assemblybox2" class="assemblybox"></div>
         <div id="assemblybox3" class="assemblybox"></div>
-        
-        
+
+
         <button id="hint" onclick="inHint()">ヒント</button>
     </body>
     <script src="js/jquery-1.10.2.min.js"></script>
@@ -102,6 +114,9 @@
     <script src="js/stylein.js"></script>
     <script src="js/surveillance.js"></script>
     <script src="js/scenario.js"></script>
+    <script src="js/hint_text.js"></script>
+    <script src="js/answer_check.js"></script>
+    <script src="js/stage.js"></script>
     <script>
         var hintbox = document.getElementById('hintbox');
         var sty = document.getElementById('styledialog');
@@ -132,7 +147,7 @@
             assemblybox1.style.display = "none";
             assemblybox2.style.display = "none";
             assemblybox3.style.display = "none";
-            
+
             var b = document.getElementById("assemblybox"+num);
             b.style.display = "block";
         }
@@ -142,11 +157,11 @@
             stylebox3.style.display = "none";
             stylebox4.style.display = "none";
             stylebox5.style.display = "none";
-            
+
             var b = document.getElementById("stylebox"+num);
             b.style.display = "block";
         }
-        
-        
+
+
       </script>
-</html> 
+</html>

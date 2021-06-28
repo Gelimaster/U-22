@@ -163,6 +163,20 @@ function roop2(target){
             // <p>タグなどの中身にテキストを入れるものの処理
             if(child[i].lastElementChild.firstElementChild.childElementCount == 0){
                 html_text = html_text + child[i].lastElementChild.firstElementChild.textContent;
+
+                //ラファエルサカエが触った部分
+
+                //ロゴで確認
+
+                //タグの中の答え
+                console.log(child[i]);
+                console.log(child[i].lastElementChild.firstElementChild.textContent);
+                //タグの種類
+                console.log(tag_id[c]);
+                //ローカルストレージに答えを入れる
+                localStorage.setItem("playerasnwer",child[i].lastElementChild.firstElementChild.textContent);
+                localStorage.setItem('playertag',tag_id[c]);
+
             // <img>タグの場合の写真の挿入処理
             }else if(child[i].lastElementChild.firstElementChild.classList.contains('imgflg') == true){
                 html_text = html_text + child[i].lastElementChild.firstElementChild.textContent;
