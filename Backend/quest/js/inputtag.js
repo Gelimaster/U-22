@@ -174,6 +174,7 @@ function roop2(target){
                 //タグの種類
                 console.log(tag_id[c]);
                 //ローカルストレージに答えを入れる
+                
                 localStorage.setItem("playerasnwer",child[i].lastElementChild.firstElementChild.textContent);
                 localStorage.setItem('playertag',tag_id[c]);
 
