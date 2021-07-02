@@ -1,5 +1,7 @@
 // タグの表示からHTML文作成までの処理
 
+var ansp ="";
+var anspfinal="";
 // タグの代入
 var tag_num = [];
 var tag_id = [];
@@ -125,9 +127,22 @@ function dataRead1(res){
 // htmlboxに入力するループ
 function roop(target){
     html_text = "";
+    ansp="";
     // console.log(target);
     roop2(target);
+    anspfinal.pop();
+   
+
+    console.log(anspfinal)
+    localStorage.setItem("answer1",anspfinal[0])
+    localStorage.setItem("answer2",anspfinal[1]) 
+    localStorage.setItem("answer3",anspfinal[2])
+    localStorage.setItem("answer4",anspfinal[3]) 
+
+
 }
+
+
 
 function roop2(target){
     var child = target.children;
@@ -139,15 +154,27 @@ function roop2(target){
     // console.log(childcnt);
     // console.log(id);
     // console.log(count);
-    // console.log(cnt);
+    // console.log(cnt); 
+    
+    localStorage.setItem("answer1","")
+    localStorage.setItem("answer2","") 
+    localStorage.setItem("answer3","")
+    localStorage.setItem("answer4","") 
+
+
+     
+
     for(var i = 0; i < childcnt;i++){
         var cnt = 0;
+        
         // divのidと一致(いっち)するものをjsonから探(さが)す
         for(var c = 0; c < count && child[i].id.slice(0,-2) != tag_id[c]; c++){
             cnt++;
+
         }
         //開始(かいし)タグの入力
         html_text = html_text + html_text1[cnt];
+        ansp=ansp+child[i].id.slice(0,-2)
         // console.log(child[i].id);
         // console.log(child[i].lastElementChild.firstElementChild.childElementCount);
         // console.log(child[i].lastElementChild);
@@ -164,24 +191,34 @@ function roop2(target){
             if(child[i].lastElementChild.firstElementChild.childElementCount == 0){
                 html_text = html_text + child[i].lastElementChild.firstElementChild.textContent;
 
-                //ラファエルサカエが触った部分
 
-                //ロゴで確認
+                //ラファエルサカエが触った部分  
+                ansp=ansp+child[i].nodeName+child[i].lastElementChild.firstElementChild.textContent+"/";
+                anspfinal = ansp.split("/")
+                
+                
+                   
+       
 
-                //タグの中の答え
-                console.log(child[i]);
-                console.log(child[i].lastElementChild.firstElementChild.textContent);
-                //タグの種類
-                console.log(tag_id[c]);
+
+                
+                     
+                
+    
+
+              
                 //ローカルストレージに答えを入れる
                 
-                localStorage.setItem("playerasnwer",child[i].lastElementChild.firstElementChild.textContent);
-                localStorage.setItem('playertag',tag_id[c]);
+                // localStorage.setItem("playerasnwer",child[i].lastElementChild.firstElementChild.textContent);
+                // localStorage.setItem('playertag',tag_id[c]);
 
             // <img>タグの場合の写真の挿入処理
             }else if(child[i].lastElementChild.firstElementChild.classList.contains('imgflg') == true){
                 html_text = html_text + child[i].lastElementChild.firstElementChild.textContent;
                 html_text = html_text + imgin(child[i].lastElementChild.firstElementChild.firstElementChild);
+
+                
+
             // <div>タグなどの中にまだ要素が含まれる場合
             }else{
                 roop2(child[i].lastElementChild.firstElementChild);
@@ -203,6 +240,7 @@ function roop2(target){
         // roop2(child[i].lastElementChild.firstElementChild);
         // 終了(しゅうりょう)タグの入力
         html_text = html_text + html_text3[cnt];
+        
     }
     
     // console.log(idArray);
