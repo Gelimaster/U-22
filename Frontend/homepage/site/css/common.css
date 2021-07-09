@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/* 共通のスタイル */
+body{
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+}
+
+img.logo{
+  position: absolute;
+  left: 170px;
+  width: 160px;
+  height: 120px;
+}
+
+img.main{
+  z-index: auto;
+  text-align: center;
+  width: 100%;
+}
+
+img.signin{
+  position: fixed;
+  right: 100px;
+  bottom: 50px;
+  width: 200px;
+  height: 200px;
+}
+
+footer{
+  margin-top: auto;
+  text-align:center;
+}
