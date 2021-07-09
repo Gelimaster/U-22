@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+nav{
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  background-color: #fff;
+  /* background: rgba(255, 255, 255, 0); */
+  width: 910px;
+  height: 30px;
+  border-radius: 10px;
+}
+#button1{
+  background-color: #FFF;
+  /* border: 0; */
+  width: 455px;
+  height: 30px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#button1:hover{
+  opacity: 0.8;
+}
+#button2{
+  background-color: #FFF;
+  /* border: 0; */
+  width: 455px;
+  height: 30px;
+  float: right;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#button2:hover{
+  opacity: 0.8;
+}
+
+body {
+  background-image: url(../images/back.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  width:100%;
+  height:100%;
+  background-attachment: fixed;
+}
+
+#modoru{
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  width:60px;
+}
+
+#name{
+  position: absolute;
+  left: 100px;
+  top: 20px;
+  height: 40px;
+}
+
+#kajiya{
+  position: relative;
+  left: 2%;
+  margin-top: 80px;
+  height: 500px;
+}
+
+.back{
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  width:910px;
+  height:440px;
+  background-color:#fff;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  border:1px solid #000;
+}
+
+div.box_srcollbar{
+  width:870px;
+  height:420px;
+  background-color:#fff;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  overflow: auto;
+  padding: 10px;
+}
+
+div.box_srcollbar::-webkit-scrollbar{
+  /* 幅 */
+  width: 12px;
+}
+
+div.box_srcollbar::-webkit-scrollbar-button:start:increment {
+  height: 5%;
+  display: block;
+  background: transparent;
+}
+
+div.box_srcollbar::-webkit-scrollbar-button:end:increment {
+  height: 5%;
+  display: block;
+  background: transparent;
+}
+
+div.box_srcollbar::-webkit-scrollbar-track{
+  /* スクロールの背景 */
+ background: #fff;
+ border: none;
+ border-radius: 12px;
+ box-shadow: inset 0 0 3px #aaa;
+}
+
+div.box_srcollbar::-webkit-scrollbar-thumb{
+  /* つまみ部分の設定 */
+ background: #FFC85B;
+ border-radius: 12px;
+ box-shadow: none;
+}
+
+.item_box{
+  float: left;
+  background-color: #fff;
+  text-align: center;
+  margin: 15px;
+  width: 180px;
+  height: 190px;
+}
+
+.item_name{
+  font-size: 15px;
+  color: #787676;
+  margin: 1px 0 1px 0;
+}
+
+.item_photo{
+  width: 110px;
+  height: 90px;
+  margin: 0 auto 4px auto;
+  background-color: #fff;
+  border: 1px solid #787676;
+  border-radius: 10px;
+}
+
+.koin{
+  width: 110px;
+  height: 20px;
+  margin: 0 auto 4px auto;
+  text-align: left;
+  background-color: #E9FEA3;
+  border: 1px solid #C5EC57;
+}
+.koin_photo{
+  width: 20px;
+  height: 20px;
+}
+.Purchase{
+  padding: 0;
+  border: none;
+  background: transparent;
+  margin: 0 auto 0 auto;
+}
+#Pur_bu{
+  width: 130px;
+  /* display: block; */
+}
+p.koin_number{
+  float: right;
+}
+
+.number{
+  position: absolute;
+  right: 3.5%;
+  top: 3%;
+  width: 150px;
+  height: 20px;
+  padding: 3px 10px 3px 0px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+
+.Trans{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.534);
+}
+
+.confirmation1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 600px;
+  height: 370px;
+  background-color: #707070;
+  border-radius: 10px;
+}
+.confirmation2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 598px;
+  height: 378px;
+  background-color: #FCC453;
+  border-radius: 10px;
+}
+.confirmation3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 596px;
+  height: 376px;
+  background-color: #707070;
+  border-radius: 10px;
+}
+.confirmation{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 594px;
+  height: 374px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.kakuninn{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 600px;
+}
