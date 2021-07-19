@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 
 <html lang="ja">
@@ -5,7 +7,6 @@
     <meta charset="utf-8">
     <title>ショップ</title>
     <link rel="stylesheet" type="text/css" href="css/shop.css">
-    <script type="text/javascript" src="js/shop.js"></script>
   </head>
 
   <nav>
@@ -138,11 +139,10 @@
 
       </div>
     </div>
-      
-      <!-- <div class="example2">
-      <p>はみ出た部分を表示しない</p>
-      ...
-      </div> -->
-  </body>
+    <?php
+      include("shop1.php")
+    ?>
 
+<script src="js/shop.js"></script>
+  </body>
 </html>

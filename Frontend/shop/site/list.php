@@ -15,7 +15,7 @@
 
   <body>
     <a href=""><img src="./images/modoru.png" alt="戻る" id="modoru"></a>
-    <p><img src="./images/name.png" alt="名前" id="name"></p>
+    <p><img src="./images/itirann.png" alt="名前" id="name"></p>
 
     <div class="number">
       <img src="./images/koin.png" alt="コイン" class="koin_photo">
