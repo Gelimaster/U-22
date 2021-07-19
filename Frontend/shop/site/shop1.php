@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>購入確認</title>
     <link rel="stylesheet" type="text/css" href="css/shop1.css">
-    <script type="text/javascript" src="js/shop.js"></script>
+    <script type="text/javascript" src="js/shop1.js"></script>
   </head>
 
   <nav>
@@ -34,7 +34,7 @@
               <img src="./images/koin.png" alt="コイン" class="koin_photo">
               <p class="koin_number">500,000</p>
             </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button2.png" id="Pur_bu"></button>
+            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
           </div>
 
           <div class="item_box">
@@ -44,7 +44,7 @@
               <img src="./images/koin.png" alt="コイン" class="koin_photo">
               <p class="koin_number">500,000</p>
             </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button2.png" id="Pur_bu"></button>
+            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
           </div>
 
           <div class="item_box">
@@ -54,18 +54,7 @@
               <img src="./images/koin.png" alt="コイン" class="koin_photo">
               <p class="koin_number">500,000</p>
             </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button2.png" id="Pur_bu"></button>
-          </div>
-
-
-          <div class="item_box">
-            <p class="item_name">アイテム名</p>
-            <div class="item_photo"></div>
-            <div class="koin">
-              <img src="./images/koin.png" alt="コイン" class="koin_photo">
-              <p class="koin_number">500,000</p>
-            </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button2.png" id="Pur_bu"></button>
+            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
           </div>
 
 
@@ -76,7 +65,7 @@
               <img src="./images/koin.png" alt="コイン" class="koin_photo">
               <p class="koin_number">500,000</p>
             </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button2.png" id="Pur_bu"></button>
+            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
           </div>
 
 
@@ -87,7 +76,7 @@
               <img src="./images/koin.png" alt="コイン" class="koin_photo">
               <p class="koin_number">500,000</p>
             </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button2.png" id="Pur_bu"></button>
+            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
           </div>
 
 
@@ -98,7 +87,7 @@
               <img src="./images/koin.png" alt="コイン" class="koin_photo">
               <p class="koin_number">500,000</p>
             </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button2.png" id="Pur_bu"></button>
+            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
           </div>
 
 
@@ -109,7 +98,7 @@
               <img src="./images/koin.png" alt="コイン" class="koin_photo">
               <p class="koin_number">500,000</p>
             </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button2.png" id="Pur_bu"></button>
+            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
           </div>
 
 
@@ -120,7 +109,7 @@
               <img src="./images/koin.png" alt="コイン" class="koin_photo">
               <p class="koin_number">500,000</p>
             </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button2.png" id="Pur_bu"></button>
+            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
           </div>
 
 
@@ -131,7 +120,7 @@
               <img src="./images/koin.png" alt="コイン" class="koin_photo">
               <p class="koin_number">500,000</p>
             </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button2.png" id="Pur_bu"></button>
+            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
           </div>
 
 
@@ -142,7 +131,18 @@
               <img src="./images/koin.png" alt="コイン" class="koin_photo">
               <p class="koin_number">500,000</p>
             </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button2.png" id="Pur_bu"></button>
+            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
+          </div>
+
+
+          <div class="item_box">
+            <p class="item_name">アイテム名</p>
+            <div class="item_photo"></div>
+            <div class="koin">
+              <img src="./images/koin.png" alt="コイン" class="koin_photo">
+              <p class="koin_number">500,000</p>
+            </div>
+            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
           </div>
 
         </div>
@@ -156,13 +156,19 @@
             <div class="confirmation">
               <div><img src="./images/kauninn.png" class="kakuninn"></div>
               <p>　　　　　</p>
-              <p class="">アイテム名</p>
-                  <div class="item_photo"></div>
-                  <div class="">
-                    <img src="./images/koin.png" alt="コイン" class="koin_photo">
-                    <p class="">500,000</p>
+              <p class="itemname_k">アイテム名</p>
+                  <div class="item_photok"></div>
+                  <p class="koin_txt">コイン×500.000を使用して</p>
+                  <p class="koin_txt">アイテムを購入しますか？</p>
+                  <div class="koin_box">
+                    <div class="koin_k">
+                      <img src="./images/koin.png" alt="コイン" class="koin_photo">
+                      <p class="k">所持コイン</p>
+                      <p id="con">　　　　　　　　　→　　　　　</p>
                   </div>
-                  <button class="Purchase" onclick="clickPurchase()"><img src="./images/button2.png" id="Pur_bu"></button>
+                </div>
+                  <button class="Purchase1" onclick="clickcancel()"><img src="./images/cancel.png" id="Pur_bu1"></button>
+                  <button class="Purchase1" onclick="clickok()"><img src="./images/OK.png" id="Pur_bu1"></button>
             </div>
           </div>
         </div>

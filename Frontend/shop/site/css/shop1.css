@@ -160,6 +160,7 @@ div.box_srcollbar::-webkit-scrollbar-thumb{
 .koin_photo{
   width: 20px;
   height: 20px;
+  float: left;
 }
 .Purchase{
   padding: 0;
@@ -250,4 +251,53 @@ p.koin_number{
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   width: 600px;
+}
+.itemname_k{
+  text-align: center;
+}
+
+.koin_k{
+  width: 130px;
+  height: 25px;
+  margin: 2px auto 2px 15%;
+  text-align: left;
+  background-color: #E9FEA3;
+  border: 1px solid #C5EC57;
+}
+
+.item_photok{
+  width: 150px;
+  height: 130px;
+  margin: 0 auto 4px auto;
+  background-color: #fff;
+  border: 1px solid #787676;
+  border-radius: 10px;
+}
+
+p#con{
+  width: 300px;
+  border-bottom: 1px solid #000 ;
+  margin: 0 auto 0 100%;
+}
+
+.Purchase1{
+  width: 200px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  margin: 20px auto 0 10%;
+}
+#Pur_bu1{
+  width: 180px;
+  /* display: block; */
+}
+
+.koin_txt{
+  text-align: center;
+}
+.k{
+  float: left;
+}
+.koin_box{
+  margin-top: 20px;
 }
