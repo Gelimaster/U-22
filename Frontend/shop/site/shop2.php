@@ -1,180 +1,37 @@
 <!DOCTYPE html>
 
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title>購入確定</title>
-    <link rel="stylesheet" type="text/css" href="css/shop2.css">
-    <script type="text/javascript" src="js/shop1.js"></script>
-  </head>
+  <div id="bought">
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="css/shop2.css">
+      <script type="text/javascript" src="js/shop1.js"></script>
+    </head>
+    <body>
 
-  <nav>
-    <button type="button" onclick="clickhtml()" id="button1">html</button>
-    <button type="button" onclick="clickcss()" id="button2">css</button>
-  </nav>
-
-  <body>
-
-      <a href=""><img src="./images/modoru.png" alt="戻る" id="modoru"></a>
-      <p><img src="./images/name.png" alt="名前" id="name"></p>
-      <p><img src="./images/kajiya.png" alt="鍛冶屋" id="kajiya"></p>
-
-      <div class="number">
-        <img src="./images/koin.png" alt="コイン" class="koin_photo">
-        <p class="koin_number">500,000</p>
-      </div>
-
-      <div class="back">
-        <div class="box_srcollbar">
-
-          <div class="item_box">
-            <p class="item_name">アイテム名</p>
-            <div class="item_photo"></div>
-            <div class="koin">
-              <img src="./images/koin.png" alt="コイン" class="koin_photo">
-              <p class="koin_number">500,000</p>
-            </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
-          </div>
-
-          <div class="item_box">
-            <p class="item_name">アイテム名</p>
-            <div class="item_photo"></div>
-            <div class="koin">
-              <img src="./images/koin.png" alt="コイン" class="koin_photo">
-              <p class="koin_number">500,000</p>
-            </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
-          </div>
-
-          <div class="item_box">
-            <p class="item_name">アイテム名</p>
-            <div class="item_photo"></div>
-            <div class="koin">
-              <img src="./images/koin.png" alt="コイン" class="koin_photo">
-              <p class="koin_number">500,000</p>
-            </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
-          </div>
-
-
-          <div class="item_box">
-            <p class="item_name">アイテム名</p>
-            <div class="item_photo"></div>
-            <div class="koin">
-              <img src="./images/koin.png" alt="コイン" class="koin_photo">
-              <p class="koin_number">500,000</p>
-            </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
-          </div>
-
-
-          <div class="item_box">
-            <p class="item_name">アイテム名</p>
-            <div class="item_photo"></div>
-            <div class="koin">
-              <img src="./images/koin.png" alt="コイン" class="koin_photo">
-              <p class="koin_number">500,000</p>
-            </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
-          </div>
-
-
-          <div class="item_box">
-            <p class="item_name">アイテム名</p>
-            <div class="item_photo"></div>
-            <div class="koin">
-              <img src="./images/koin.png" alt="コイン" class="koin_photo">
-              <p class="koin_number">500,000</p>
-            </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
-          </div>
-
-
-          <div class="item_box">
-            <p class="item_name">アイテム名</p>
-            <div class="item_photo"></div>
-            <div class="koin">
-              <img src="./images/koin.png" alt="コイン" class="koin_photo">
-              <p class="koin_number">500,000</p>
-            </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
-          </div>
-
-
-          <div class="item_box">
-            <p class="item_name">アイテム名</p>
-            <div class="item_photo"></div>
-            <div class="koin">
-              <img src="./images/koin.png" alt="コイン" class="koin_photo">
-              <p class="koin_number">500,000</p>
-            </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
-          </div>
-
-
-          <div class="item_box">
-            <p class="item_name">アイテム名</p>
-            <div class="item_photo"></div>
-            <div class="koin">
-              <img src="./images/koin.png" alt="コイン" class="koin_photo">
-              <p class="koin_number">500,000</p>
-            </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
-          </div>
-
-
-          <div class="item_box">
-            <p class="item_name">アイテム名</p>
-            <div class="item_photo"></div>
-            <div class="koin">
-              <img src="./images/koin.png" alt="コイン" class="koin_photo">
-              <p class="koin_number">500,000</p>
-            </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
-          </div>
-
-
-          <div class="item_box">
-            <p class="item_name">アイテム名</p>
-            <div class="item_photo"></div>
-            <div class="koin">
-              <img src="./images/koin.png" alt="コイン" class="koin_photo">
-              <p class="koin_number">500,000</p>
-            </div>
-            <button class="Purchase" onclick="clickPurchase()"><img src="./images/button4.png" id="Pur_bu"></button>
-          </div>
-
-        </div>
-      </div>
-
-
-    <div class="Trans">
-      <div class="confirmation1">
-        <div class="confirmation2">
-          <div class="confirmation3">
-            <div class="confirmation">
-              <div><img src="./images/kakutei.png" class="kakuninn"></div>
-              <p>　　　　　</p>
-                  <p class="koin_txt1">コイン×500.000を使用して</p>
-                  <p class="koin_txt2">アイテムを購入しました。</p>
-                  <div class="koin_box">
-                    <div class="koin_k">
-                      <img src="./images/koin.png" alt="コイン" class="koin_photo">
-                      <p class="k">所持コイン</p>
-                      <p id="con">　　　　　　　　　→　　</p>
+      <div class="Trans1">
+        <div class="confirmation11">
+          <div class="confirmation22">
+            <div class="confirmation33">
+              <div class="confirmation1">
+                <div><img src="./images/kakutei.png" class="kakuninn1"></div>
+                <p>　　　　　</p>
+                    <p class="koin_txt11">コイン×500.000を使用して</p>
+                    <p class="koin_txt22">アイテムを購入しました。</p>
+                    <div class="koin_box1">
+                      <div class="koin_k1">
+                        <img src="./images/koin.png" alt="コイン" class="koin_photo1">
+                        <p class="k1">所持コイン</p>
+                        <p id="con1">　　　　　　　　　→　　</p>
+                      </div>
                     </div>
-                  </div>
-                  <button class="Purchase1" onclick="clickok()"><img src="./images/OK.png" id="Pur_bu1"></button>
+                    <button class="Purchase11" onclick="clickok()"><img src="./images/OK.png" id="Pur_bu11"></button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-      <!-- <div class="example2">
-      <p>はみ出た部分を表示しない</p>
-      ...
-      </div> -->
-  </body>
-
+  
+    </body>
+ </div>
 </html>
