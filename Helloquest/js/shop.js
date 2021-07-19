@@ -1,3 +1,8 @@
+const checkbox= document.getElementById("check_box_check");
+const bought =document.getElementById("bought")
+checkbox.style.display="none"
+
+
 function clickhtml() {
     console.log("Html クリック");
 }
@@ -5,5 +10,6 @@ function clickcss() {
     console.log("css クリック");
 }
 function clickPurchase() {
-    console.log("購入 クリック");
+    checkbox.style.display="block"
+
 }
