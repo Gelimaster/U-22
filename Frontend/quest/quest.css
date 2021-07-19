@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* 共通のスタイル */
+body{
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+}
+
+img.logo{
+  position: absolute;
+  left: 170px;
+  width: 160px;
+  height: 120px;
+}
+
+img.mura{
+  z-index: auto;
+  width: 90vw;
+  height: 100vh;
+}
+
+img.house1{
+    position: absolute;
+    right: 520px;
+    top: 50px;
+    width: 370px;
+    height: auto;
+  }
+
+  img.house2{
+    position: absolute;
+    left: 153px;
+    bottom: 102px;
+    width: 530px;
+    height: auto;
+  }
+
+  img.signin{
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+    width: 200px;
+    height: 200px;
+  }
+
+footer{
+  margin-top: auto;
+  text-align:center;
+}
