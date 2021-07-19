@@ -36,10 +36,11 @@
           </div>
         </div>
       </div>
-      <script type="text/javascript" src="js/shop1.js"></script>
     </body>
   </div>
   <?php
       include("shop2.php")
   ?>
+  
+  <script type="text/javascript" src="js/shop1.js"></script>
 </html>

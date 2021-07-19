@@ -5,7 +5,6 @@
     <head>
       <meta charset="utf-8">
       <link rel="stylesheet" type="text/css" href="css/shop2.css">
-      <script type="text/javascript" src="js/shop1.js"></script>
     </head>
     <body>
 
@@ -25,13 +24,14 @@
                         <p id="con1">　　　　　　　　　→　　</p>
                       </div>
                     </div>
-                    <button class="Purchase11" onclick="clickok()"><img src="./images/OK.png" id="Pur_bu11"></button>
+                    <button class="Purchase11" onclick="clickok1()"><img src="./images/OK.png" id="Pur_bu11"></button>
               </div>
             </div>
           </div>
         </div>
       </div>
   
+      <script type="text/javascript" src="js/shop2.js"></script>
     </body>
  </div>
 </html>

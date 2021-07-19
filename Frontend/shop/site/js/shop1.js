@@ -6,7 +6,6 @@ function clickcancel() {
     checkbox.style.display="none"
 }
 function clickok() {
-    console.log("OK　クリック");
     checkbox.style.display="none"
     bought.style.display="block"
 

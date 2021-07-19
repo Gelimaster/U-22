@@ -1,4 +1,5 @@
 const checkbox= document.getElementById("check_box_check");
+const bought =document.getElementById("bought")
 checkbox.style.display="none"
 
 
