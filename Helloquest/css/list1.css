@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.Trans1{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.534);
+  text-align: center;
+}
+
+.confirmation11{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 600px;
+  height: 370px;
+  background-color: #707070;
+  border-radius: 10px;
+}
+.confirmation21{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 598px;
+  height: 378px;
+  background-color: #FCC453;
+  border-radius: 10px;
+}
+.confirmation31{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 596px;
+  height: 376px;
+  background-color: #707070;
+  border-radius: 10px;
+}
+.confirmation1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 594px;
+  height: 374px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.kakuninn1{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 600px;
+}
+.itemname_k1{
+  text-align: center;
+}
+
+.item_photok1{
+  width: 150px;
+  height: 130px;
+  margin: 0 0 4px 10%;
+  background-color: #fff;
+  border: 1px solid #787676;
+  border-radius: 10px;
+  float: left;
+}
+
+.item_txt1{
+  width: 300px;
+  height: 230px;
+  margin: 0 auto 0 5%;
+  float: left;
+}
+
+.koin_k1{
+  width: 130px;
+  height: 25px;
+  margin: 2px auto 2px 15%;
+  text-align: left;
+  background-color: #E9FEA3;
+  border: 1px solid #C5EC57;
+}
+
+.Purchase11{
+  width: 200px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  margin: 20px auto 0 auto;
+}
+#Pur_bu11{
+  width: 180px;
+  /* display: block; */
+}
+
+.koin_txt1{
+  width: 300px;
+  height: 230px;
+}

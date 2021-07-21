@@ -15,7 +15,7 @@
   </nav>
 
   <body>
-    <a href=""><img src="./images/shop/modoru.png" alt="戻る" id="modoru"></a>
+    <a href="mypage.php"><img src="./images/shop/modoru.png" alt="戻る" id="modoru"></a>
     <p><img src="./images/shop/name.png" alt="名前" id="name"></p>
     <p><img src="./images/shop/kajiya.png" alt="鍛冶屋" id="kajiya"></p>
 

@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <title>アイテム一覧</title>
     <link rel="stylesheet" type="text/css" href="css/list.css">
-    <script type="text/javascript" src="js/list.js"></script>
   </head>
 
   <nav>
@@ -92,11 +91,10 @@
         </div>
       </div>
     </div>
-      
-      <!-- <div class="example2">
-      <p>はみ出た部分を表示しない</p>
-      ...
-      </div> -->
+    <?php
+    include("list1.php");
+    ?>
+  <script type="text/javascript" src="js/list.js"></script>
   </body>
 
 </html>
