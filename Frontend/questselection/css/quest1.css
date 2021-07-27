@@ -21,6 +21,7 @@
   position: absolute;
   width: 100%;
   height: auto;
+  z-index: 1;
 }
 
 .mypagebox .quest_button{
@@ -49,6 +50,7 @@
   position: absolute;
   width: 100%;
   height: auto;
+  z-index: 1;
 }
 
 .q1 .quest_button{
@@ -58,4 +60,22 @@
 
 .q1 .quest_button:before {
   bottom: -22%;
+}
+
+
+
+#hint_box{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 77%;
+  height: 80%;
+  background-color: white;
+  z-index: 999;
+}
+
+#hint_button{
+  position: relative;
+  top: 1%;
+  left: 97%;
 }
