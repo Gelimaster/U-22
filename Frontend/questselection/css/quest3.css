@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+ul{
+  margin-bottom: 33%;
+}
+
+ul{
+  margin-bottom: 74%;
+}
+
+/* .vill_hint_button{
+  top: 80%;
+  left: 20%;
+} */
+
+.stage3{
+  width: 100%;
+}
+
+.q3{
+  position: absolute;
+  width: 27%;
+  height: 72%;
+  top: -1%;
+  left: 33.7%;
+  opacity: 0;
+}
+
+.q3:hover{
+  opacity: 1;
+}
+
+.laboratory{
+  position: absolute;
+  width: auto;
+  height: 100%;
+}
+
+.q3 .quest_button{
+  top: 25%;
+  left: 2%;
+}
+
+.q3 .quest_button:before {
+  bottom: -18%;
+  right: -7%;
+}
