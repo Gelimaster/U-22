@@ -32,6 +32,11 @@ while(n< Mstage[1]){
     document.getElementById("stage2").style.display=""
     document.getElementById("stage3").style.display=""
   }  
+  if(Mstage <40){
+    document.getElementById("stage1").style.display="none"
+    document.getElementById("stage2").style.display="none"
+    document.getElementById("stage3").style.display="none"
+  }
 }
 
 

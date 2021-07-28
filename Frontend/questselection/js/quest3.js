@@ -28,6 +28,9 @@ while(n< Mstage[1]){
   }else{
     document.getElementById("stage1").style.display=""
   }  
+  if(Mstage <30){
+    document.getElementById("stage1").style.display="none"
+  }
 }
 
 
