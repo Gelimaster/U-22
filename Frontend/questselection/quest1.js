@@ -3,6 +3,8 @@
   var   stage2 = document.getElementById("stage2").style.display="none"
   var   stage3 = document.getElementById("stage3").style.display="none"
   var  hint = document.getElementById("hint_box")
+  var back_button =document.getElementById("back_button")
+  back_button.style.backgroundColor="gray"
   hint.style.display="none"
   var n =0
 
