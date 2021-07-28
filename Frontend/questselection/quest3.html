@@ -13,6 +13,11 @@
   </head>
 
   <body>
+    <div id="hint_box">
+      <button id="hint_button" onclick="closehint()" >x</button>
+       <!-- ヒントはここに書く -->
+
+    </div>
     <div class="nav">
       <div class="logo">
         <a href=""><img src="./images/logo.png" alt="ホームページへ" /></a>
@@ -21,24 +26,22 @@
         <p>工場の町</p>
       </div>
       <ul>
-        <li><a href="" class="button">3-1</a></li>
+        <li><a id="stage1" onmouseover="select()" onmouseleave="unselected()" href="" class="button">3-1</a></li>
       </ul>
-      <div class="vill_hint">
-        <a href="">
+      <div onclick="openhint()" class="vill_hint">
           <div class="vill_hint_button">
             <p>ヒント！</p>
           </div>
           <img src="./images/usagi.png" alt="ヒント" />
-        </a>
       </div>
       <div class="stage_nav">
-        <a href="" class="button next_stage_button">前の町</a>
-        <a href="" class="button next_stage_button">次の町</a>
+        <a id="back_button" href="quest2.html" class="button next_stage_button">前の町</a>
+        <a id="next_button" href="quest4.html" class="button next_stage_button">次の町</a>
       </div>
     </div>
     <div class="village">
       <img src="./images/stage3.png" alt="stage3" class="stage3" />
-      <div class="q3">
+      <div id="quest3" class="q3">
         <a href="">
           <div class="quest_button">
             <p>クエスト</p>
@@ -47,5 +50,6 @@
         </a>
       </div>
     </div>
+    <script src="js/quest3.js"></script>
   </body>
 </html>

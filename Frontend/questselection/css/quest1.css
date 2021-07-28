@@ -64,18 +64,3 @@
 
 
 
-#hint_box{
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  width: 77%;
-  height: 80%;
-  background-color: white;
-  z-index: 999;
-}
-
-#hint_button{
-  position: relative;
-  top: 1%;
-  left: 97%;
-}
