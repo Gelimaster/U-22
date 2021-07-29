@@ -2,7 +2,6 @@
   const Mstage = localStorage.getItem("stage")
   var   stage1 = document.getElementById("stage1").style.display="none"
   var   stage2 = document.getElementById("stage2").style.display="none"
-  var   stage3 = document.getElementById("stage3").style.display="none"
 
 
   var next_stage= document.getElementById("next_button")
@@ -30,12 +29,10 @@ while(n< Mstage[1]){
   }else{
     document.getElementById("stage1").style.display=""
     document.getElementById("stage2").style.display=""
-    document.getElementById("stage3").style.display=""
   } 
   if(Mstage <20){
     document.getElementById("stage1").style.display="none"
     document.getElementById("stage2").style.display="none"
-    document.getElementById("stage3").style.display="none"
   }
 }
 
