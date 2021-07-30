@@ -5,12 +5,12 @@ var charabox = document.getElementById("charabox");
 var serifubox = document.getElementById("serifubox");
 
 // 1にするとシナリオが入る。0の場合は表示されない
-var scenarioIn=0;
+var scenarioIn=1;
 
 var msgCnt = 1;
 
 // シナリオNo シナリオが進めば数値も変化する
-var scenarioNo = 1;
+var scenarioNo = localStorage.getItem("stage");
 
 var chara =[];
 var charClass = [];
@@ -18,6 +18,7 @@ var charaName = [];
 var selifu = [];
 var sceCnt = 0;
 var c = 0;
+var x=0;
 
 
 //　シナリオデータ読込
@@ -27,6 +28,9 @@ function sceRead(res){
             chara[sceCnt] = res[i].chara;
             charClass[sceCnt] = res[i].charClass;
             charaName[i] = res[i].charaName;
+            //主人公をユーザ名にかえる処理
+            x=charaName.length-sceCnt-1
+            console.log(x)
             selifu[sceCnt] = res[i].selifu;
             sceCnt++;
         }
@@ -61,11 +65,12 @@ async function serifu(){
     // １文字ずつ表示する処理
     if(c < sceCnt){
         for(var i = 0;i <= selifu[c].length;i++){
-            serifubox.innerHTML = charaName[c] + "<br>" + selifu[c].substr(0,i);
+            serifubox.innerHTML = charaName[x] + "<br>" + selifu[c].substr(0,i);
             await wait(3);
         }
         // serifubox.innerHTML = selifu[c];
         c++;
+        x++;
     }else{
         c = 0;
         scenarioIn = 0;

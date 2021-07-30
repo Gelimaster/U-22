@@ -1,30 +1,892 @@
 [
     {
-        "sceNo":1,      
+        "sceNo":"00",      
         "chara":"char_1.png,char_2.png",
         "charClass":"leftdown,rightup",
         "charaName":"うさぎ",
-        "selifu":"もしかして話せないのか的な会話。"
+        "selifu":"いてて。。。<br>ごめん、今急いでてうさぎのカバンから杖が落ち地面へ刺さった"
     },
     {
-        "sceNo":1,
-        "chara":"char_1.png,char_2.png",
-        "charClass":"leftup,rightdown",
-        "charaName":"主人公代理",
-        "selifu":"一生懸命話そうとしている様子を記入"
+        "sceNo":"00",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"うさぎのカバンから杖が落ち地面へ刺さった"
     },
     {
-        "sceNo":1,
-        "chara":"char_1.png,char_2.png",
-        "charClass":"leftdown,rightup",
-        "charaName":"うさぎ",
-        "selifu":"この道具を使ってみて的な会話。<br>道具の説明なんかも入れるかも。"
-    },
-    {
-        "sceNo":2,
+        "sceNo":"00",
         "chara":"char_1.png",
         "charClass":"leftup",
-        "charaName":"主人公代理",
-        "selifu":"工事のおじちゃんです。よろしくお願いします"
+        "charaName":"主人公",
+        "selifu":"あっ、まってっ"
+    },
+    {
+        "sceNo":"00",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"突然、地震が起こる"
+    },
+    {
+        "sceNo":"00",
+        "chara":"char_1.png",
+        "charClass":"leftup",
+        "charaName":"主人公",
+        "selifu":"な、なんだ！？<br>と、とりあえずこれを返さないと"
+    },
+    {
+        "sceNo":"00",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"主人公は杖を抜いた"
+    },
+    {
+        "sceNo":"00",
+        "chara":"char_1.png",
+        "charClass":"leftup",
+        "charaName":"主人公",
+        "selifu":"（落とし物を手に入れた）"
+    },
+    {
+        "sceNo":"00",
+        "chara":"char_1.png",
+        "charClass":"leftup",
+        "charaName":"主人公",
+        "selifu":"えっと、どこに行ったんだ？"
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "sceNo":"11",      
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"村人",
+        "selifu":"（あわあわあわ）"
+    },
+    {
+        "sceNo":"11",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"村人",
+        "selifu":"（おろおろ）"
+    },
+    {
+        "sceNo":"11",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftup,rightdown",
+        "charaName":"主人公",
+        "selifu":"な、なんだこれ…"
+    },
+    {
+        "sceNo":"11",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftup,rightdown",
+        "charaName":"主人公",
+        "selifu":"(大丈夫ですか？）<br>（あれ、声が出ない！？）"
+    },
+    {
+        "sceNo":"11",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdon,rightup",
+        "charaName":"主人公",
+        "selifu":"あ、やっぱり！！説明している暇はない、手伝って！！"
+    },
+    {
+        "sceNo":"11",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftup,rightdown",
+        "charaName":"主人公",
+        "selifu":"!?"
+    },
+
+
+
+
+
+
+
+    {
+        "sceNo":"12",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"村人",
+        "selifu":"やったー、声が出るゾ"
+    },  
+    {
+        "sceNo":"12",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"村人",
+        "selifu":"元に戻ったわ"
+    },  
+    {
+        "sceNo":"12",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"本当にありがとう！僕だけじゃダメなんだ<br>きっと他の場所でも今みたいなことが起こっていると思う<br>お願い、探すのを手伝って！！！"
+    },  
+    {
+        "sceNo":"12",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftup,rightdown",
+        "charaName":"主人公",
+        "selifu":"？？？？"
+    },  
+    {
+        "sceNo":"12",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"ごめん、何のことかさっぱりだよね<br>僕はうさぎ。この杖を持って未来から来た。"
+    },  
+    {
+        "sceNo":"12",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"未来のことは詳しく話せないんだけど、この杖は世界を作る杖。<br>また、世界を壊す杖なんだ。僕はその杖を落としてしまった<br>さっきも杖を落としたからこんな事態になってしまったんだ<br>杖それぞれに違う機能があってこれは文字の杖<br>"
+    },  
+    {
+        "sceNo":"12",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"（文字の杖を手に入れた）"
+    },  
+    {
+        "sceNo":"12",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"僕は杖の力を使うことができないから手伝ってほしいんだけど（もじもじ）"
+    },  
+    {
+        "sceNo":"12",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"ほんと？！手伝ってくれるの？！やったー！！<br>じゃあさっそく探しに行こう行こう！！"
+    },  
+    {
+        "sceNo":"12",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"本屋の店主",
+        "selifu":"困ったなぁ"
+    },  
+    {
+        "sceNo":"12",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftup,rightdown",
+        "charaName":"主人公",
+        "selifu":"本屋のおじさん？どうしたの？"
+    },  
+    {
+        "sceNo":"12",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"本屋の店主",
+        "selifu":"本のタイトルが表紙から消えちまった…。店の本、全部。"
+    },  
+    {
+        "sceNo":"12",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftup,rightup",
+        "charaName":"",
+        "selifu":"！！"
+    },  
+    {
+        "sceNo":"12",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftup,rightdown",
+        "charaName":"主人公",
+        "selifu":"これってもしかして…"
+    },  
+    {
+        "sceNo":"12",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"杖の力のせいだ。トラブルはあれだけじゃなかったんだ…<br>杖でやったなら杖で戻すしかない！<br>クエスト開始だ！！！"
+    }
+
+
+
+
+
+
+
+    ,  
+    {
+        "sceNo":"01",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"ここが君の部屋かぁ。旅に行くための準備をしないと！"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"プルルルル、プルルルル"
+    },   
+    {
+        "sceNo":"01",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"!!<br>しまった…あいつからだ…<br>主人公ちょっとごめん"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"ピッ"
+    } , 
+    {
+        "sceNo":"01",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"もしｍ"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"店長",
+        "selifu":"もしもーし！げんきそうだねぇ"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"店長",
+        "selifu":"あっそれ！文字の杖だね！ふふーん"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"いやちょっと今忙しくて…"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"店長",
+        "selifu":"まあ、少しくらいいいじゃないか"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"店長",
+        "selifu":"ちょっとそこの君、その杖を使いもっといろんなことをしたいと思わない？"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"店長",
+        "selifu":"私はウエブショップの店長。<br>よかったら見ていかないか？<br>このうさぎさんにうちの商品が送れる端末を持たせてあるから、気に入ったものがあるなら送るよ"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"なっ、勝手に…まあいいや。とにかく急いでいるからまたかけなおすよ"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"店長",
+        "selifu":"ちょっ"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"ピッ"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"さ、さぁ杖を探しに行こう！"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"（ショップとカスタムが解放された）"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"（ショップ　カスタマイズで使用できるものをメダルで購入できるよ）"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"カスタマイズ　マイページをクエストで手に入れたタグやショップで購入したものを使いカスタマイズすることができる）"
+    },  
+    {
+        "sceNo":"01",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"クエストボタンを押して次の杖を探しに行こう！"
+    }
+
+
+
+
+
+    
+    ,  
+    {
+        "sceNo":"13",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"杖のある場所はある程度探知することができるんだ<br>だからその町へのワープするためにこの杖を使うんだ！！"
+    },  
+
+
+
+
+
+
+
+    {
+        "sceNo":"21",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftup,rightdown",
+        "charaName":"うさぎ",
+        "selifu":"なんだか騒がしいね"
+    },  
+    {
+        "sceNo":"21",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftup,rightdown",
+        "charaName":"屋台のおじさん",
+        "selifu":"商品が消えちまったー"
+    },  
+    {
+        "sceNo":"21",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftup,rightdown",
+        "charaName":"うさぎ",
+        "selifu":"これは杖のせいだ！！"
+    },  
+    {
+        "sceNo":"21",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"主人公",
+        "selifu":"すみません。こんな感じの杖みませんでした？"
+    },  
+    {
+        "sceNo":"21",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"屋台のおじさん",
+        "selifu":"ああ、これのこと？"
+    },  
+    {
+        "sceNo":"21",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"（画像の杖を手に入れた）"
+    },  
+    {
+        "sceNo":"21",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftup,rightdown",
+        "charaName":"うさぎ",
+        "selifu":"早速、直していこう！"
+    }
+
+
+
+
+
+
+
+
+
+    
+    ,  
+    {
+        "sceNo":"22",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftup,rightdown",
+        "charaName":"屋台のおじさん",
+        "selifu":"この果物、なんか歪んでるぞ！<br>こんなもの売れない～！！"
+    }
+
+
+
+
+    ,  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"じゃあ次の杖を探そう！"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"プルルルル、プルルルル"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"あっ、もしもし…"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"シソネル",
+        "selifu":"ちょっと今どこにいるのさ！！僕の杖はどこにあるのさ！！"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"えっとー、ちょっとね、あっほら杖ならここにあるよ、<br>ここは安全だし、自然いっぱいだし、いい所さ"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"シソネル",
+        "selifu":"ちょっと今どこにいるのさ！！僕の杖はどこにあるのさ！！"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"シソネル",
+        "selifu":"もしかして、過去にいるの？"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"ぎく"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"シソネル",
+        "selifu":"他の杖が見当たらないけど無くしたの？"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"ぎくぎく"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"シソネル",
+        "selifu":"ていうか、どうやって杖を"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftup,rightdown",
+        "charaName":"主人公",
+        "selifu":"あのー"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"シソネル",
+        "selifu":"すみません。取り乱してしまって、この人は？"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"一緒に杖を探してもらってます"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"シソネル",
+        "selifu":"どうもすみません、<br>とにかくどうやって杖を持ってきたかわからないけど持ってきてね"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"それが、どうやってもってきたかわからなくて"
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"シソネル",
+        "selifu":"しょうがない、こっちで調べてみるよ<br>何かあったら連絡するね"
+    },
+    {
+        "sceNo":"02",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":""
+    },  
+    {
+        "sceNo":"02",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"えっと、そうゆうことなので引き続き杖探し手伝ってください"
+    }
+
+
+
+
+
+    ,  
+    {
+        "sceNo":"31",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"ここは研究施設みたいだけど…あっ杖だ！！"
+    },  
+    {
+        "sceNo":"31",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"研究員",
+        "selifu":"君の杖なのか！？こんなものは今まで見たことがない。"
+    },  
+    {
+        "sceNo":"31",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"えっとなにかこの杖を見つけたとき異変が起こりませんでしたか？"
+    },  
+    {
+        "sceNo":"31",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"研究員",
+        "selifu":"ああ、箱が消えてしまってね"
+    },  
+    {
+        "sceNo":"31",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"じゃあ、その杖で直すので返していただきますね"
+    },  
+    {
+        "sceNo":"31",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"（箱の杖を手に入れた）"
+    }
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ,  
+    {
+        "sceNo":"41",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"なんだかすごい行列だね、これは杖のせいかもしれないな"
+    },  
+    {
+        "sceNo":"41",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"すみません、こんな感じの杖みませんでしたか？"
+    },  
+    {
+        "sceNo":"41",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"郵便局員",
+        "selifu":"それなら、落とし物として届いていますよ"
+    },  
+    {
+        "sceNo":"41",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"（送信の杖を手に入れた）"
+    },  
+    {
+        "sceNo":"41",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftup,rightdown",
+        "charaName":"主人公",
+        "selifu":"すごい行列ですけど、どうかしたんですか？"
+    },  
+    {
+        "sceNo":"41",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"郵便局員",
+        "selifu":"なぜか書類の記入欄が消えてしまって"
+    },  
+    {
+        "sceNo":"41",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"それ多分この杖のせいなので直します"
+    }
+
+
+
+
+
+
+
+
+
+
+    ,  
+    {
+        "sceNo":"42",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"これで杖は全部だ！"
+    },  
+    {
+        "sceNo":"42",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"プルルルル、プルルルル"
+    },  
+    {
+        "sceNo":"42",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"おっタイミングばっちりだ"
+    },  
+    {
+        "sceNo":"42",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"",
+        "selifu":"ピッ"
+    },  
+    {
+        "sceNo":"42",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"もしもし、杖集まったよ！そっちは？"
+    },  
+    {
+        "sceNo":"42",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"シソネル",
+        "selifu":"やっぱり送れないみたい。店の転送装置は一方通行だから無理みたい"
+    },  
+    {
+        "sceNo":"42",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"そうかぁ、どうしよう"
+    },  
+    {
+        "sceNo":"42",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"シソネル",
+        "selifu":"どうしよ"
+    },  
+    {
+        "sceNo":"42",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"時空警察",
+        "selifu":"お前を逮捕する"
+    },  
+    {
+        "sceNo":"42",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"！？"
+    },  
+    {
+        "sceNo":"42",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"時空警察",
+        "selifu":"時空規定第11条の「物の時空移動」の規定を犯した罪で逮捕する"
+    },  
+    {
+        "sceNo":"42",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"なんだって！？"
+    },  
+    {
+        "sceNo":"42",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"時空警察",
+        "selifu":"裁判を受ける際に弁護する文章を提出してもらうことも可能だ"
+    },  
+    {
+        "sceNo":"42",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"主人公！僕のために手紙を書いてくれ！！"
+    }
+
+
+
+
+
+
+
+
+
+    ,  
+    {
+        "sceNo":"43",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"よしこれで…"
+    },  
+    {
+        "sceNo":"43",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"これじゃあ送信できない！"
+    }
+
+
+
+
+
+
+
+
+    ,  
+    {
+        "sceNo":"03",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"よし、送信っと"
+    },  
+    {
+        "sceNo":"03",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"いろいろ迷惑をかけてごめんよ。そしていろいろありがとう<br>じゃあ僕は裁判を受けるよ"
+    },  
+    {
+        "sceNo":"03",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"ばいばい"
+    },  
+    {
+        "sceNo":"03",
+        "chara":"",
+        "charClass":"",
+        "charaName":"",
+        "selifu":"（白紙）"
+    },  
+    {
+        "sceNo":"03",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"実は、杖の影響を受けて困っている人がいるらしくて<br>直さないといけないんだ"
+    },  
+    {
+        "sceNo":"03",
+        "chara":"char_1.png,char_2.png",
+        "charClass":"leftdown,rightup",
+        "charaName":"うさぎ",
+        "selifu":"それを解決するまでもう少し付き合ってくれない？<br><br>僕らの戦いはまだ続く"
     }
 ]

@@ -130,10 +130,8 @@ function roop(target){
     ansp="";
     // console.log(target);
     roop2(target);
-    anspfinal.pop();
    
 
-    console.log(anspfinal)
     localStorage.setItem("answer1",anspfinal[0])
     localStorage.setItem("answer2",anspfinal[1]) 
     localStorage.setItem("answer3",anspfinal[2])
