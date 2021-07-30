@@ -96,7 +96,7 @@
     {
         "sceNo":"11",
         "chara":"char_1.png,char_2.png",
-        "charClass":"leftdon,rightup",
+        "charClass":"leftdown,rightup",
         "charaName":"主人公",
         "selifu":"あ、やっぱり！！説明している暇はない、手伝って！！"
     },
