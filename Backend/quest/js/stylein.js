@@ -6,6 +6,17 @@ var background_color = [];
 var background_image = [];
 var color = [];
 var FontSize = [];
+var TextDecoration = [];
+var position = [];
+var left = [];
+var Top = [];
+var ListStyleType = [];
+var BorderStyle = [];
+var BorderColor = [];
+var BorderWidth = [];
+var BorderTopLeftRadius = [];
+var BorderTopRightRadius = [];
+var BorderBottomLeftRadius = [];
 
 var wi = document.getElementById('width');
 var he = document.getElementById('height');
@@ -13,10 +24,24 @@ var ba_co = document.getElementById('background_color');
 var ba_im = document.getElementById('background_image');
 var co = document.getElementById('color');
 var fosi = document.getElementById('FontSize');
+var tede = document.getElementById('TextDecoration');
+var po = document.getElementById('position');
+var le = document.getElementById('left');
+var to = document.getElementById('Top');
+var lity = document.getElementById('ListStyleType');
+var bost = document.getElementById('BorderStyle');
+var boco = document.getElementById('BorderColor');
+var bowi = document.getElementById('BorderWidth');
+var btlr = document.getElementById('BorderTopLeftRadius');
+var btrr = document.getElementById('BorderTopRightRadius');
+var bblr = document.getElementById('BorderBottomLeftRadius');
+var bbrr = document.getElementById('BorderBottomRightRadius');
 
-var proper = ['id_name','width','height','background_color','color','FontSize'];
-var pro1 = ['#','width:','height:','background-color:','color:','font-size:'];
-var pro2 = [' {<br>','0px;<br>','0px;<br>',';<br>',';<br>','rem;<br>'];
+var proper = ['id_name','width','height','background_color','color','FontSize','TextDecoration','position','left','Top','ListStyleType','BorderStyle','BorderColor','BorderWidth','BorderTopLeftRadius','BorderTopRightRadius','BorderBottomLeftRadius','BorderBottomRightRadius'];
+var pro1 = ['#','width:','height:','background-color:','color:','font-size:','text-decoration:','position:','left:','top:','list-style-type:','border-style:','border-color:','border-width:','border-top-left-radius:','border-top-right-radius:','border-bottom-left-radius:','border-bottom-right-radius:'];
+var pro2 = [' {<br>','0px;<br>','0px;<br>',';<br>',';<br>','rem;<br>',';<br>',';<br>','0px;<br>','0px;<br>',';<br>',';<br>',';<br>','px;<br>','%;<br>','%;<br>','%;<br>','%;<br>'];
+var shortpro = ['wi','he','ba_co','ba_im','co','fosi','tede','po','le','to','lity','bost','boco','bowi','btlr','btrr','bblr','bbrr'];
+
 
 var idsub = "";
 var idsubcnt = 0;
@@ -25,7 +50,20 @@ var csstext ="";
 var choice = document.getElementById('choiceid');
 var idArray = [];
 
-
+// ボタンクリック時にそれぞれのcss適用ボックス表示
+function inButton3(num){
+    if(idsub != ""){
+        stylebox1.style.display = "none";
+        stylebox2.style.display = "none";
+        stylebox3.style.display = "none";
+        stylebox4.style.display = "none";
+        stylebox5.style.display = "none";
+        stylebox6.style.display = "none";
+        
+        var b = document.getElementById("stylebox"+num);
+        b.style.display = "block";
+    }
+}
 
 // idの一覧
 function idlistin(){
@@ -75,7 +113,8 @@ function idStyleIn(){
             var cnt = 1;
             for(var c = 1;c < proper.length && eval(proper[c])[i] != null ;c++){
                 cnt++;
-                // console.log(eval(proper[c])[i]);
+                // console.log(proper[c]);
+                // console.log(eval(proper[c]));
                 // console.log(cnt);
             }
             if(cnt != 1){
@@ -99,6 +138,7 @@ function idStyleOut(out){
     // console.log(cssbox.textContent);
     eval(out.id)[idsubcnt] = out.value;
     idStyleIn();
+    // console.log(csstext);
     cssbox.innerHTML = csstext;
     style.innerHTML =cssbox.textContent;
 }
@@ -128,6 +168,19 @@ function idstyle(event){
     ba_co.value = "#000000";
     co.value = "#000000";
     fosi.value = "";
+    tede.value = "";
+    po.value = "";
+    le.value = "";
+    to.value = "";
+    lity.value = "";
+    bost.value = "";
+    boco.value = "#000000";
+    bowi.value = "";
+    btlr.value = "";
+    btrr.value = "";
+    bblr.value = "";
+    bbrr.value = "";
+
     if(width[idsubcnt] != null){
         wi.value = width[idsubcnt];
     }
@@ -142,6 +195,42 @@ function idstyle(event){
     }
     if(FontSize[idsubcnt] != null){
         fosi.value = FontSize[idsubcnt];
+    }
+    if(TextDecoration[idsubcnt] != null){
+        tede.value = TextDecoration[idsubcnt];
+    }
+    if(position[idsubcnt] != null){
+        po.value = position[idsubcnt];
+    }
+    if(left[idsubcnt] != null){
+        le.value = left[idsubcnt];
+    }
+    if(Top[idsubcnt] != null){
+        to.value = Top[idsubcnt];
+    }
+    if(ListStyleType[idsubcnt] != null){
+        lity.value = ListStyleType[idsubcnt];
+    }
+    if(BorderStyle[idsubcnt] != null){
+        bost.value = BorderStyle[idsubcnt];
+    }
+    if(BorderColor[idsubcnt] != null){
+        boco.value = BorderColor[idsubcnt];
+    }
+    if(BorderWidth[idsubcnt] != null){
+        bowi.value = BorderWidth[idsubcnt];
+    }
+    if(BorderTopLeftRadius[idsubcnt] != null){
+        btlr.value = BorderTopLeftRadius[idsubcnt];
+    }
+    if(BorderTopRightRadius[idsubcnt] != null){
+        btrr.value = BorderTopRightRadius[idsubcnt];
+    }
+    if(BorderBottomLeftRadius[idsubcnt] != null){
+        bblr.value = BorderBottomLeftRadius[idsubcnt];
+    }
+    if(BorderBottomRightRadius[idsubcnt] != null){
+        bbrr.value = BorderBottomRightRadius[idsubcnt];
     }
     // ba_im.value = background_image[idcnt];
 }
