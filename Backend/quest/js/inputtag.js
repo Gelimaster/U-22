@@ -15,6 +15,7 @@ var tagcnt = [];
 var count = 0;
 var html_text = "";
 var idlist = "visualbox";
+var bunsyou = "";
 
 var target = document.getElementById('assemblybox1');
 
@@ -125,8 +126,10 @@ function dataRead1(res){
 // htmlboxに入力するループ
 function roop(target){
     html_text = "";
+    bunsyou = "";
     // console.log(target);
     roop2(target);
+    console.log(bunsyou);
 }
 
 function roop2(target){
@@ -148,9 +151,11 @@ function roop2(target){
         }
         //開始(かいし)タグの入力
         html_text = html_text + html_text1[cnt];
+        bunsyou = bunsyou + child[i].id.slice(0,-2);
         // console.log(child[i].id);
         // console.log(child[i].lastElementChild.firstElementChild.childElementCount);
         // console.log(child[i].lastElementChild);
+        // console.log(child[i].lastElementChild.childElementCount);
         if(idlist.includes(child[i].id +"0")){
             // console.log("重複回避");
         }else{
@@ -163,6 +168,7 @@ function roop2(target){
             // <p>タグなどの中身にテキストを入れるものの処理
             if(child[i].lastElementChild.firstElementChild.childElementCount == 0){
                 html_text = html_text + child[i].lastElementChild.firstElementChild.textContent;
+                bunsyou = bunsyou + child[i].lastElementChild.firstElementChild.textContent;
             // <img>タグの場合の写真の挿入処理
             }else if(child[i].lastElementChild.firstElementChild.classList.contains('imgflg') == true){
                 html_text = html_text + child[i].lastElementChild.firstElementChild.textContent;
@@ -181,9 +187,21 @@ function roop2(target){
                 }else{
                     roop2(child[i].lastElementChild.lastElementChild);
                 }
+            }else if(child[i].lastElementChild.firstElementChild.classList.contains('inputselect') == true){
+                // console.log("inputtagである");
+                // console.log(child[i].lastElementChild.firstElementChild.firstElementChild.value);
+                html_text = html_text + child[i].lastElementChild.firstElementChild.firstElementChild.value + "\"";
+                html_text = html_text + " id = \"" + child[i].id + "0" + "\" ";
+                html_text = html_text + html_text2[cnt];
+                html_text = html_text + child[i].lastElementChild.lastElementChild.textContent;
             }else{
                 roop2(child[i].lastElementChild.lastElementChild);
             }
+        }else{
+
+        }
+        if(child[i].parentNode.id == "assemblybox1"){
+            bunsyou = bunsyou + ",";
         }
         // roop2(child[i].lastElementChild.firstElementChild);
         // 終了(しゅうりょう)タグの入力
