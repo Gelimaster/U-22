@@ -1,7 +1,4 @@
 // タグの表示からHTML文作成までの処理
-
-var ansp ="";
-var anspfinal="";
 // タグの代入
 var tag_num = [];
 var tag_id = [];
@@ -17,6 +14,7 @@ var tagcnt = [];
 var count = 0;
 var html_text = "";
 var idlist = "visualbox";
+var bunsyou = "";
 
 var target = document.getElementById('assemblybox1');
 
@@ -127,20 +125,12 @@ function dataRead1(res){
 // htmlboxに入力するループ
 function roop(target){
     html_text = "";
-    ansp="";
+    bunsyou = "";
     // console.log(target);
     roop2(target);
-   
-
-    localStorage.setItem("answer1",anspfinal[0])
-    localStorage.setItem("answer2",anspfinal[1]) 
-    localStorage.setItem("answer3",anspfinal[2])
-    localStorage.setItem("answer4",anspfinal[3]) 
-
-
+    console.log(bunsyou);
+    localStorage.setItem("playeranswer",bunsyou)
 }
-
-
 
 function roop2(target){
     var child = target.children;
@@ -152,30 +142,20 @@ function roop2(target){
     // console.log(childcnt);
     // console.log(id);
     // console.log(count);
-    // console.log(cnt); 
-    
-    localStorage.setItem("answer1","")
-    localStorage.setItem("answer2","") 
-    localStorage.setItem("answer3","")
-    localStorage.setItem("answer4","") 
-
-
-     
-
+    // console.log(cnt);
     for(var i = 0; i < childcnt;i++){
         var cnt = 0;
-        
         // divのidと一致(いっち)するものをjsonから探(さが)す
         for(var c = 0; c < count && child[i].id.slice(0,-2) != tag_id[c]; c++){
             cnt++;
-
         }
         //開始(かいし)タグの入力
         html_text = html_text + html_text1[cnt];
-        ansp=ansp+child[i].id.slice(0,-2)
+        bunsyou = bunsyou + child[i].id.slice(0,-2);
         // console.log(child[i].id);
         // console.log(child[i].lastElementChild.firstElementChild.childElementCount);
         // console.log(child[i].lastElementChild);
+        // console.log(child[i].lastElementChild.childElementCount);
         if(idlist.includes(child[i].id +"0")){
             // console.log("重複回避");
         }else{
@@ -188,35 +168,11 @@ function roop2(target){
             // <p>タグなどの中身にテキストを入れるものの処理
             if(child[i].lastElementChild.firstElementChild.childElementCount == 0){
                 html_text = html_text + child[i].lastElementChild.firstElementChild.textContent;
-
-
-                //ラファエルサカエが触った部分  
-                ansp=ansp+child[i].nodeName+child[i].lastElementChild.firstElementChild.textContent+"/";
-                anspfinal = ansp.split("/")
-                
-                
-                   
-       
-
-
-                
-                     
-                
-    
-
-              
-                //ローカルストレージに答えを入れる
-                
-                // localStorage.setItem("playerasnwer",child[i].lastElementChild.firstElementChild.textContent);
-                // localStorage.setItem('playertag',tag_id[c]);
-
+                bunsyou = bunsyou + child[i].lastElementChild.firstElementChild.textContent;
             // <img>タグの場合の写真の挿入処理
             }else if(child[i].lastElementChild.firstElementChild.classList.contains('imgflg') == true){
                 html_text = html_text + child[i].lastElementChild.firstElementChild.textContent;
                 html_text = html_text + imgin(child[i].lastElementChild.firstElementChild.firstElementChild);
-
-                
-
             // <div>タグなどの中にまだ要素が含まれる場合
             }else{
                 roop2(child[i].lastElementChild.firstElementChild);
@@ -231,14 +187,25 @@ function roop2(target){
                 }else{
                     roop2(child[i].lastElementChild.lastElementChild);
                 }
+            }else if(child[i].lastElementChild.firstElementChild.classList.contains('inputselect') == true){
+                // console.log("inputtagである");
+                // console.log(child[i].lastElementChild.firstElementChild.firstElementChild.value);
+                html_text = html_text + child[i].lastElementChild.firstElementChild.firstElementChild.value + "\"";
+                html_text = html_text + " id = \"" + child[i].id + "0" + "\" ";
+                html_text = html_text + html_text2[cnt];
+                html_text = html_text + child[i].lastElementChild.lastElementChild.textContent;
             }else{
                 roop2(child[i].lastElementChild.lastElementChild);
             }
+        }else{
+
+        }
+        if(child[i].parentNode.id == "assemblybox1"){
+            bunsyou = bunsyou + ",";
         }
         // roop2(child[i].lastElementChild.firstElementChild);
         // 終了(しゅうりょう)タグの入力
         html_text = html_text + html_text3[cnt];
-        
     }
     
     // console.log(idArray);
