@@ -201,12 +201,12 @@
         "tag_num":18,
         "tag_id" : "input",
         "tag_name" : "入力",
-        "tag_area":"<select><option value = \"text\">テキスト</option><option value = \"submit\">送信ボタン</option><option value = \"reset\">リセットボタン</option><option value = \"button\">ボタン</option><option value = \"password\">パスワード入力</option></select>",
-        "html_text1":"&lt;input ",
-        "html_text2":"type = \"",
+        "tag_area":"<div class = \"inputselect\"><select><option value = \"text\">テキスト</option><option value = \"submit\">送信ボタン</option><option value = \"reset\">リセットボタン</option><option value = \"button\">ボタン</option><option value = \"password\">パスワード入力</option></select></div><div class=\"textbox\" contenteditable=true></div>",
+        "html_text1":"&lt;input type = \"",
+        "html_text2":" value = \"",
         "html_text3":"\">&lt;/input>",
         "tag_class":"inputtag",
-        "status":false
+        "status":true
     },
     {
         "tag_num":100,
