@@ -23,7 +23,7 @@
     <a href="profile.php" class="button">プロフィール</a>
     <a href="list.php" class="button">アイテム</a>
     <a href="shop.php" class="button">ショップ</a>
-    <a href="customize.php" class="button">カスタマイズ</a>
+    <a href="custom.php" class="button">カスタマイズ</a>
     <a href="koukai.php" class="button">公開ページ一覧</a>
 
     <a href="quest.php" class="quest">クエスト</a>

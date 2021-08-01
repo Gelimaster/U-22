@@ -1,10 +1,10 @@
 [
     {
         "image_num": 0,
-        "image_id": "image01",
-        "image_name": "char_1.png",
+        "image_id": "logo1",
+        "image_name": "logo.png",
         "image_class":"imgwide",
-        "images_html":"images/custom/char_1.png"
+        "images_html":"images/mypage/logo.png"
     },
     {
         "image_num": 1,
