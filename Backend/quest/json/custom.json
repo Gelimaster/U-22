@@ -1,0 +1,245 @@
+[
+    {
+        "tag_num":0,
+        "tag_id" : "body",
+        "tag_name" : "全体",
+        "tag_area":"<div class=\"box\" ondrop=\"Drop( event);\" draggable=\"true\">",
+        "html_text1":"&lt;body ",
+        "html_text2":"><br>",
+        "html_text3":"&lt;/body><br>",
+        "tag_class":"bodytag",
+        "status":true
+    },
+    {
+        "tag_num":1,
+        "tag_id":"p",
+        "tag_name":"テキスト入力",
+        "tag_area":"<div class=\"textbox\" contenteditable=true></div>",
+        "html_text1":"&lt;p ",
+        "html_text2":">",
+        "html_text3":"&lt;/p><br>",
+        "tag_class":"ptag",
+        "status":true
+    },
+    {
+        "tag_num":2,
+        "tag_id" : "img",
+        "tag_name" : "写真表示",
+        "tag_area":"<div class=\"imgs imgflg\" ondrop=\"Drop( event);\" draggable=\"true\"></div>",
+        "html_text1":"&lt;img ",
+        "html_text2":"src=\"",
+        "html_text3":"\"><br>",
+        "tag_class":"imgtag",
+        "status":true
+    },
+    {
+        "tag_num":3,
+        "tag_id" : "div",
+        "tag_name" : "箱",
+        "tag_area":"<div class=\"divbox\" ondrop=\"Drop( event);\" draggable=\"true\"></div>",
+        "html_text1":"&lt;div ",
+        "html_text2":"><br>",
+        "html_text3":"&lt;/div><br>",
+        "tag_class":"divtag",
+        "status":true
+    },
+    {
+        "tag_num":4,
+        "tag_id" : "a",
+        "tag_name" : "リンク",
+        "tag_area":"<div class=\"textbox imgflg\" contenteditable=true></div><div class=\"box\" ondrop=\"Drop( event);\" draggable=\"true\"></div>",
+        "html_text1":"&lt;a href=\"",
+        "html_text2":">",
+        "html_text3":"&lt;/a><br>",
+        "tag_class":"atag",
+        "status":true
+    },
+    {
+        "tag_num":5,
+        "tag_id" : "ul",
+        "tag_name" : "リスト",
+        "tag_area":"<div class=\"ulbox\" ondrop=\"Drop( event);\" draggable=\"true\"></div>",
+        "html_text1":"&lt;ul ",
+        "html_text2":"><br>",
+        "html_text3":"&lt;/ul>",
+        "tag_class":"ultag",
+        "status":true
+    },
+    {
+        "tag_num":6,
+        "tag_id" : "ol",
+        "tag_name" : "数字リスト",
+        "tag_area":"<div class=\"olbox\" ondrop=\"Drop( event);\" draggable=\"true\"></div>",
+        "html_text1":"&lt;ol ",
+        "html_text2":"><br>",
+        "html_text3":"&lt;/ol><br>",
+        "tag_class":"oltag",
+        "status":true
+    },
+    {
+        "tag_num":7,
+        "tag_id" : "li",
+        "tag_name" : "・",
+        "tag_area":"<div class=\"textbox\" contenteditable=true></div>",
+        "html_text1":"&lt;li ",
+        "html_text2":">",
+        "html_text3":"&lt;/li><br>",
+        "tag_class":"litag",
+        "status":true
+    },
+    {
+        "tag_num":8,
+        "tag_id" : "nav",
+        "tag_name" : "ナビゲーション",
+        "tag_area":"<div class=\"box\" ondrop=\"Drop( event);\" draggable=\"true\">",
+        "html_text1":"&lt;nav ",
+        "html_text2":"><br>",
+        "html_text3":"&lt;/nav><br>",
+        "tag_class":"navtag",
+        "status":true
+    },
+    {
+        "tag_num":9,
+        "tag_id" : "main",
+        "tag_name" : "メイン",
+        "tag_area":"<div class=\"box\" ondrop=\"Drop( event);\" draggable=\"true\">",
+        "html_text1":"&lt;main ",
+        "html_text2":">",
+        "html_text3":"&lt;/main><br>",
+        "tag_class":"maintag",
+        "status":true
+    },
+    {
+        "tag_num":10,
+        "tag_id" : "header",
+        "tag_name" : "ヘッダー",
+        "tag_area":"<div class=\"box\" ondrop=\"Drop( event);\" draggable=\"true\">",
+        "html_text1":"&lt;header ",
+        "html_text2":"><br>",
+        "html_text3":"&lt;/header><br>",
+        "tag_class":"headertag",
+        "status":true
+    },
+    {
+        "tag_num":11,
+        "tag_id" : "footer",
+        "tag_name" : "フッター",
+        "tag_area":"<div class=\"box\" ondrop=\"Drop( event);\" draggable=\"true\">",
+        "html_text1":"&lt;footer ",
+        "html_text2":">",
+        "html_text3":"&lt;/footer><br>",
+        "tag_class":"footertag",
+        "status":true
+    },
+    {
+        "tag_num":12,
+        "tag_id" : "section",
+        "tag_name" : "セクション",
+        "tag_area":"<div class=\"box\" ondrop=\"Drop( event);\" draggable=\"true\">",
+        "html_text1":"&lt;section ",
+        "html_text2":">",
+        "html_text3":"&lt;/section><br>",
+        "tag_class":"sectiontag",
+        "status":true
+    },
+    {
+        "tag_num":13,
+        "tag_id" : "button",
+        "tag_name" : "ボタン",
+        "tag_area":"<div class=\"box\" ondrop=\"Drop( event);\" draggable=\"true\">",
+        "html_text1":"&lt;button ",
+        "html_text2":"><br>",
+        "html_text3":"&lt;/button><br>",
+        "tag_class":"buttontag",
+        "status":true
+    },
+    {
+        "tag_num":14,
+        "tag_id" : "table",
+        "tag_name" : "表",
+        "tag_area":"<div class=\"box\" ondrop=\"Drop( event);\" draggable=\"true\">",
+        "html_text1":"&lt;table ",
+        "html_text2":"><br>",
+        "html_text3":"&lt;/table><br>",
+        "tag_class":"tabletag",
+        "status":true
+    },
+    {
+        "tag_num":15,
+        "tag_id" : "tr",
+        "tag_name" : "行",
+        "tag_area":"<div class=\"box\" ondrop=\"Drop( event);\" draggable=\"true\">",
+        "html_text1":"&lt;tr ",
+        "html_text2":">",
+        "html_text3":"&lt;/tr><br>",
+        "tag_class":"trtag",
+        "status":true
+    },
+    {
+        "tag_num":16,
+        "tag_id" : "th",
+        "tag_name" : "見出し",
+        "tag_area":"<div class=\"box\" ondrop=\"Drop( event);\" draggable=\"true\">",
+        "html_text1":"&lt;th ",
+        "html_text2":">",
+        "html_text3":"&lt;/th><br>",
+        "tag_class":"thtag",
+        "status":true
+    },
+    {
+        "tag_num":17,
+        "tag_id" : "td",
+        "tag_name" : "列",
+        "tag_area":"<div class=\"textbox\" contenteditable=true></div>",
+        "html_text1":"&lt;td ",
+        "html_text2":">",
+        "html_text3":"&lt;/td>",
+        "tag_class":"tdtag",
+        "status":true
+    },
+    {
+        "tag_num":18,
+        "tag_id" : "input",
+        "tag_name" : "入力",
+        "tag_area":"<div class = \"inputselect\"><select><option value = \"text\">テキスト</option><option value = \"submit\">送信ボタン</option><option value = \"reset\">リセットボタン</option><option value = \"button\">ボタン</option><option value = \"password\">パスワード入力</option></select></div><div class=\"textbox\" contenteditable=true></div>",
+        "html_text1":"&lt;input type = \"",
+        "html_text2":" value = \"",
+        "html_text3":"\">&lt;/input>",
+        "tag_class":"inputtag",
+        "status":true
+    },
+    {
+        "tag_num":100,
+        "tag_id" : "logo0",
+        "tag_name" : "ロゴ",
+        "tag_area":"<div class=\"imgs imgflg\" ><img src=\"images/logo.png\" class = \"imgwide \" id = \"logo1\"></div>",
+        "html_text1":"&lt;img ",
+        "html_text2":"class = \"logo\" alt=\"ロゴ\" src=\"",
+        "html_text3":"\"><br>",
+        "tag_class":"imgtag",
+        "status":false
+    },
+    {
+        "tag_num":100,
+        "tag_id" : "link1",
+        "tag_name" : "プロフィール",
+        "tag_area":"",
+        "html_text1":"&lt;a href=\"profile.php\" class = \"button\">プロフィール",
+        "html_text2":"class = \"button\"  src=\"",
+        "html_text3":"&lt;/a><br>",
+        "tag_class":"atag",
+        "status":false
+    },
+    {
+        "tag_num":100,
+        "tag_id" : "link2",
+        "tag_name" : "アイテム",
+        "tag_area":"",
+        "html_text1":"&lt;a href=\"list.php\"  class = \"button\"> アイテム ",
+        "html_text2":"class = \"button\"  src=\"",
+        "html_text3":"&lt;/a><br>",
+        "tag_class":"atag atag1",
+        "status":false
+    }
+
+]

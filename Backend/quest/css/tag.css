@@ -191,6 +191,10 @@ div.box{
     height: 30px;
     margin-bottom: 10px;
 }
+.atag1 .tagarea{
+    height: 20px;
+
+}
 /* <p> */
 .ptag{
     z-index: 3;

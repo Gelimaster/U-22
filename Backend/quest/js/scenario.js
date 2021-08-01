@@ -5,7 +5,7 @@ var charabox = document.getElementById("charabox");
 var serifubox = document.getElementById("serifubox");
 
 // 1にするとシナリオが入る。0の場合は表示されない
-var scenarioIn=1;
+var scenarioIn=0;
 
 var msgCnt = 1;
 
