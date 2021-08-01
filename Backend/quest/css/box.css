@@ -74,6 +74,10 @@
 }
 
 /* 入力したデータを実行するボックス */
+#stylebutton{
+    z-index: 999;
+}
+
 #visualbox{
     width: 68%;
     height: 72%;
@@ -89,6 +93,20 @@
 
 #visualbox div{
     display: block;
+}
+.invisible{
+    width: 68%;
+    height: 72%;
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    z-index: 900;
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color:transparent;
+    
+
 }
 
 /* ヒント表示時のボックス */

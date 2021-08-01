@@ -128,7 +128,6 @@ function roop(target){
     bunsyou = "";
     // console.log(target);
     roop2(target);
-    console.log(bunsyou);
     localStorage.setItem("playeranswer",bunsyou)
 }
 
@@ -197,7 +196,11 @@ function roop2(target){
             }else{
                 roop2(child[i].lastElementChild.lastElementChild);
             }
+        }else if(child[i].lastChild.childElementCount == 0){
+            html_text = html_text + "id = \"" + child[i].id + "0" + "\" ";	
+            html_text = html_text + html_text2[cnt];
         }else{
+            
 
         }
         if(child[i].parentNode.id == "assemblybox1"){

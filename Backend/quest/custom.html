@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/tag.css">
         <link rel="stylesheet" href="css/input.css">
         <link rel="stylesheet" href="css/scenario.css">
-        <link rel="stylesheet" type="text/css" href="css/mypage.css">
+        <link rel="stylesheet" href="css/mypage.css">
         <style id="style" type="text/css"></style>
     </head>
     <body>
@@ -22,22 +22,15 @@
         <!-- ゲーム画面 -->
         <button id="stylebutton" onclick="cssin()">CSS</button>
         <div id="visualbox"></div>
+        <div class="invisible"></div>
+     
         <div id="hintbox">
             <!-- ヒントのテキスト -->
-            <div  id="hint_text"></div>
-              <!-- 答えの表示 -->
-              <p id="answer">あなたの答えは。。。</p>
-              <button onclick="checkanswer()">答え</button>
-              <br>
-              <button id="beforestage" onclick="beforestage()"><</button>
-              <button id="nextstage" onclick="nextstage()">></button>
-            <!-- ステージの確認 -->
-            <p class="stage"></p>
+            <button onclick="test123()"></button>
           
             
             <!-- ヒントの表示 -->
             <button id="close" onclick="closeHint()">とじる</button>
-            何かのヒントを表示する
         </div>
         
         <button id="bt1" onclick="inButton(1)">タグ一覧</button>
@@ -152,6 +145,7 @@
             ondragleave=""
             class="assemblybox"
         >
+
         
         </div>
         <div id="assemblybox2" class="assemblybox"></div>
@@ -167,9 +161,6 @@
     <script src="js/stylein.js"></script>
     <script src="js/surveillance.js"></script>
     <script src="js/scenario.js"></script>
-    <script src="js/hint_text.js"></script>
-    <script src="js/answer_check.js"></script>
-    <script src="js/stage.js"></script>
     <script>
         var hintbox = document.getElementById('hintbox');
         var sty = document.getElementById('styledialog');
@@ -204,7 +195,8 @@
             var b = document.getElementById("assemblybox"+num);
             b.style.display = "block";
         }
-        
+
+  
         
       </script>
 </html> 

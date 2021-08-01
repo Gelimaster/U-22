@@ -30,7 +30,6 @@ function sceRead(res){
             charaName[i] = res[i].charaName;
             //主人公をユーザ名にかえる処理
             x=charaName.length-sceCnt-1
-            console.log(x)
             selifu[sceCnt] = res[i].selifu;
             sceCnt++;
         }

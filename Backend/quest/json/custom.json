@@ -224,10 +224,10 @@
         "tag_id" : "link1",
         "tag_name" : "プロフィール",
         "tag_area":"",
-        "html_text1":"&lt;a href=\"profile.php\" class = \"button\">プロフィール",
-        "html_text2":"class = \"button\"  src=\"",
-        "html_text3":"&lt;/a><br>",
-        "tag_class":"atag",
+        "html_text1":"&lt;a href=\"profile.php\" ",
+        "html_text2":"class = \"button\">",
+        "html_text3":"プロフィール &lt;/a><br>",
+        "tag_class":"atag atag1",
         "status":false
     },
     {
@@ -235,9 +235,53 @@
         "tag_id" : "link2",
         "tag_name" : "アイテム",
         "tag_area":"",
-        "html_text1":"&lt;a href=\"list.php\"  class = \"button\"> アイテム ",
-        "html_text2":"class = \"button\"  src=\"",
-        "html_text3":"&lt;/a><br>",
+        "html_text1":"&lt;a href=\"list.php\" ",
+        "html_text2":"class = \"button\">",
+        "html_text3":"アイテム &lt;/a><br>",
+        "tag_class":"atag atag1",
+        "status":false
+    },
+    {
+        "tag_num":100,
+        "tag_id" : "link3",
+        "tag_name" : "ショップ",
+        "tag_area":"",
+        "html_text1":"&lt;a href=\"shop.php\" ",
+        "html_text2":"class = \"button\">",
+        "html_text3":"ショップ &lt;/a><br>",
+        "tag_class":"atag atag1",
+        "status":false
+    },
+    {
+        "tag_num":100,
+        "tag_id" : "link4",
+        "tag_name" : "カスタマイズ",
+        "tag_area":"",
+        "html_text1":"&lt;a href=\"customize.php\" ",
+        "html_text2":"class = \"button\">",
+        "html_text3":"カスタマイズ &lt;/a><br>",
+        "tag_class":"atag atag1",
+        "status":false
+    },
+    {
+        "tag_num":100,
+        "tag_id" : "link5",
+        "tag_name" : "公開ページ一覧",
+        "tag_area":"",
+        "html_text1":"&lt;a href=\"koukai.php\" ",
+        "html_text2":"class = \"button\">",
+        "html_text3":"公開ページ一覧 &lt;/a><br>",
+        "tag_class":"atag atag1",
+        "status":false
+    },
+    {
+        "tag_num":100,
+        "tag_id" : "link6",
+        "tag_name" : "クエスト",
+        "tag_area":"",
+        "html_text1":"&lt;a href=\"quest.php\" ",
+        "html_text2":"class = \"quest\">",
+        "html_text3":"クエスト &lt;/a><br>",
         "tag_class":"atag atag1",
         "status":false
     }
