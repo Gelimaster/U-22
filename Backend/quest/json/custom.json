@@ -210,24 +210,80 @@
     },
     {
         "tag_num":100,
-        "tag_id" : "selifudiv",
-        "tag_name" : "セリフ",
-        "tag_area":"<div class=\"divbox\" ondrop=\"Drop( event);\"></div>",
-        "html_text1":"&lt;div ",
-        "html_text2":"class=\"selifutag\"><br>",
-        "html_text3":"&lt;/div><br>",
-        "tag_class":"divtag",
-        "status":false
-    },
-    {
-        "tag_num":101,
-        "tag_id" : "char1img",
-        "tag_name" : "主人公",
-        "tag_area":"<div class=\"imgs imgflg\" ><img src=\"images/char_1.png\" class = \"imgwide\" id = \"image01\"></div>",
+        "tag_id" : "logo0",
+        "tag_name" : "ロゴ",
+        "tag_area":"<div class=\"imgs imgflg\" ><img src=\"images/logo.png\" class = \"imgwide \" id = \"logo1\"></div>",
         "html_text1":"&lt;img ",
-        "html_text2":"class = \"chaimg\" src=\"",
+        "html_text2":"class = \"logo\" alt=\"ロゴ\" src=\"",
         "html_text3":"\"><br>",
         "tag_class":"imgtag",
         "status":false
+    },
+    {
+        "tag_num":100,
+        "tag_id" : "link1",
+        "tag_name" : "プロフィール",
+        "tag_area":"",
+        "html_text1":"&lt;a href=\"profile.php\" ",
+        "html_text2":"class = \"button\">",
+        "html_text3":"プロフィール &lt;/a><br>",
+        "tag_class":"atag atag1",
+        "status":false
+    },
+    {
+        "tag_num":100,
+        "tag_id" : "link2",
+        "tag_name" : "アイテム",
+        "tag_area":"",
+        "html_text1":"&lt;a href=\"list.php\" ",
+        "html_text2":"class = \"button\">",
+        "html_text3":"アイテム &lt;/a><br>",
+        "tag_class":"atag atag1",
+        "status":false
+    },
+    {
+        "tag_num":100,
+        "tag_id" : "link3",
+        "tag_name" : "ショップ",
+        "tag_area":"",
+        "html_text1":"&lt;a href=\"shop.php\" ",
+        "html_text2":"class = \"button\">",
+        "html_text3":"ショップ &lt;/a><br>",
+        "tag_class":"atag atag1",
+        "status":false
+    },
+    {
+        "tag_num":100,
+        "tag_id" : "link4",
+        "tag_name" : "カスタマイズ",
+        "tag_area":"",
+        "html_text1":"&lt;a href=\"customize.php\" ",
+        "html_text2":"class = \"button\">",
+        "html_text3":"カスタマイズ &lt;/a><br>",
+        "tag_class":"atag atag1",
+        "status":false
+    },
+    {
+        "tag_num":100,
+        "tag_id" : "link5",
+        "tag_name" : "公開ページ一覧",
+        "tag_area":"",
+        "html_text1":"&lt;a href=\"koukai.php\" ",
+        "html_text2":"class = \"button\">",
+        "html_text3":"公開ページ一覧 &lt;/a><br>",
+        "tag_class":"atag atag1",
+        "status":false
+    },
+    {
+        "tag_num":100,
+        "tag_id" : "link6",
+        "tag_name" : "クエスト",
+        "tag_area":"",
+        "html_text1":"&lt;a href=\"quest.php\" ",
+        "html_text2":"class = \"quest\">",
+        "html_text3":"クエスト &lt;/a><br>",
+        "tag_class":"atag atag1",
+        "status":false
     }
+
 ]

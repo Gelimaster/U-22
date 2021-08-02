@@ -26,14 +26,14 @@ in_num =[101,100,102];
 window.onload = function (){
     // imageの取得
         $.ajax({
-            url:		"./json/image.json",	// データのファイル名
+            url:		"./json/customimage.json",	// データのファイル名
             type:		"GET",			// GET or POST
             dataType:	"json",			// text  json  xml など
             success:	dataRead2		// dataがparseできた時に実行するfunction名
         });
     // タグの取得
         $.ajax({
-            url:		"./json/tag.json",	// データのファイル名
+            url:		"./json/custom.json",	// データのファイル名
             type:		"GET",			// GET or POST
             dataType:	"json",			// text  json  xml など
             success:	dataRead1		// dataがparseできた時に実行するfunction名
@@ -128,7 +128,6 @@ function roop(target){
     bunsyou = "";
     // console.log(target);
     roop2(target);
-    console.log(bunsyou);
     localStorage.setItem("playeranswer",bunsyou)
 }
 
@@ -197,7 +196,11 @@ function roop2(target){
             }else{
                 roop2(child[i].lastElementChild.lastElementChild);
             }
+        }else if(child[i].lastChild.childElementCount == 0){
+            html_text = html_text + "id = \"" + child[i].id + "0" + "\" ";	
+            html_text = html_text + html_text2[cnt];
         }else{
+            
 
         }
         if(child[i].parentNode.id == "assemblybox1"){
