@@ -1,0 +1,405 @@
+@charset "utf-8";
+
+/* タグの構成 */
+/* 
+    <div class ="tagbox">
+        <div class = "tagname"></div>   ツールボックスに入っている場合はこの部分のみ表示
+        <div = "tagarea"></div>   入力ボックスに入れたらこの部分も表示されるようになる
+    </div>
+*/
+
+/* タグ全体 */
+div.tagbox{
+    max-width: 500px;
+    min-width: 150px;
+    min-height: 40px;
+    box-sizing: border-box;
+    padding: 5px;
+    display: inline-block;
+}
+
+/*　　　 ※変更禁止　　　 */
+div.tagiri{
+    display: block;
+}
+
+/* タグ名 */
+div.tagname{
+    text-align: center;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+    display: block;
+}
+
+/* 入力ボックスに入れた際のタグ名の角を変更 */
+div.intagname{
+    border-radius: 10px 10px 0 0;
+}
+
+/* タグの入力エリア */
+div.tagarea{
+    color: #fff;
+    width: auto;
+    height: auto;
+    min-width: 170px;
+    min-height: 50px;
+    resize: both;
+    overflow: hidden;
+    display: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 0 10px 10px 10px;
+}
+
+/* テキストエリア */
+div.textbox{
+    color: #000;
+    overflow: hidden;
+    width: 95%;
+    height: 95%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 0 auto;
+    /* position: relative; */
+    z-index: 2;
+}
+
+div.box{
+    color: #000;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    min-width: 99%;
+    min-height: 99%;
+    padding: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+/* それぞれのタグの設定 */
+
+/* <body> */
+.bodytag{
+    z-index: 2;
+    max-width: 700px;
+    max-height: 1000px;
+    position: sticky;
+}
+.bodytag .tagname{
+    background-color: rgb(253, 114, 0);
+}
+.bodytag .tagarea{
+    background-color: rgb(253, 114, 0);
+    max-width: 700px;
+    max-height: 1000px;
+}
+
+
+/* <header> */
+.headertag .tagname{
+    background-color: tomato;
+}
+.headertag .tagarea{
+    background-color: tomato;
+}
+
+
+/* <nav> */
+.navtag{
+    z-index: 2;
+    max-width: 700px;
+    max-height: 1000px;
+    position: sticky;
+}
+.navtag .tagname{
+    background-color: lightcoral;
+}
+.navtag .tagarea{
+    background-color: lightcoral;
+    max-width: 700px;
+    max-height: 1000px;
+}
+
+
+/* <main> */
+.maintag .tagname{
+    background-color: lightslategray;
+}
+.maintag .tagarea{
+    background-color: lightslategray;
+}
+
+
+/* <footer> */
+.footertag .tagname{
+    background-color: sandybrown;
+}
+.footertag .tagarea{
+    background-color: sandybrown;
+}
+
+
+/* div */
+.divtag{
+    z-index: 3;
+}
+.divtag .tagname{
+    background-color: crimson;
+}
+.divtag .tagarea{
+    background-color: crimson;
+}
+
+
+/* <section> */
+.sectiontag .tagname{
+    background-color: plum;
+}
+.sectiontag .tagarea{
+    background-color: plum;
+}
+
+
+/* <button> */
+.buttontag .tagname{
+    background-color: olive;
+}
+.buttontag .tagarea{
+    background-color: olive;
+}
+
+
+/* <a> */
+.atag{
+    z-index: 3;
+}
+.atag .tagname{
+    background-color: #9370db;
+}
+.atag .tagarea{
+    background-color: #9370db;
+}
+.atag .tagarea .textbox{
+    height: 30px;
+    margin-bottom: 10px;
+}
+/* <p> */
+.ptag{
+    z-index: 3;
+    position: sticky;
+}
+.ptag .tagname{
+    background-color: #87ceeb;
+}
+
+.ptag .tagarea{
+    background-color: #87ceeb;
+}
+
+/* <img> */
+.imgtag{
+    z-index: 3;
+}
+.imgtag .tagname{
+    background-color: aquamarine;
+}
+.imgtag .tagarea{
+    background-color: aquamarine;
+    min-width: 150px;
+    width: 150px;
+    border-top-right-radius: 0;
+    height: 160px;
+    resize: none;
+}
+
+
+.divbox{
+    color: #000;
+    overflow: hidden;
+    width: 99%;
+    height: 99%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+
+div.tagarea div.imgs{
+    width: 100px;
+    height: 140px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+div.img{
+    width: 150px;
+    height: 190px;
+    resize: none;
+    padding: 17px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* <ul> */
+.ultag .tagname{
+    background-color:green;
+}
+.ultag .tagarea{
+    background-color: green;
+}
+.ulbox{
+    color: #000;
+    overflow: hidden;
+    width: 99%;
+    height: 99%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+
+/* <ol> */
+.oltag .tagname{
+    background-color: chartreuse;
+}
+.oltag .tagarea{
+    background-color: chartreuse;
+}
+.olbox{
+    color: #000;
+    overflow: hidden;
+    width: 99%;
+    height: 99%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+
+/* <li> */
+.litag{
+    display: inline-block;
+    width: auto;
+    height: 40px;
+    margin-bottom: 3px;
+}
+.litag .tagname{
+    display: inline;
+    background-color: gold;
+    width: 50px;
+}
+.litag .tagarea{
+    background-color: gold;
+    resize: none;
+    width: 240px;
+}
+.litag .tagarea .textbox{
+    color: #000;
+    width: 99%;
+    height: 40px;
+    padding: 5px;
+    display: inline;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 0 auto;
+    /* position: relative; */
+    z-index: 2;
+}
+
+.litag .intagname{
+    border-radius: 10px 0 0 10px;
+}
+.litag .tagin{
+    border-radius: 0 10px 10px 0;
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* <table> */
+.tabletag .tagname{
+    background-color: lightsalmon;
+}
+
+.tabletag .tagarea{
+    background-color: lightsalmon;
+}
+
+/* <tr> */
+.trtag .tagname{
+    background-color: mediumseagreen;
+}
+.trtag .tagarea{
+    background-color: mediumseagreen;
+}
+
+/* <th> */
+.thtag .tagname{
+    background-color: mediumturquoise;
+}
+.thtag .tagarea{
+    background-color: mediumturquoise;
+}
+
+/* <td> */
+.tdtag .tagname{
+    background-color: mediumaquamarine;
+}
+.tdtag .tagarea{
+    background-color: mediumaquamarine;
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+
+div.tagin{
+    display: block;
+    width: 90%;
+}
+.litag .tagin{
+    display: inline;
+}
+.imgwide{
+    width: 10%;
+    min-width: 80px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* 特殊なタグcss */
+.selifutag{
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    width: 60%;
+    height: 20%;
+    border: solid 1px #000;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.selifutag p{
+    font-size: 1.3rem;
+}
+
+.chaimg{
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    width: 20%;
+}
