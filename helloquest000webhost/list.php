@@ -39,7 +39,7 @@ include("config/db_ini.php");
 
         <div class="item_box">
           <p class="item_name"><?php print $db_row["shop_name"]?></p>
-          <div class="item_photo"><?php print $db_row["shop_img"]?></div>
+          <img class="item_photo" src="/images/item/<?php print $db_row["shop_img"]?>"></div>
           <button class="Purchase" onclick="clickDetails()"><img src="/images/shop/detail.png" id="Pur_bu"></button>
         </div>
         <?php
@@ -69,14 +69,14 @@ include("config/db_ini.php");
 
         <!-- loop end -->
 
-
+       
       </div>
     </div>
     <?php
     include("list1.php");
     ?>
-
-
+     
+    
     <script type="text/javascript" src="/js/list.js"></script>
   </body>
 
