@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* 親要素(コンテナ) */
+.flex-container {
+	background-color: #dfdfdf;
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* 子要素(アイテム) */
+.flex-item {
+	margin: 10px auto;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	background-color: #343434;
+	color: #fff;
+}
