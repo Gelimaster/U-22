@@ -314,7 +314,7 @@
         "tag_area":"<div class=\"textbox\" id = \"qest3textarea\" contenteditable=true></div>",
         "html_text1":"&lt;textarea ",
         "html_text2":"type = \"",
-        "html_text3":"\" rows=\"28\" cols=\"100\">&lt;/textarea>",
+        "html_text3":"\" rows=\"25\" cols=\"80\">&lt;/textarea>",
         "tag_class":"textareatag",
         "status":false
     }

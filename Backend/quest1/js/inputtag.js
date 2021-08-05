@@ -21,10 +21,6 @@ var target = document.getElementById('assemblybox1');
 
 // もとからassemblybox1に入れておくタグのtag_num
 var in_num=[];
-in_num =[101,100];
-in_num =[110,111,120,121,130,210,220,310,410,420,430,431];
-in_num =[130];
-
 
 window.onload = function (){
     // imageの取得
@@ -97,6 +93,11 @@ function dataRead1(res){
     // assemblybox1に入れる処理
 
     // クエスト用にin_num
+    const stagenum = localStorage.getItem('stage');//ローカルストレージ
+    // const stagenum = 43;//クエスト手動切り替え
+    const qesttagnum = [110,111,120,121,130,220,430];
+    in_num = qesttagnum.filter(item => item > stagenum * 10 - 1 && item < stagenum * 10 + 10);
+    console.log(in_num);
     
     for(var num_cnt = 0;num_cnt < in_num.length;num_cnt++){
         for(var i = 0;i < count;i++){
