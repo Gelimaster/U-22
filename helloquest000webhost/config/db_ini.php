@@ -13,8 +13,8 @@
 
 
   //MySqlサーバ接続
-$conn = mysqli_connect
-($host,$user,$pass,$db_name);
+  $conn = mysqli_connect
+  ($host,$user,$pass,$db_name);
 
 if($conn == false){
 print "MySqlサーバー接続に失敗しました。";

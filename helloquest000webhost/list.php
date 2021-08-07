@@ -36,7 +36,6 @@ include("config/db_ini.php");
         $db_row= mysqli_fetch_array($db_result);
         while($db_row= mysqli_fetch_array($db_result)){
         ?>
-
         <div class="item_box">
           <p class="item_name"><?php print $db_row["shop_name"]?></p>
           <img class="item_photo" src="/images/item/<?php print $db_row["shop_img"]?>"></div>
