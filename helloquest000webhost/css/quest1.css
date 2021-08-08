@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+.stage1{
+  width: 100%;
+}
+
+.mypagebox{
+  position: absolute;
+  width: 21.5%;
+  height: 43%;
+  top: 7%;
+  left: 33%;
+  opacity: 0;
+}
+
+.mypagebox:hover{
+  opacity: 1;
+}
+
+.house1{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.mypagebox .quest_button{
+  top: 10%;
+  left: -5%;
+}
+
+.mypagebox .quest_button:before {
+  bottom: -27%;
+}
+
+.q1{
+  position: absolute;
+  width: 31%;
+  height: 64%;
+  top: 20.5%;
+  left: 5.3%;
+  opacity: 0;
+}
+
+.q1:hover{
+  opacity: 1;
+}
+
+.house2{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.q1 .quest_button{
+  top: 15%;
+  left: 0%;
+}
+
+.q1 .quest_button:before {
+  bottom: -22%;
+}
+
+
+

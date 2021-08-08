@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+ul{
+  margin-bottom: 33%;
+}
+
+.stage2{
+  width: 100%;
+}
+
+.q2{
+  position: absolute;
+  width: 31%;
+  height: 64%;
+  top: 10%;
+  left: 5%;
+  opacity: 0;
+}
+
+.q2:hover{
+  opacity: 1;
+}
+
+.shop1{
+  position: absolute;
+  width: auto;
+  height: 90%;
+}
+
+.q2 .quest_button{
+  top: 35%;
+  left: -5%;
+}
+
+.q2 .quest_button:before {
+  bottom: -22%;
+}

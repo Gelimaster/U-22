@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+ul{
+  margin-bottom: 33%;
+}
+
+.stage4{
+  width: 100%;
+}
+
+.q4{
+  position: absolute;
+  width: 27%;
+  height: 69%;
+  top: 0%;
+  left: 41%;
+  opacity: 0;
+}
+
+.q4:hover{
+  opacity: 1;
+}
+
+.postoffice{
+  position: absolute;
+  width: auto;
+  height: 100%;
+}
+
+.q4 .quest_button{
+  top: 10%;
+  left: 10%;
+}
+
+.q4 .quest_button:before {
+  bottom: -18%;
+  right: -7%;
+}
