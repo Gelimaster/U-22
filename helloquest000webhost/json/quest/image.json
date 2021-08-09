@@ -1,0 +1,16 @@
+[
+    {
+        "image_num": 0,
+        "image_id": "image01",
+        "image_name": "char_1.png",
+        "image_class":"imgwide",
+        "images_html":"images/char_1.png"
+    },
+    {
+        "image_num": 1,
+        "image_id": "image02",
+        "image_name": "char_2.png",
+        "image_class":"imgwide",
+        "images_html":"images/char_2.png"
+    }
+]
