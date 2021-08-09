@@ -37,7 +37,7 @@
           <img src="/images/quest/usagi.png" alt="ヒント" />
       </div>
       <div class="stage_nav">
-        <a id="back_button" href="/quest3.html" class="button next_stage_button">前の町</a>
+        <a id="back_button" href="/quest3.php" class="button next_stage_button">前の町</a>
         <a id="next_button" href="" class="button next_stage_button">次の町</a>
       </div>
     </div>

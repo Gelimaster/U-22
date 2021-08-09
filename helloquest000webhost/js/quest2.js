@@ -1,5 +1,5 @@
   //ステージに関するもの
-  const Mstage = localStorage.getItem("stage")
+  const Mstage = localStorage.getItem("user_stage")
   var   stage1 = document.getElementById("stage1").style.display="none"
   var   stage2 = document.getElementById("stage2").style.display="none"
 
