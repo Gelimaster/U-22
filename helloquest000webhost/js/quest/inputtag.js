@@ -1,4 +1,5 @@
 // タグの表示からHTML文作成までの処理
+
 // タグの代入
 var tag_num = [];
 var tag_id = [];
@@ -20,8 +21,6 @@ var target = document.getElementById('assemblybox1');
 
 // もとからassemblybox1に入れておくタグのtag_num
 var in_num=[];
-in_num =[101,100,102];
-
 
 window.onload = function (){
     // imageの取得
@@ -67,7 +66,7 @@ function dataRead1(res){
 		count++;
 	}
     // タグの表示(ひょうじ)
-    for(var i = 0; i < count; i++){
+    for(var i = 0; i < count; i++){ 
         if(stat[i]) {
             var tid = tag_id[i] + ("0"+ tagcnt[i]).slice(-2);
             tagcnt[i]++;
@@ -83,16 +82,23 @@ function dataRead1(res){
             tag.classList.add('tagname');
             tag.innerHTML = tag_name[i];
             document.getElementById(tid).appendChild(tag);
-
+            
             // tagareaの作成
             var tag = document.createElement("div");
             tag.classList.add('tagarea');
             tag.innerHTML = tag_area[i];
-            document.getElementById(tid).appendChild(tag);
+            document.getElementById(tid).appendChild(tag);    
         }
     }
     // assemblybox1に入れる処理
 
+    // クエスト用にin_num
+    const stagenum = localStorage.getItem('user_stage');//ローカルストレージ
+    // const stagenum = 43;//クエスト手動切り替え
+    const qesttagnum = [110,111,120,121,130,220,430];
+    in_num = qesttagnum.filter(item => item > stagenum * 10 - 1 && item < stagenum * 10 + 10);
+    console.log(in_num);
+    
     for(var num_cnt = 0;num_cnt < in_num.length;num_cnt++){
         for(var i = 0;i < count;i++){
             if(in_num[num_cnt] == tag_num[i]){
@@ -110,7 +116,7 @@ function dataRead1(res){
                 tag.innerHTML = tag_name[i];
                 tag.style.borderRadius ="10px 10px 0 0";
                 document.getElementById(tid).appendChild(tag);
-
+                
                 // tagareaの作成
                 var tag = document.createElement("div");
                 tag.classList.add('tagarea');
@@ -207,7 +213,7 @@ function roop2(target){
         // 終了(しゅうりょう)タグの入力
         html_text = html_text + html_text3[cnt];
     }
-
+    
     // console.log(idArray);
 }
 

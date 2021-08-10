@@ -129,7 +129,6 @@ function roop(target){
     // console.log(target);
     roop2(target);
     console.log(bunsyou);
-    localStorage.setItem("playeranswer",bunsyou)
 }
 
 function roop2(target){
