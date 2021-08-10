@@ -26,9 +26,9 @@
         <p>工場の町</p>
       </div>
       <ul>
-        <li><a id="stage1" onmouseover="select()" onmouseleave="unselected()" href="" class="button">4-1</a></li>
-        <li><a id="stage2" onmouseover="select()" onmouseleave="unselected()" href="" class="button">4-2</a></li>
-        <li><a id="stage3" onmouseover="select()" onmouseleave="unselected()" href="" class="button">4-3</a></li>
+        <li><a id="stage1" onmouseover="select()" onmouseleave="unselected()" href="/quest.php" class="button">4-1</a></li>
+        <li><a id="stage2" onmouseover="select()" onmouseleave="unselected()" href="/quest.php" class="button">4-2</a></li>
+        <li><a id="stage3" onmouseover="select()" onmouseleave="unselected()" href="/quest.php" class="button">4-3</a></li>
       </ul>
       <div onclick="openhint()" class="vill_hint">
           <div class="vill_hint_button">
