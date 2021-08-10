@@ -19,7 +19,9 @@ var selifu = [];
 var sceCnt = 0;
 var c = 0;
 var x=0;
+var tc = 0; //チュートリアルカウント
 
+const stagenum = localStorage.getItem('stage');
 
 //　シナリオデータ読込
 function sceRead(res){
@@ -44,7 +46,12 @@ function sceRead(res){
 function scenario(){
     if(scenarioIn == 1){
         shadow.style.visibility = "visible";
+        tutorialimg.style.visibility = "hidden";
         scebox.style.display = "block";
+        let stageimgnum = Math.floor(stagenum / 10);
+        console.log(stageimgnum);
+        let stageimg = "\"images/st_sc" + stageimgnum + ".png\"";
+        document.getElementById("shadow").style.backgroundImage = "url(" + stageimg + ")";
     }
 }
 
@@ -103,4 +110,27 @@ function sleepByPromise(sec) {
 async function wait(sec) {
     // await句を使って、Promiseの非同期処理が完了するまで待機します。
     await sleepByPromise(sec);
+}
+
+// チュートリアル画面遷移
+function tutmove() {
+    tutorialimg.style.visibility = "visible";
+    tc++;
+    if (stagenum == "11") {
+        if (tc < 3) {
+            console.log("チュートリアル");
+            tutorialimgin.src = "./images/tut11" + tc + ".png";
+        }else{
+            tutorialimg.style.visibility = "hidden";
+        }
+    }
+    // 2-1チュートリアル
+    if (stagenum == "21") {
+        if (tc < 4) {
+            console.log("チュートリアル");
+            tutorialimgin.src = "./images/tut21" + tc + ".png";
+        }else{
+            tutorialimg.style.visibility = "hidden";
+        }
+    }
 }

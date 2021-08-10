@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* クエスト1-1 */
+/* クエスト1-2 */
+#bookimg000{
+    width: 30%;
+    height: auto;
+    position: fixed;
+    top: 0%;
+    left: 18%;
+}
+#titlediv000{
+    width: 16%;
+    height: 10%;
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+/* クエスト1-3 */
+#nextstagediv000{
+    text-align: center;
+    padding: 10px 90px;
+    border-top-left-radius: 4% 16%;
+    border-top-right-radius: 4% 16%;
+    border-bottom-right-radius: 4% 16%;
+    border-bottom-left-radius: 4% 16%;
+    border: 4px double rgba(0, 0, 0, 0.5);
+    background-color: #ffd153;
+    background-image: -webkit-linear-gradient( rgba(255, 247, 0, 0.4) 0%, transparent 50%, transparent 50%, rgba(254, 248, 179, 0.4) 100% );
+    background-image: linear-gradient( rgba(255, 255, 255, 0.3) 0%, transparent 50%, transparent 50%, rgba(255, 255, 255, 0.3) 100% );
+    box-shadow: 0 2px 2px 0 rgb(255 255 255 / 20%) inset, 0 2px 10px 0 rgb(255 255 255 / 30%) inset, 0 -2px 2px 0 rgb(255 255 255 / 40%) inset;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    width: 30vw;
+    height: 20vh;
+}
+/* クエスト2-1 */
+/* クエスト2-2 */
+#appleimg000{
+    width: 30%;
+    height: 30%;
+}
+/* クエスト3-1 */
+/* クエスト4-1 */
+/* クエスト4-2 */
+/* クエスト4-3 */
+#qest3textarea000{
+    font-size: 150%;
+}
