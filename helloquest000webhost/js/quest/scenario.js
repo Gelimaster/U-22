@@ -10,7 +10,7 @@ var scenarioIn=0;
 var msgCnt = 1;
 
 // シナリオNo シナリオが進めば数値も変化する
-var scenarioNo = localStorage.getItem("stage");
+var scenarioNo = localStorage.getItem("user_stage");
 
 var chara =[];
 var charClass = [];
