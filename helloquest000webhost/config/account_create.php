@@ -5,10 +5,17 @@
   $key= $_POST["key"];
   //アカウント登録
   $sql = "insert into user_table(user_name,user_key,user_coin,user_stage,user_sex)values('村人','$key',1000,11,'男')";
-  $query = mysqli_query($conn,$sql);
+  $query = mysqli_query($conn,$sql);  
 //ユーザー情報を取得する
 $sql1 = "select * from user_table where user_key= '$key' ";
 $db_result = mysqli_query($conn,$sql1);
+if($db_result){
+    echo "done";
+}else{
+    echo "error";
+}
+
+
 $db_row= mysqli_fetch_array($db_result);
 
 
@@ -23,10 +30,10 @@ $html = "<img id = \"logo0000\" class = \"logo\" alt=\"ロゴ\" src=\"images/myp
 <a href=\"shop.php\" id = \"link3000\" class = \"button\">ショップ </a>
 <a href=\"custom.php\" id = \"link4000\" class = \"button\">カスタマイズ </a>
 <a href=\"koukai.php\" id = \"link5000\" class = \"button\">公開ページ一覧 </a>
-<a href=\"quest.php\" id = \"link6000\" class = \"quest\">クエスト </a>";
+<a href=\"quest1.php\" id = \"link6000\" class = \"quest\">クエスト </a>";
 
 $sql = "insert into custom_table(custom_user_id,htmldata)values('$id','$html')";
-$query = mysqli_query($conn,$sql);
+$query = mysqli_query($conn,$sql); 
 
 
 
@@ -46,7 +53,7 @@ mysqli_free_result($db_result);//clear information
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body>
+  <body>      
       <input id="username" type="hidden" name="key" value="<?php print $username ?>">
       <input id="stage" type="hidden" name="key" value="<?php print $stage ?>">
       <input id="id" type="hidden" name="key" value="<?php print $id ?>">

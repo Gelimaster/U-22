@@ -279,7 +279,7 @@
         "tag_id" : "link6",
         "tag_name" : "クエスト",
         "tag_area":"",
-        "html_text1":"&lt;a href=\"quest.php\" ",
+        "html_text1":"&lt;a href=\"quest1.php\" ",
         "html_text2":"class = \"quest\">",
         "html_text3":"クエスト &lt;/a><br>",
         "tag_class":"atag atag1",
