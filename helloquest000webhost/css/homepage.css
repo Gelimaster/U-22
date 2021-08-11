@@ -1,34 +1,92 @@
 @charset "utf-8";
 
-/* 共通のスタイル */
-body{
-  text-align: center;
-  color: #000;
-  background-color: #fff;
-}
 
 img.logo{
-  position: absolute;
-  left: 170px;
-  width: 160px;
-  height: 120px;
-}
-
-img.main{
-  z-index: auto;
-  text-align: center;
-  width: 100%;
-}
+    position: absolute;
+    left: 5%;
+    width: 10%;
+    height: auto;
+    z-index: 20;
+  }
 
 input.signin{
-  position: fixed;
-  right: 100px;
-  bottom: 50px;
-  width: 200px;
-  height: 200px;
-}
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+    width: 200px;
+    height: 200px;
+    z-index: 20;
+  }
 
+.cp_cssslider {
+	width: 65vw;
+	height: 98vh;
+	overflow: hidden;
+	margin: 0 auto;
+    background-image: url(../images/quest/renga_pattern.png);
+}
+.cp_slide_item {
+	width: 65vw;
+	height: 98vh;
+	float: left;
+	position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cp_slide_item img{
+	width: 65vw;
+	height: auto;
+}
+.cp_slidewrapper {
+	width: 300%;/* slideの枚数×100% */
+	position: relative;
+	left: 0;
+	animation: slider 20s infinite ease;/* スピード */
+}
+@-webkit-keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	33% {
+	-webkit-transform: translateX(-65vw);
+	transform: translateX(-65vw);
+	}
+	66% {
+	-webkit-transform: translateX(-130vw);
+	transform: translateX(-130vw);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+}
+@keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	33% {
+	-webkit-transform: translateX(-65vw);
+	transform: translateX(-65vw);
+	}
+	66% {
+	-webkit-transform: translateX(-130vw);
+	transform: translateX(-130vw);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+}
 footer{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
   margin-top: auto;
   text-align:center;
 }
