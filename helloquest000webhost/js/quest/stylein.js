@@ -44,7 +44,7 @@ var proper = ['id_name','width','height','background_color','color','FontSize','
 var pro1 = ['#','width:','height:','background-color:','color:','font-size:','text-decoration:','position:','left:','top:','list-style-type:','border-style:','border-color:','border-width:','border-top-left-radius:','border-top-right-radius:','border-bottom-left-radius:','border-bottom-right-radius:'];
 var pro2 = [' {<br>','0px;<br>','0px;<br>',';<br>',';<br>','rem;<br>',';<br>',';<br>','0px;<br>','0px;<br>',';<br>',';<br>',';<br>','px;<br>','%;<br>','%;<br>','%;<br>','%;<br>'];
 var shortpro = ['wi','he','ba_co','ba_im','co','fosi','tede','po','le','to','lity','bost','boco','bowi','btlr','btrr','bblr','bbrr'];
-
+var bunsyoucss = "";
 
 var idsub = "";
 var idsubcnt = 0;
@@ -109,7 +109,7 @@ function tagout(event){
 
 // cssboxにcssを表記する処理
 function idStyleIn(){
-    
+   bunsyoucss = "";
     csstext ="";
     for(var i = 0;i < idcnt2;i++){
         if(id_name[i] == null || id_name[i] == "null"){
@@ -125,17 +125,26 @@ function idStyleIn(){
                 for(var c = 0;c < proper.length;c++){
                     if(eval(proper[c])[i] != null){
                         csstext = csstext + pro1[c] + eval(proper[c])[i] + pro2[c];
+                       if(c == 0){
+                        	bunsyoucss = bunsyoucss + eval(propar[c])[i] .slice(0,-3);
+                        }else{
+	                        bunsyoucss = bunsyoucss + pro1[c] + eval(propar[c])[i];
+                            console.log(bunsyoucss);
+                            localStorage.setItem("answercss",bunsyoucss)
+                        }
                     }
                 }    
             csstext = csstext + "}<br>";
             }
 
         }
+        bunsyoucss = bunsyoucss + ",";
     }
 }
 
 // 
 function idStyleOut(out){
+    var style= document.getElementById("style")
     // console.log(out.id);
     // console.log(out.value);
     // console.log(eval(out.id));

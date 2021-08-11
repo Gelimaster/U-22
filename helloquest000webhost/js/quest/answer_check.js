@@ -2,7 +2,7 @@
 
 
 var asnwer;
-
+var playeranswercss;
 
 
 
@@ -16,28 +16,45 @@ fetch("json/quest/answer.json")//ファイル指定
   })
 
 var playeranswer = localStorage.getItem("playeranswer")
-
-
-
+    playeranswercss = localStorage.getItem("answercss")
+var currentstage = localStorage.getItem("stage")
+    parseInt(currentstage)
 
 //答えの比較処理
 function checkanswer() {
   //正しい要素を使ってるかどうかの確認
 
-  if (answer == playeranswer) {
-    document.querySelector("#answer").innerText = "正解";
-    
-    // クリア画面の表示
-    clearbox.style.visibility = "visible";
-    rewarddis();
-    
-    // コントロール
-    control();
-
-  } else {
-    document.querySelector("#answer").innerText = "ハズレ";
+  if(currentstage == 22 || currentstage ==  31){
+    if (answer == playeranswercss) {
+      document.querySelector("#answer").innerText = "正解";
+      
+      // クリア画面の表示
+      clearbox.style.visibility = "visible";
+      rewarddis();
+      
+      // コントロール
+      control();
+  
+    } else {
+      document.querySelector("#answer").innerText = "ハズレ";
+    }
+  }else{
+    if (answer == playeranswer) {
+      document.querySelector("#answer").innerText = "正解";
+      
+      // クリア画面の表示
+      clearbox.style.visibility = "visible";
+      rewarddis();
+      
+      // コントロール
+      control();
+  
+    } else {
+      document.querySelector("#answer").innerText = "ハズレ";
+    }
   }
 
+  
 
 
 }
