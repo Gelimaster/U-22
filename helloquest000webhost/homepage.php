@@ -31,7 +31,13 @@
 
     </header>
 
-    <img src="/images/home/main.png" class="main">
+    <div class="cp_cssslider">
+      <div class="cp_slidewrapper">
+        <div class="cp_slide_item"><img src="./images/home/homepage1.png" /></div>
+        <div class="cp_slide_item"><img src="./images/home/homepage2.png" /></div>
+        <div class="cp_slide_item"><img src="./images/home/homepage3.png" /></div>
+      </div>
+    </div>
 
     <footer>
       Copyright &copy; 2021 . HelloQuest Rights Reserved.
