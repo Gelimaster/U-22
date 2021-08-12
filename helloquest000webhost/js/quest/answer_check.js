@@ -27,6 +27,7 @@ var currentstage = localStorage.getItem("stage")
 function checkanswer() {
     playeranswer = localStorage.getItem("playeranswer")
     playeranswercss = localStorage.getItem("answercss")
+    cleartext = document.getElementById("cleartext")
 
     console.log(answer)
     console.log(playeranswer)
@@ -39,6 +40,7 @@ function checkanswer() {
       // クリア画面の表示
       clearbox.style.visibility = "visible";
        if(localStorage.getItem("user_stage") <= localStorage.getItem("stage")){
+         cleartext.innerHTML="報酬"
         rewarddis();
       }
       
@@ -58,6 +60,7 @@ function checkanswer() {
       clearbox.style.visibility = "visible";
       
       if(localStorage.getItem("user_stage") <= localStorage.getItem("stage")){
+        cleartext.innerHTML="報酬"
         rewarddis();
       }
       // コントロール

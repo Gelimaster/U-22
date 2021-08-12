@@ -49,7 +49,7 @@
         <div id="clearbox" onclick="moveqc()">
             <div id="clearboxdiv">
                 <h2>クリア！！</h2>
-                <p>報酬</p>
+                <p id="cleartext"></p>
                 <p id="reward"></p>
             </div>
         </div>
@@ -166,6 +166,7 @@
     <button id="hint" onclick="inHint()">ヒント</button>
 </body>
 <script src="js/quest/jquery-1.10.2.min.js"></script>
+<script src="js/quest/stage.js"></script>
 <script src="js/quest/drag.js"></script>
 <script src="js/quest/inputtag.js"></script>
 <script src="js/quest/inputimage.js"></script>
@@ -174,7 +175,7 @@
 <script src="js/quest/scenario.js"></script>
 <script src="js/quest/hint_text.js"></script>
 <script src="js/quest/answer_check.js"></script>
-<script src="js/quest/stage.js"></script>
+
 <script>
     var hintbox = document.getElementById('hintbox');
     var sty = document.getElementById('styledialog');
