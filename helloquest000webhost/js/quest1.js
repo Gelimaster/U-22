@@ -13,8 +13,7 @@
   var n =0
 
 //ステージ選択
-function select(obj){
-   localStorage.setItem("stage",10+parseInt(obj.id[5]))
+function select(){
   var  q1=document.getElementById("quest1")
   q1.style.opacity ="1"
 }
@@ -23,6 +22,10 @@ function unselected(){
     var  q1=document.getElementById("quest1")
     q1.style.opacity ="0"
 }
+function set(obj){
+  localStorage.setItem("stage",10+parseInt(obj.id[5]))
+}
+
 //mypage選択
 function select1(){
     var  mp1=document.getElementById("mypagebox1")
@@ -34,6 +37,10 @@ function select1(){
       mp1.style.opacity ="0"
   }
 
+  //画像の選択処理
+function setstage(){
+  localStorage.setItem("stage",localStorage.getItem("user_stage"))
+}
  
 
 

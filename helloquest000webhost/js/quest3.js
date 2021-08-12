@@ -20,6 +20,9 @@ function unselected(){
     var  q1=document.getElementById("quest3")
     q1.style.opacity ="0"
 }
+function set(obj){
+  localStorage.setItem("stage",30+parseInt(obj.id[5]))
+}
 
 //ステージの表示
 while(n< Mstage[1]){

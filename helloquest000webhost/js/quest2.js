@@ -11,8 +11,7 @@
   var n =0
 
 //ステージ選択
-function select(obj){
-  localStorage.setItem("stage",10+parseInt(obj.id[5]))
+function select(){
   var  q1=document.getElementById("quest2")
   q1.style.opacity ="1"
 }
@@ -20,6 +19,10 @@ function select(obj){
 function unselected(){
     var  q1=document.getElementById("quest2")
     q1.style.opacity ="0"
+}
+
+function set(obj){
+  localStorage.setItem("stage",20+parseInt(obj.id[5]))
 }
 
 //ステージの表示

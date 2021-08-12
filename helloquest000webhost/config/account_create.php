@@ -64,7 +64,7 @@ mysqli_free_result($db_result);//clear information
         var id1  = document.getElementById("id").value
         var id2 =document.cookie="user_id ="+ id1 + ";" +  ";domain=;path=/";
         console.log(id2)
-        window.location.replace('../mypage.php');
+        window.location.replace('../profile.php');
       </script>
 </body>
 

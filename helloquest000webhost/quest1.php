@@ -28,9 +28,9 @@
         <p>最初の村</p>
       </div>
       <ul>
-        <li><a id="stage1" onmouseover="select(this)" onmouseleave="unselected()" href="/quest.php" class="button">1-1</a></li>
-        <li><a id="stage2" onmouseover="select(this)" onmouseleave="unselected()" href="/quest.php" class="button">1-2</a></li>
-        <li><a id="stage3" onmouseover="select(this)" onmouseleave="unselected()" href="/quest.php" class="button">1-3</a></li>
+        <li ><a id="stage1" onclick="set(this)" onmouseover="select()" onmouseleave="unselected()" href="/quest.php" class="button">1-1</a></li>
+        <li><a id="stage2" onclick="set(this)" onmouseover="select()" onmouseleave="unselected()" href="/quest.php" class="button">1-2</a></li>
+        <li><a id="stage3" onclick="set(this)" onmouseover="select()" onmouseleave="unselected()" href="/quest.php" class="button">1-3</a></li>
         <li><a onclick="goback()" onmouseover="select1()" onmouseleave="unselected1()" href="/mypage.php" class="button mypage_button">マイページ</a></li>
       </ul>
       <div onclick="openhint()" class="vill_hint">
@@ -55,11 +55,11 @@
         </a>
       </div>
       <div id="quest1" class="q1">
-        <a href="/quest1.php">
+        <a href="/quest.php">
           <div class="quest_button">
             <p>クエスト</p>
           </div>
-          <img src="/images/quest/house2.png" alt="house2" class="house2" />
+          <img onclick="setstage()" src="/images/quest/house2.png" alt="house2" class="house2" />
         </a>
       </div>
     </div>

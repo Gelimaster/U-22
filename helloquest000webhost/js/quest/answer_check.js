@@ -2,14 +2,12 @@
 
 
 var asnwer;
-
+var playeranswercss;
+var playeranswer;
 
 var clearbox = document.getElementById("clearbox");
 var reward = document.getElementById("reward");
 const now_stage = localStorage.getItem("stage");
-
-var playeranswercss;
-
 
 
 // クエストの答えを取得処理
@@ -18,16 +16,20 @@ fetch("json/quest/answer.json")//ファイル指定
   .then(data => {
     // console.log(data[storedInput])//ログで確認
     answer = data[storedInput]//クラスquestにテキストを表示する
-    console.log(answer)
+    
   })
 
-var playeranswer = localStorage.getItem("playeranswer")
-    playeranswercss = localStorage.getItem("answercss")
+
 var currentstage = localStorage.getItem("stage")
     parseInt(currentstage)
 
 //答えの比較処理
 function checkanswer() {
+    playeranswer = localStorage.getItem("playeranswer")
+    playeranswercss = localStorage.getItem("answercss")
+
+    console.log(answer)
+    console.log(playeranswer)
   //正しい要素を使ってるかどうかの確認
 
   if(currentstage == 22 || currentstage ==  31){
@@ -36,10 +38,14 @@ function checkanswer() {
       
       // クリア画面の表示
       clearbox.style.visibility = "visible";
-      rewarddis();
+       if(localStorage.getItem("user_stage") <= localStorage.getItem("stage")){
+        rewarddis();
+      }
       
       // コントロール
-      control();
+      if(localStorage.getItem("user_stage") <= localStorage.getItem("stage")){
+      control();    
+      }
   
     } else {
       document.querySelector("#answer").innerText = "ハズレ";
@@ -50,10 +56,15 @@ function checkanswer() {
       
       // クリア画面の表示
       clearbox.style.visibility = "visible";
-      rewarddis();
       
+      if(localStorage.getItem("user_stage") <= localStorage.getItem("stage")){
+        rewarddis();
+      }
       // コントロール
-      control();
+      if(localStorage.getItem("user_stage") <= localStorage.getItem("stage")){
+      control();    
+      }
+      
   
     } else {
       document.querySelector("#answer").innerText = "ハズレ";
@@ -97,11 +108,25 @@ function rewarddis() {
 function control() {
   var nstage = parseInt(now_stage[1]);
   var nstage0 = parseInt(now_stage[0]);
-  if (nstage == 3) {
-    localStorage.setItem("stage", parseInt(now_stage) + 10 - 2);
-  } else {
-    localStorage.setItem("stage", parseInt(now_stage) + 1);
+  if(nstage0 == 2){
+    if (nstage == 2) {
+      localStorage.setItem("user_stage", parseInt(now_stage) + 10 - 1);
+    } else {
+      localStorage.setItem("user_stage", parseInt(now_stage) + 1);
+    }
   }
-  location.reload();
-  console.log(now_stage);
+  if(nstage0 == 3){
+    if (nstage == 1) {
+      localStorage.setItem("user_stage", parseInt(now_stage) + 10);
+    } else {
+      localStorage.setItem("user_stage", parseInt(now_stage) + 1);
+    }
+  }
+  if(nstage0 == 1 || nstage0 == 4){
+    if (nstage == 3) {
+      localStorage.setItem("user_stage", parseInt(now_stage) + 10 - 2);
+    } else {
+      localStorage.setItem("user_stage", parseInt(now_stage) + 1);
+    }
+  } 
 }
