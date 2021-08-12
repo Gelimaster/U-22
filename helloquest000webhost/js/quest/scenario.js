@@ -5,7 +5,7 @@ var charabox = document.getElementById("charabox");
 var serifubox = document.getElementById("serifubox");
 
 // 1にするとシナリオが入る。0の場合は表示されない
-var scenarioIn=0;
+var scenarioIn=1;
 
 var msgCnt = 1;
 
@@ -21,6 +21,8 @@ var c = 0;
 var x=0;
 var tc = 0; //チュートリアルカウント
 
+var user_sex = localStorage.getItem("user_sex")
+
 const stagenum = localStorage.getItem('stage');
 
 //　シナリオデータ読込
@@ -28,6 +30,14 @@ function sceRead(res){
     for(var i in res){
         if(scenarioNo == res[i].sceNo){
             chara[sceCnt] = res[i].chara;
+            if(chara[sceCnt] =="char_1.png,char_2.png"){
+                 if(user_sex == "男"){
+                chara[sceCnt] = "char11.png,char_2.png"
+            }else{
+                 chara[sceCnt] = "char12.png,char_2.png"
+            }
+                
+            }
             charClass[sceCnt] = res[i].charClass;
             charaName[i] = res[i].charaName;
             //主人公をユーザ名にかえる処理

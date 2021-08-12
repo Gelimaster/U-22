@@ -12,11 +12,11 @@ include("db_ini.php");
 
   //アカウント更新
   $sql = "update user_table set user_name = '$username' where user_id = $user_id";
-  $query = mysqli_query($conn,$sql);
+  $query = mysqli_query($conn,$sql); 
   $sql1 = "update user_table set user_sex = '$sex' where user_id = $user_id";
-  $query = mysqli_query($conn,$sql1);
+  $query = mysqli_query($conn,$sql1); 
   $sql2 = "update user_table set user_comment = '$comment' where user_id = $user_id";
-  $query = mysqli_query($conn,$sql2);
+  $query = mysqli_query($conn,$sql2); 
 
 ?>
 
@@ -27,8 +27,9 @@ include("db_ini.php");
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body>
+  <body> 
       <input  type="hidden" id="name" value="<?php print $username ?>">
+      <input  type="hidden" id="sex" value="<?php print $sex ?>">
     <script src="../js/update_account.js"></script>
     <script>
         window.location.replace('../mypage.php');
@@ -36,3 +37,4 @@ include("db_ini.php");
 </body>
 
 </html>
+

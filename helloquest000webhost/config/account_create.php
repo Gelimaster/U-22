@@ -24,6 +24,7 @@ $username= $db_row["user_name"];
 $coin= $db_row["user_coin"];
 $stage= $db_row["user_stage"];
 $id= $db_row["user_id"];
+$sex= $db_row["user_sex"];
 $html = "<img id = \"logo0000\" class = \"logo\" alt=\"ロゴ\" src=\"images/mypage/logo.png\">
 <a href=\"profile.php\" id = \"link1000\" class = \"button\">プロフィール </a>
 <a href=\"list.php\" id = \"link2000\" class = \"button\">アイテム </a>
@@ -58,6 +59,7 @@ mysqli_free_result($db_result);//clear information
       <input id="stage" type="hidden" name="key" value="<?php print $stage ?>">
       <input id="id" type="hidden" name="key" value="<?php print $id ?>">
       <input id="coin" type="hidden" name="key" value="<?php print $coin ?>">
+      <input id="sex" type="hidden" name="key" value="<?php print $sex ?>">
     </form>
     <script src="../js/account_create.js"></script>
     <script>
