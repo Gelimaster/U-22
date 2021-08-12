@@ -104,8 +104,9 @@ function rewarddis() {
       reward.innerHTML = "コイン×" + reward_coin[index] + "<br>" + reward_item[index];
     }
       
-    let user_coin = localStorage.getItem("user_coin"); 
+    let user_coin = parseInt(localStorage.getItem("user_coin")); 
     user_coin = user_coin + 10;
+    localStorage.setItem("user_coin",user_coin)
 
   });
 }
