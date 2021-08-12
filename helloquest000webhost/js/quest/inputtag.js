@@ -93,7 +93,7 @@ function dataRead1(res){
     // assemblybox1に入れる処理
 
     // クエスト用にin_num
-    const stagenum = localStorage.getItem('user_stage');//ローカルストレージ
+    const stagenum = localStorage.getItem('stage');//ローカルストレージ
     // const stagenum = 43;//クエスト手動切り替え
     const qesttagnum = [110,111,120,121,130,220,430];
     in_num = qesttagnum.filter(item => item > stagenum * 10 - 1 && item < stagenum * 10 + 10);
@@ -179,6 +179,7 @@ function roop2(target){
             }else if(child[i].lastElementChild.firstElementChild.classList.contains('imgflg') == true){
                 html_text = html_text + child[i].lastElementChild.firstElementChild.textContent;
                 html_text = html_text + imgin(child[i].lastElementChild.firstElementChild.firstElementChild);
+                bunsyou = bunsyou + imgin(child[i].lastElementChild.firstElementChild.firstElementChild);
             // <div>タグなどの中にまだ要素が含まれる場合
             }else{
                 roop2(child[i].lastElementChild.firstElementChild);
@@ -200,6 +201,12 @@ function roop2(target){
                 html_text = html_text + " id = \"" + child[i].id + "0" + "\" ";
                 html_text = html_text + html_text2[cnt];
                 html_text = html_text + child[i].lastElementChild.lastElementChild.textContent;
+                 bunsyou = bunsyou + child[i].lastElementChild.firstElementChild.firstElementChild.value　+ child[i].lastElementChild.lastElementChild.textContent
+                 if(child[i].lastElementChild.lastElementChild.childElementCount == 0){
+                }else{
+                    roop2(child[i].lastElementChild.lastElementChild);
+                }
+                
             }else{
                 roop2(child[i].lastElementChild.lastElementChild);
             }

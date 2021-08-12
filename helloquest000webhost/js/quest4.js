@@ -12,7 +12,8 @@
   var n =0
 
 //ステージ選択
-function select(){
+function select(obj){ 
+  localStorage.setItem("stage",10+parseInt(obj.id[5]))
   var  q1=document.getElementById("quest4")
   q1.style.opacity ="1"
 }
