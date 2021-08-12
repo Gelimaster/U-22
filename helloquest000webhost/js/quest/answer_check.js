@@ -3,7 +3,9 @@
 
 var asnwer;
 
-
+var clearbox = document.getElementById("clearbox");
+var reward = document.getElementById("reward");
+const now_stage = localStorage.getItem("stage");
 
 
 // クエストの答えを取得処理
