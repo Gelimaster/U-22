@@ -48,7 +48,7 @@ function checkanswer() {
       if(localStorage.getItem("user_stage") <= localStorage.getItem("stage")){
       control();    
       }
-  
+
     } else {
       document.querySelector("#answer").innerText = "ハズレ";
     }
@@ -67,7 +67,6 @@ function checkanswer() {
       if(localStorage.getItem("user_stage") <= localStorage.getItem("stage")){
       control();    
       }
-      
   
     } else {
       document.querySelector("#answer").innerText = "ハズレ";
@@ -104,6 +103,9 @@ function rewarddis() {
       // 報酬のデータを入れる
       reward.innerHTML = "コイン×" + reward_coin[index] + "<br>" + reward_item[index];
     }
+      
+    let user_coin = localStorage.getItem("user_coin"); 
+    user_coin = user_coin + 10;
 
   });
 }

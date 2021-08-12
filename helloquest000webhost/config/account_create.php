@@ -4,7 +4,7 @@
   //キー変数を受け取る
   $key= $_POST["key"];
   //アカウント登録
-  $sql = "insert into user_table(user_name,user_key,user_coin,user_stage,user_sex)values('村人','$key',1000,11,'男')";
+  $sql = "insert into user_table(user_name,user_key,user_coin,user_stage,user_sex)values('村人','$key',0,11,'男')";
   $query = mysqli_query($conn,$sql);  
 //ユーザー情報を取得する
 $sql1 = "select * from user_table where user_key= '$key' ";
