@@ -16,12 +16,6 @@ if (sex1 == "男") {
 
 
 function goback() {
-    if (localStorage.getItem('user_stage') == "11") {
-        // アカウントを最初に作った場合
-        window.location.href = '../qest.php';
-    } else if(!(localStorage.getItem('user_stage') == "11")){
-        // 通常
-        window.history.back();
-    }
+    window.history.back();
 }
 
