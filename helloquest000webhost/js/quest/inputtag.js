@@ -9,6 +9,7 @@ var html_text1 = [];
 var html_text2 = [];
 var html_text3 = [];
 var tag_class = [];
+var tag_get_num = [];
 var stat = [];
 var tagcnt = [];
 
@@ -19,8 +20,6 @@ var bunsyou = "";
 
 var target = document.getElementById('assemblybox1');
 var stylebutton = document.getElementById('stylebutton');
-const stagenum = localStorage.getItem('stage');//ローカルストレージ
-
 
 // もとからassemblybox1に入れておくタグのtag_num
 var in_num = [];
@@ -49,12 +48,12 @@ window.onload = function () {
             success: sceRead		// dataがparseできた時に実行するfunction名
         });
     }
-    // cssボタンの表示ON・OFF
-    stylehidden();
+  // cssボタンの表示ON・OFF
+  stylehidden();
 }
 
-
 function dataRead1(res) {
+    const stagenum = localStorage.getItem('stage');//ローカルストレージ
     for (var i in res) {
         // 代入する配列[カウンター] = functionの引数(いんすう)に指定(してい)した変数(へんすう)[i].jsonファイルのプロパティ;
         tag_num[count] = res[i].tag_num;
@@ -65,6 +64,7 @@ function dataRead1(res) {
         html_text2[count] = res[i].html_text2;
         html_text3[count] = res[i].html_text3;
         tag_class[count] = res[i].tag_class;
+        tag_get_num[count] = res[i].tag_get_num;
         stat[count] = res[i].status;
         tagcnt[count] = 0;
         // カウンターを増加(ぞうか)させる。
@@ -108,7 +108,7 @@ function dataRead1(res) {
     for (var num_cnt = 0; num_cnt < in_num.length; num_cnt++) {
         for (var i = 0; i < count; i++) {
             if (in_num[num_cnt] == tag_num[i]) {
-                if (parseInt(in_num[num_cnt]) == tag_num[i]) {
+                if (parseInt(tag_get_num[i]) <= stagenum) {
                     var tid = tag_id[i] + ("0" + tagcnt[i]).slice(-2);
                     tagcnt[i]++;
                     // tagboxの作成
@@ -209,12 +209,11 @@ function roop2(target) {
                 html_text = html_text + " id = \"" + child[i].id + "0" + "\" ";
                 html_text = html_text + html_text2[cnt];
                 html_text = html_text + child[i].lastElementChild.lastElementChild.textContent;
-                bunsyou = bunsyou + child[i].lastElementChild.firstElementChild.firstElementChild.value + child[i].lastElementChild.lastElementChild.textContent
-                if (child[i].lastElementChild.lastElementChild.childElementCount == 0) {
-                } else {
+                bunsyou = bunsyou + child[i].lastElementChild.firstElementChild.firstElementChild.value　+ child[i].lastElementChild.lastElementChild.textContent
+                 if(child[i].lastElementChild.lastElementChild.childElementCount == 0){
+                }else{
                     roop2(child[i].lastElementChild.lastElementChild);
                 }
-
             } else {
                 roop2(child[i].lastElementChild.lastElementChild);
             }
@@ -262,9 +261,9 @@ function inputid(target) {
     return newc;
 }
 
-function stylehidden() {
+function stylehidden(){
     // 問題によってcssボタンを見えなくする
-    if (stagenum < 22) {
+    if(localStorage.getItem('user_stage') < 22){
         stylebutton.style.visibility = "hidden";
     }
 }
