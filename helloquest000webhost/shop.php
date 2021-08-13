@@ -31,8 +31,6 @@ include("config/db_ini.php");
         $sql1 = "select * from shop_table ";
         $db_result = mysqli_query($conn,$sql1);
         $db_cnt = mysqli_num_rows($db_result);
-        $db_row= mysqli_fetch_array($db_result);
-        $price =$db_row["shop_price"];
         while($db_row= mysqli_fetch_array($db_result)){
       
         ?>
