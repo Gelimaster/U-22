@@ -88,6 +88,7 @@ function rewarddis() {
   const qestnum = [];
   const reward_coin = [];
   const reward_item = [];
+  const reward_id = [];
   $.getJSON('json/quest/reward.json', (data) => {
     // console.log(data);
 
@@ -96,6 +97,7 @@ function rewarddis() {
         qestnum.push(data[i].qestnum);
         reward_coin.push(data[i].reward_coin);
         reward_item.push(data[i].reward_item);
+        reward_id.push(data[i].reward_id);
       }
     }
     const index = qestnum.indexOf(Number(now_stage));
@@ -107,6 +109,9 @@ function rewarddis() {
     let user_coin = parseInt(localStorage.getItem("user_coin")); 
     user_coin = user_coin + 10;
     localStorage.setItem("user_coin",user_coin)
+     if(reward_id[index] != ""){
+      localStorage.setItem(reward_id[index],1)
+    }
 
   });
 }

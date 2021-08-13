@@ -2,46 +2,55 @@
     {
         "qestnum": 11,
         "reward_coin": "10",
-        "reward_item": "テキスト入力タグ"
+        "reward_item": "テキスト入力タグ",
+        "reward_id":"reward4"
     },
     {
         "qestnum": 12,
         "reward_coin": "10",
-        "reward_item": ""
+        "reward_item": "",
+        "reward_id":""
     },
     {
         "qestnum": 13,
         "reward_coin": "10",
-        "reward_item": "リンクタグ"
+        "reward_item": "リンクタグ",
+        "reward_id":"reward5"
     },
     {
         "qestnum": 21,
         "reward_coin": "10",
-        "reward_item": "写真表示タグ"
+        "reward_item": "写真表示タグ",
+        "reward_id":"reward6"
     },
     {
         "qestnum": 22,
         "reward_coin": "10",
-        "reward_item": "css"
+        "reward_item": "css",
+        "reward_id":""
     },
     {
         "qestnum": 31,
         "reward_coin": "10",
-        "reward_item": "div"
+        "reward_item": "div",
+        "reward_id":"reward7"
     },
     {
         "qestnum": 41,
         "reward_coin": "10",
-        "reward_item": "入力"
+        "reward_item": "入力",
+        "reward_id":"reward7"
     },
     {
         "qestnum": 42,
         "reward_coin": "10",
-        "reward_item": "文章入力"
+        "reward_item": "文章入力",
+        "reward_id":"reward8"
     },
     {
         "qestnum": 43,
         "reward_coin": "10",
-        "reward_item": ""
+        "reward_item": "",
+        "reward_id":""
     }
 ]
