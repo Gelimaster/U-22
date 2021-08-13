@@ -126,9 +126,9 @@ function idStyleIn(){
                     if(eval(proper[c])[i] != null){
                         csstext = csstext + pro1[c] + eval(proper[c])[i] + pro2[c];
                        if(c == 0){
-                        	bunsyoucss = bunsyoucss + eval(propar[c])[i] .slice(0,-3);
+                        	bunsyoucss = bunsyoucss + eval(proper[c])[i] .slice(0,-3);
                         }else{
-	                        bunsyoucss = bunsyoucss + pro1[c] + eval(propar[c])[i];
+	                        bunsyoucss = bunsyoucss + proper[c] + eval(proper[c])[i];
                             console.log(bunsyoucss);
                             localStorage.setItem("answercss",bunsyoucss)
                         }
