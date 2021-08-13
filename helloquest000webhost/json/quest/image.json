@@ -33,5 +33,54 @@
         "image_name": "fruit_ringo.png",
         "image_class":"imgwide",
         "images_html":"images/fruit_ringo.png"
+    },
+    {
+        "image_num": 6,
+        "image_id": "image06",
+        "image_name": "char4.png",
+        "image_class":"imgwide",
+        "images_html":"images/char4.png"
+    },
+    {
+        "image_num": 7,
+        "image_id": "image07",
+        "image_name": "char5.png",
+        "image_class":"imgwide",
+        "images_html":"images/char5.png"
+    },
+    {
+        "image_num": 8,
+        "image_id": "image08",
+        "image_name": "BookstoreManager.png",
+        "image_class":"imgwide",
+        "images_html":"images/BookstoreManager.png"
+    },
+    {
+        "image_num": 9,
+        "image_id": "image09",
+        "image_name": "PostalWorker.png",
+        "image_class":"imgwide",
+        "images_html":"images/PostalWorker.png"
+    },
+    {
+        "image_num": 10,
+        "image_id": "image10",
+        "image_name": "StoreOpeningcapaCity.png",
+        "image_class":"imgwide",
+        "images_html":"images/StoreOpeningcapaCity.png"
+    },
+    {
+        "image_num": 11,
+        "image_id": "image11",
+        "image_name": "Researcher.png",
+        "image_class":"imgwide",
+        "images_html":"images/Researcher.png"
+    },
+    {
+        "image_num": 12,
+        "image_id": "image11",
+        "image_name": "police.png",
+        "image_class":"imgwide",
+        "images_html":"images/police.png"
     }
 ]
