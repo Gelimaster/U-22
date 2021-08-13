@@ -21,7 +21,7 @@
                 <input type="hidden" id="itemprice" value="<?php print $price?>">
                 <input type="hidden" id="itemid1">
                 <p class="itemname_k">アイテム名</p>
-                    <div class="item_photok"></div>
+                    <div class="item_photok"><img class="item_photok" id="itemimg1" src="" ></div>
                     <p id="itemtxt1" class="koin_txt">コイン×<?php print $price?>を使用して</p>
                     <p id="itemtxt2" class="koin_txt">アイテムを購入しますか？</p>
                     <div class="koin_box">

@@ -55,6 +55,10 @@ function clickcss() {
 function clickPurchase(obj) {
     var itemid = obj
     document.getElementById("itemid1").value = itemid
+    
+    var ximg=document.getElementById("itemimg1")
+    ximg.src="../images/shop/" + itemid+".png"
+    console.log(ximg)
     checkbox.style.display="block"
 
 }
