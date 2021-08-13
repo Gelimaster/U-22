@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 
 <html lang="ja">
-  <div id="describe">
+  <div id="check_box_check">
     <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" type="text/css" href="/css/list1.css">
+      <link rel="stylesheet" type="text/css" href="/css/shop1.css">
     </head>
-
 
     <body>
 
 
-      <div class="Trans1">
-        <div class="confirmation11">
-          <div class="confirmation21">
-            <div class="confirmation31">
-              <div class="confirmation1">
-                <div><img src="/images/shop/syousai.png" class="kakuninn1"></div>
+
+      <div class="Trans">
+        <div class="confirmation1">
+          <div class="confirmation2">
+            <div class="confirmation3">
+              <div class="confirmation">
+                <div><img src="/images/shop/kauninn.png" class="kakuninn"></div>
                 <p>　　　　　</p>
-                <p class="itemname_k1">アイテム名</p>
-                  <div class="item_photok1"></div>
-                  <div class="item_txt1">
-                    <p class="koin_txt1">アイテム説明</p>
+                <input type="hidden" id="itemprice" value="<?php print $price?>">
+                <input type="hidden" id="itemid1">
+                <p class="itemname_k">アイテム名</p>
+                    <div class="item_photok"></div>
+                    <p id="itemtxt1" class="koin_txt">コイン×<?php print $price?>を使用して</p>
+                    <p id="itemtxt2" class="koin_txt">アイテムを購入しますか？</p>
+                    <div class="koin_box">
+                      <div class="koin_k">
+                        <img src="/images/shop/koin.png" alt="コイン" class="koin_photo">
+                        <p class="k">所持コイン</p>
+                        <p id="con"></p>
+                    </div>
                   </div>
-                <button class="Purchase11" onclick="clickok()"><img src="/images/shop/OK.png" id="Pur_bu11"></button>
+                    <button class="Purchase1" onclick="clickcancel()"><img src="/images/shop/cancel.png" id="Pur_bu1"></button>
+                    <button id="buyitem1" class="Purchase1" onclick="clickok(<?php print $db_row["shop_id"] ?>)"><img src="/images/shop/OK.png" id="Pur_bu1"></button>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </body>
   </div>
-
-
-    <script type="text/javascript" src="/js/list1.js"></script>
-  </body>
-
+  <?php
+      include("shop2.php")
+  ?>
+  
 </html>

@@ -12,10 +12,7 @@ include("config/db_ini.php");
     <link rel="stylesheet" type="text/css" href="/css/shop.css">
   </head>
 
-  <nav>
-    <button type="button" onclick="clickhtml()" id="button1">html</button>
-    <button type="button" onclick="clickcss()" id="button2">css</button>
-  </nav>
+ 
 
   <body>
     <a href="/mypage.php"><img src="/images/shop/modoru.png" alt="戻る" id="modoru"></a>
@@ -35,22 +32,28 @@ include("config/db_ini.php");
         $db_result = mysqli_query($conn,$sql1);
         $db_cnt = mysqli_num_rows($db_result);
         $db_row= mysqli_fetch_array($db_result);
+        $price =$db_row["shop_price"];
         while($db_row= mysqli_fetch_array($db_result)){
+      
         ?>
-
+         
         <div class="item_box">
-          <input type="hidden" id="itemid" value="shopitem"+<?php print $db_row["shop_id"]?>>
+            
+        <input type="hidden" id="itemid" value="shopitem<?php print $db_row["shop_id"]?>">
+        <input type="hidden" id="itemprice" value="<?php print $db_row["shop_price"]?>">
           <p class="item_name"><?php print $db_row["shop_name"]?></p>
           <img class="item_photo" src="/images/shop/<?php print $db_row["shop_img"]?>"></img>
           <div class="koin">
             <img src="/images/shop/koin.png" alt="コイン" class="koin_photo">
             <p class="koin_number"><?php print $db_row["shop_price"]?></p>
           </div>
-          <button class="Purchase" onclick="clickPurchase()"><img src="/images/shop/button4.png" id="Pur_bu"></button>
+          <p>SOLD OUT</p>
+          <button id="shopitem<?php print $db_row["shop_id"]?>" class="Purchase" onclick="clickPurchase(<?php print $db_row["shop_id"]?>)"><img src="/images/shop/button4.png" id="Pur_bu"></button>
         </div>
+    
         <?php
         }
-        mysqli_free_result($db_result);//clear information
+       mysqli_free_result($db_result);//clear information
         ?>
         <!-- loop stop -->
 
@@ -58,9 +61,12 @@ include("config/db_ini.php");
       </div>
     </div>
     <?php
-      include("shop1.php")
+      include("shop1.php");
+       
     ?>
 
 <script src="/js/shop.js"></script>
+<script src="/js/shop1.js"></script>
+<script src="/js/shop2.js"></script>
   </body>
 </html>

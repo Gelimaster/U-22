@@ -15,13 +15,15 @@
               <div class="confirmation1">
                 <div><img src="/images/shop/kakutei.png" class="kakuninn1"></div>
                 <p>　　　　　</p>
-                    <p class="koin_txt11">コイン×500.000を使用して</p>
+                
+                <input type="hidden" id="itemprice" value="<?php print $price?>">
+                    <p class="koin_txt11">コイン×<?php print $price?>を使用して</p>
                     <p class="koin_txt22">アイテムを購入しました。</p>
                     <div class="koin_box1">
                       <div class="koin_k1">
                         <img src="/images/shop/koin.png" alt="コイン" class="koin_photo1">
                         <p class="k1">所持コイン</p>
-                        <p id="con1">　　　　　　　　　→　　</p>
+                        <p id="con1"></p>
                       </div>
                     </div>
                     <button class="Purchase11" onclick="clickok1()"><img src="/images/shop/OK.png" id="Pur_bu11"></button>
@@ -30,8 +32,7 @@
           </div>
         </div>
       </div>
-
-      <script type="text/javascript" src="/js/shop2.js"></script>
+  
     </body>
  </div>
 </html>

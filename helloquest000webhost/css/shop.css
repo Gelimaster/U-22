@@ -164,6 +164,8 @@ div.box_srcollbar::-webkit-scrollbar-thumb{
   border: none;
   background: transparent;
   margin: 0 auto 0 auto;
+  position:relative;
+  top:-24px;
 }
 #Pur_bu{
   width: 130px;
