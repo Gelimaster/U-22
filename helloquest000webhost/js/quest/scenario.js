@@ -36,11 +36,26 @@ function sceRead(res){
             }else{
                  chara[sceCnt] = "char12.png,char_2.png"
             }
+            
                 
             }
+             if(chara[sceCnt] =="char_1.png"){
+                 if(user_sex == "男"){
+                chara[sceCnt] = "char11.png"
+            }else{
+                 chara[sceCnt] = "char12.png"
+            }
+            
+                
+            }
+            
+            
             charClass[sceCnt] = res[i].charClass;
             charaName[i] = res[i].charaName;
             //主人公をユーザ名にかえる処理
+            if(charaName[i]=="主人公"){
+                charaName[i] = localStorage.getItem("user_name")
+            }
             x=charaName.length-sceCnt-1
             selifu[sceCnt] = res[i].selifu;
             sceCnt++;
