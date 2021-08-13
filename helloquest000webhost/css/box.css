@@ -75,7 +75,7 @@
 
 /* 入力したデータを実行するボックス */
 #stylebutton{
-    z-index: 998;
+    z-index: 9;
 }
 
 #visualbox{

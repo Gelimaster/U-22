@@ -8,6 +8,7 @@
         "html_text2":"><br>",
         "html_text3":"&lt;/body><br>",
         "tag_class":"bodytag",
+        "tag_get_num":"111",
         "status":true
     },
     {
@@ -19,6 +20,7 @@
         "html_text2":">",
         "html_text3":"&lt;/p><br>",
         "tag_class":"ptag",
+        "tag_get_num":"11",
         "status":true
     },
     {
@@ -30,6 +32,7 @@
         "html_text2":"src=\"",
         "html_text3":"\"><br>",
         "tag_class":"imgtag",
+        "tag_get_num":"21",
         "status":true
     },
     {
@@ -41,6 +44,7 @@
         "html_text2":"><br>",
         "html_text3":"&lt;/div><br>",
         "tag_class":"divtag",
+        "tag_get_num":"31",
         "status":true
     },
     {
@@ -52,6 +56,7 @@
         "html_text2":">",
         "html_text3":"&lt;/a><br>",
         "tag_class":"atag",
+        "tag_get_num":"13",
         "status":true
     },
     {
@@ -63,6 +68,7 @@
         "html_text2":"><br>",
         "html_text3":"&lt;/ul>",
         "tag_class":"ultag",
+        "tag_get_num":"112",
         "status":true
     },
     {
@@ -74,6 +80,7 @@
         "html_text2":"><br>",
         "html_text3":"&lt;/ol><br>",
         "tag_class":"oltag",
+        "tag_get_num":"112",
         "status":true
     },
     {
@@ -85,6 +92,7 @@
         "html_text2":">",
         "html_text3":"&lt;/li><br>",
         "tag_class":"litag",
+        "tag_get_num":"112",
         "status":true
     },
     {
@@ -96,6 +104,7 @@
         "html_text2":"><br>",
         "html_text3":"&lt;/nav><br>",
         "tag_class":"navtag",
+        "tag_get_num":"113",
         "status":true
     },
     {
@@ -107,6 +116,7 @@
         "html_text2":">",
         "html_text3":"&lt;/main><br>",
         "tag_class":"maintag",
+        "tag_get_num":"113",
         "status":true
     },
     {
@@ -118,6 +128,7 @@
         "html_text2":"><br>",
         "html_text3":"&lt;/header><br>",
         "tag_class":"headertag",
+        "tag_get_num":"113",
         "status":true
     },
     {
@@ -129,6 +140,7 @@
         "html_text2":">",
         "html_text3":"&lt;/footer><br>",
         "tag_class":"footertag",
+        "tag_get_num":"113",
         "status":true
     },
     {
@@ -140,6 +152,7 @@
         "html_text2":">",
         "html_text3":"&lt;/section><br>",
         "tag_class":"sectiontag",
+        "tag_get_num":"113",
         "status":true
     },
     {
@@ -151,6 +164,7 @@
         "html_text2":"><br>",
         "html_text3":"&lt;/button><br>",
         "tag_class":"buttontag",
+        "tag_get_num":"114",
         "status":true
     },
     {
@@ -162,6 +176,7 @@
         "html_text2":"><br>",
         "html_text3":"&lt;/table><br>",
         "tag_class":"tabletag",
+        "tag_get_num":"115",
         "status":true
     },
     {
@@ -173,6 +188,7 @@
         "html_text2":">",
         "html_text3":"&lt;/tr><br>",
         "tag_class":"trtag",
+        "tag_get_num":"115",
         "status":true
     },
     {
@@ -184,6 +200,7 @@
         "html_text2":">",
         "html_text3":"&lt;/th><br>",
         "tag_class":"thtag",
+        "tag_get_num":"115",
         "status":true
     },
     {
@@ -195,6 +212,7 @@
         "html_text2":">",
         "html_text3":"&lt;/td>",
         "tag_class":"tdtag",
+        "tag_get_num":"115",
         "status":true
     },
     {
@@ -206,6 +224,7 @@
         "html_text2":" value = \"",
         "html_text3":"\">&lt;/input>",
         "tag_class":"inputtag",
+        "tag_get_num":"41",
         "status":true
     },
     {
@@ -217,6 +236,7 @@
         "html_text2":"type = \"",
         "html_text3":"\">&lt;/textarea>",
         "tag_class":"textareatag",
+        "tag_get_num":"42",
         "status":true
     },
     {
@@ -228,6 +248,7 @@
         "html_text2":"class=\"selifutag\"><br>",
         "html_text3":"&lt;/div><br>",
         "tag_class":"divtag",
+        "tag_get_num":"999",
         "status":false
     },
     {
@@ -239,6 +260,7 @@
         "html_text2":"class = \"chaimg\" src=\"",
         "html_text3":"\"><br>",
         "tag_class":"imgtag",
+        "tag_get_num":"999",
         "status":false
     },
     {
@@ -250,6 +272,7 @@
         "html_text2":"class = \"chaimg\" src=\"",
         "html_text3":"\"><br>",
         "tag_class":"imgtag",
+        "tag_get_num":"1",
         "status":false
     },
     {
@@ -261,6 +284,7 @@
         "html_text2":"class=\"selifutag\"><br>",
         "html_text3":"&lt;/div><br>",
         "tag_class":"divtag",
+        "tag_get_num":"1",
         "status":false
     },
     {
@@ -272,6 +296,7 @@
         "html_text2":"class = \"chaimg\" src=\"",
         "html_text3":"\"><br>",
         "tag_class":"imgtag",
+        "tag_get_num":"1",
         "status":false
     },
     {
@@ -283,6 +308,7 @@
         "html_text2":"class=\"selifutag\"><br>",
         "html_text3":"&lt;/div><br>",
         "tag_class":"divtag",
+        "tag_get_num":"1",
         "status":false
     },
     {
@@ -294,6 +320,7 @@
         "html_text2":"class=\"selifutag\"><br>",
         "html_text3":"&lt;/div><br>",
         "tag_class":"divtag",
+        "tag_get_num":"1",
         "status":false
     },
     {
@@ -305,6 +332,7 @@
         "html_text2":"class = \"chaimg\" src=\"",
         "html_text3":"\"><br>",
         "tag_class":"imgtag",
+        "tag_get_num":"1",
         "status":false
     },
     {
@@ -316,6 +344,7 @@
         "html_text2":"type = \"",
         "html_text3":"\" rows=\"25\" cols=\"80\">&lt;/textarea>",
         "tag_class":"textareatag",
+        "tag_get_num":"1",
         "status":false
     }
 ]

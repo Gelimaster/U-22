@@ -54,6 +54,7 @@ window.onload = function () {
 
 function dataRead1(res) {
     const stagenum = localStorage.getItem('stage');//ローカルストレージ
+    const user_stagenum = localStorage.getItem('user_stage');//ローカルストレージ
     for (var i in res) {
         // 代入する配列[カウンター] = functionの引数(いんすう)に指定(してい)した変数(へんすう)[i].jsonファイルのプロパティ;
         tag_num[count] = res[i].tag_num;
@@ -73,7 +74,7 @@ function dataRead1(res) {
     // タグの表示(ひょうじ)
     for (var i = 0; i < count; i++) {
         if (stat[i]) {
-            if (parseInt(tag_get_num[i]) <= stagenum) {
+            if (parseInt(tag_get_num[i]) <= user_stagenum) {
                 var tid = tag_id[i] + ("0" + tagcnt[i]).slice(-2);
                 tagcnt[i]++;
                 // tagboxの作成
@@ -108,7 +109,7 @@ function dataRead1(res) {
     for (var num_cnt = 0; num_cnt < in_num.length; num_cnt++) {
         for (var i = 0; i < count; i++) {
             if (in_num[num_cnt] == tag_num[i]) {
-                if (parseInt(tag_get_num[i]) <= stagenum) {
+                if (parseInt(tag_get_num[i]) <= user_stagenum) {
                     var tid = tag_id[i] + ("0" + tagcnt[i]).slice(-2);
                     tagcnt[i]++;
                     // tagboxの作成
