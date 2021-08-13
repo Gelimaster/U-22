@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+body{
+    background-image: url(../images/quest/renga_pattern.png);
+}
 
 img.logo{
     position: absolute;
@@ -23,7 +26,6 @@ input.signin{
 	height: 98vh;
 	overflow: hidden;
 	margin: 0 auto;
-    background-image: url(../images/quest/renga_pattern.png);
 }
 .cp_slide_item {
 	width: 65vw;

@@ -1,55 +1,55 @@
 [
     {
-        "sceNo":"00",      
+        "sceNo":"11",      
         "chara":"char_1.png,char_2.png",
         "charClass":"leftdown,rightup",
         "charaName":"うさぎ",
         "selifu":"いてて。。。<br>ごめん、今急いでてうさぎのカバンから杖が落ち地面へ刺さった"
     },
     {
-        "sceNo":"00",
+        "sceNo":"11",
         "chara":"",
         "charClass":"",
         "charaName":"",
         "selifu":"うさぎのカバンから杖が落ち地面へ刺さった"
     },
     {
-        "sceNo":"00",
+        "sceNo":"11",
         "chara":"char_1.png",
         "charClass":"leftup",
         "charaName":"主人公",
         "selifu":"あっ、まってっ"
     },
     {
-        "sceNo":"00",
+        "sceNo":"11",
         "chara":"",
         "charClass":"",
         "charaName":"",
         "selifu":"突然、地震が起こる"
     },
     {
-        "sceNo":"00",
+        "sceNo":"11",
         "chara":"char_1.png",
         "charClass":"leftup",
         "charaName":"主人公",
         "selifu":"な、なんだ！？<br>と、とりあえずこれを返さないと"
     },
     {
-        "sceNo":"00",
+        "sceNo":"11",
         "chara":"",
         "charClass":"",
         "charaName":"",
         "selifu":"主人公は杖を抜いた"
     },
     {
-        "sceNo":"00",
+        "sceNo":"11",
         "chara":"char_1.png",
         "charClass":"leftup",
         "charaName":"主人公",
         "selifu":"（落とし物を手に入れた）"
     },
     {
-        "sceNo":"00",
+        "sceNo":"11",
         "chara":"char_1.png",
         "charClass":"leftup",
         "charaName":"主人公",

@@ -23,9 +23,25 @@ div#shadow{
     width: 100%;
     height: 100%;
     
-    background-color: #000;
+    /* background-color: #000;
+    opacity: .1; */
+
     visibility:hidden;
-    opacity: .6;
+    z-index: 10;
+
+}
+div#shadow2{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    background-color: #000;
+    opacity: .1;
+
+    visibility:hidden;
     z-index: 11;
 
 }
@@ -40,7 +56,6 @@ div#charbox{
     height: 100%;
 
     box-sizing: border-box;
-
     z-index: 13;
 }
 
@@ -71,29 +86,37 @@ div#serifubox{
 
 /* topとleftのみ変更可 positionとz-indexは変更禁止 */
 .leftup{
+    width: 30vw;
+    height: auto;
     position: fixed;
-    top: 0;
+    top: 3%;
     left: 5%;
     z-index: 13;
 }
 
 .leftdown{
+    width: 30vw;
+    height: auto;
     position: fixed;
-    top: 0;
+    top: 3%;
     left: 5%;
     z-index: 10;
 }
 
 .rightup{
+    width: 30vw;
+    height: auto;
     position: fixed;
-    top: 0;
+    top: 3%;
     left: 55%;
     /* transform: scale(-1, 1); */
     z-index: 13;
 }
 .rightdown{
+    width: 30vw;
+    height: auto;
     position: fixed;
-    top: 0;
+    top: 3%;
     left: 55%;
     /* transform: scale(-1, 1); */
     z-index: 10;

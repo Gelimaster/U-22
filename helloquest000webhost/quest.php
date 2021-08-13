@@ -18,6 +18,7 @@
     <div id="scebox" onclick="move()">
         <div id="chabox">
             <div id="shadow"></div>
+            <div id="shadow2"></div>
             <div id="charabox"></div>
             <div id="serifubox" class="serifu1"></div>
         </div>
