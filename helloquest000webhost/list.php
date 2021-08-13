@@ -19,7 +19,7 @@ include("config/db_ini.php");
 
   <body>
     <a href="/mypage.php"><img src="/images/shop/modoru.png" alt="戻る" id="modoru"></a>
-    <p><img src="/images/shop/name.png" alt="名前" id="name"></p>
+    <p><img src="/images/shop/name1.png" alt="名前" id="name"></p>
 
     <div class="number">
       <img src="/images/shop/koin.png" alt="コイン" class="koin_photo">
