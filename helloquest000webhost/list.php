@@ -32,14 +32,14 @@ include("config/db_ini.php");
         $sql1 = "select * from shop_table ";
         $db_result = mysqli_query($conn,$sql1);
         $db_cnt = mysqli_num_rows($db_result);
-        $db_row= mysqli_fetch_array($db_result);
         while($db_row= mysqli_fetch_array($db_result)){
         ?>
-
+        <div id="shopitem<?php print $db_row["shop_id"]?>">
         <div class="item_box">
           <p class="item_name"><?php print $db_row["shop_name"]?></p>
           <img class="item_photo" src="/images/shop/<?php print $db_row["shop_img"]?>"></img>
           <button class="Purchase" onclick="clickDetails()"><img src="/images/shop/detail.png" id="Pur_bu"></button>
+        </div>
         </div>
         <?php
         }
@@ -51,14 +51,14 @@ include("config/db_ini.php");
         $sql = "select * from reward_table ";
         $db_result1 = mysqli_query($conn,$sql);
         $db_cnt = mysqli_num_rows($db_result1);
-        $db_row1= mysqli_fetch_array($db_result1);
         while($db_row1= mysqli_fetch_array($db_result1)){
         ?>
-
+        <div id="reward<?php print $db_row1["reward_id"]?>">
         <div class="item_box">
           <p class="item_name"><?php print $db_row1["reward_name"]?></p>
-          <img class="item_photo" src="/images/shop/<?php print $db_row1["reward_img"]?>"></img>
-          <button class="Purchase" onclick="clickDetails()"><img src="/images/shop/detail.png" id="Pur_bu"></button>
+          <img id="rewardimg<?php print $db_row1["reward_id"]?>" class="item_photo" src="/images/shop/<?php print $db_row1["reward_img"]?>"></img>
+          <button id="btn<?php print $db_row1["reward_id"]?>" class="Purchase" onclick="clickDetails()"><img src="/images/shop/detail.png" id="Pur_bu"></button>
+        </div>
         </div>
         <?php
         }
@@ -79,4 +79,3 @@ include("config/db_ini.php");
   </body>
 
 </html>
-
