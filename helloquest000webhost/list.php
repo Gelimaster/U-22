@@ -9,7 +9,6 @@ include("config/db_ini.php");
   <head>
     <meta charset="utf-8">
     <title>Hello Web Quest</title>
-    
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/css/list.css">
   </head>
@@ -40,7 +39,7 @@ include("config/db_ini.php");
         <div class="item_box">
           <p class="item_name"><?php print $db_row["shop_name"]?></p>
           <img class="item_photo" src="/images/shop/<?php print $db_row["shop_img"]?>"></img>
-          <button class="Purchase" onclick="clickDetails()"><img src="/images/shop/detail.png" id="Pur_bu"></button>
+          <button class="Purchase" onclick="clickDetails(<?php print $db_row["shop_id"]?>)"><img src="/images/shop/detail.png" id="Pur_bu"></button>
         </div>
         </div>
         <?php

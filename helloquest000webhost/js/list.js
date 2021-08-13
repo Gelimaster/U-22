@@ -72,6 +72,12 @@ function clickhtml() {
 function clickcss() {
     console.log("css クリック");
 }
-function clickDetails() {
+function clickDetails(obj) {
+    var itemid = obj
+    console.log(obj)
+    var ximg=document.getElementById("itemimg1")
+    ximg.src="../images/shop/" + itemid+".png"
+    console.log(ximg)
+    
     describe.style.display="block"
 }
