@@ -41,7 +41,9 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Hello Quest</title>
+        <title>Hello Web Quest</title>
+        
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/box.css">
         <link rel="stylesheet" href="css/tag.css">
         <link rel="stylesheet" href="css/input.css">

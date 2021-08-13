@@ -4,7 +4,9 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>ステージ1</title>
+    <title>Hello Web Quest</title>
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/button.css" />

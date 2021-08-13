@@ -8,7 +8,9 @@ include("config/db_ini.php");
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>アイテム一覧</title>
+    <title>Hello Web Quest</title>
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/css/list.css">
   </head>
 

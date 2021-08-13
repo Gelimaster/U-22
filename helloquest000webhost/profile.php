@@ -32,6 +32,8 @@ mysqli_free_result($db_result);//clear information
     <meta charset="utf-8">
 
     <title>Hello Web Quest</title>
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="/css/profile.css">
 
