@@ -8,7 +8,12 @@ checkbox.style.display="none"
 user_coin.innerHTML = localStorage.getItem("user_coin")
 
 
-
+ var obj1 = document.getElementById("shopitem1")
+ var x1 = localStorage.getItem(obj1.id)
+   if(x1 =="1"){
+        obj1.style.display="none"
+        
+    }
  var obj2 = document.getElementById("shopitem2")
  var x2 = localStorage.getItem(obj2.id)
    if(x2 =="1"){
