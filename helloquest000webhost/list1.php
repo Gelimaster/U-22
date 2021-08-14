@@ -21,7 +21,7 @@
                 <p class="itemname_k1">アイテム名</p>
                   <div class="item_photok1"><img class="item_photok1" id="itemimg1" src="" ></div>
                   <div class="item_txt1">
-                    <p class="koin_txt1">アイテム説明</p>
+                    <p id="itemdescribe" class="koin_txt1">アイテム説明</p>
                   </div>
                 <button class="Purchase11" onclick="clickok()"><img src="/images/shop/OK.png" id="Pur_bu11"></button>
               </div>

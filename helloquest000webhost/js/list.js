@@ -72,11 +72,24 @@ function clickhtml() {
 function clickcss() {
     console.log("css クリック");
 }
-function clickDetails(obj) {
+function clickDetails(obj,obj1) {
+    var des = document.getElementById("itemdescribe")
+    des.innerHTML="アイテム説明 <br>" + obj1
     var itemid = obj
     console.log(obj)
     var ximg=document.getElementById("itemimg1")
     ximg.src="../images/shop/" + itemid+".png"
+    console.log(ximg)
+    
+    describe.style.display="block"
+}
+function clickDetails1(obj,obj1) {
+    var des = document.getElementById("itemdescribe")
+    des.innerHTML="アイテム説明 <br>" + obj1
+    var itemid = obj
+    console.log(obj)
+    var ximg=document.getElementById("itemimg1")
+    ximg.src="../images/shop/r" + itemid+".png"
     console.log(ximg)
     
     describe.style.display="block"
