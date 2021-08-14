@@ -118,7 +118,7 @@
     top: 5%;
     left: 5%;
     display: none;
-    z-index: 999;
+    z-index: 9;
     border: 1px solid #000;
     background-color: #fff;
 }
