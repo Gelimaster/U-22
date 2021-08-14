@@ -312,3 +312,13 @@ function inputid(target) {
     // console.log(tagcnt[cou]);
     return newc;
 }
+
+
+//2-2クリアしたらCSS開放処理
+var cssreward = document.getElementById("stylebutton")
+if(localStorage.getItem("user_stage")<23){
+    cssreward.style.display="none"
+}else{
+     cssreward.style.display="block"
+}
+
