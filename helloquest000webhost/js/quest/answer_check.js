@@ -133,11 +133,20 @@ function control() {
       localStorage.setItem("user_stage", parseInt(now_stage) + 1);
     }
   }
-  if(nstage0 == 1 || nstage0 == 4){
+  if(nstage0 == 1 ){
     if (nstage == 3) {
       localStorage.setItem("user_stage", parseInt(now_stage) + 10 - 2);
     } else {
       localStorage.setItem("user_stage", parseInt(now_stage) + 1);
     }
   } 
+  if( nstage0 == 4){
+    if (nstage == 3) {
+      localStorage.setItem("user_stage", parseInt(now_stage) + 1);
+    } else {
+      localStorage.setItem("user_stage", parseInt(now_stage) + 1);
+    }
+  } 
+
+
 }
