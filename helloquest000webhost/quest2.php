@@ -32,9 +32,9 @@
         <li><a id="stage2" onclick="set(this)" onmouseover="select()" onmouseleave="unselected()" href="/quest.php" class="button">2-2</a></li>
       </ul>
       <div onclick="openhint()" class="vill_hint">
-          <div class="vill_hint_button">
+          <!-- <div class="vill_hint_button">
             <p>ヒント！</p>
-          </div>
+          </div> -->
           <img src="/images/quest/usagi.png" alt="ヒント" />
       </div>
       <div class="stage_nav">

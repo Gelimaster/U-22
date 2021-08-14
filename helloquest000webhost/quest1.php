@@ -36,9 +36,9 @@
         <li><a onclick="goback()" onmouseover="select1()" onmouseleave="unselected1()" href="/mypage.php" class="button mypage_button">マイページ</a></li>
       </ul>
       <div onclick="openhint()" class="vill_hint">
-          <div class="vill_hint_button">
+          <!-- <div class="vill_hint_button">
             <p>ヒント！</p>
-          </div>
+          </div> -->
           <img src="/images/quest/usagi.png" alt="ヒント" />
       </div>
       <div class="stage_nav">
