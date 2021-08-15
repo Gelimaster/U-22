@@ -127,6 +127,17 @@
     border: 1px solid #000;
     background-color: #fff;
 }
+#customhintbox{
+    width: 60%;
+    height: 70%;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    display: none;
+    z-index: 999;
+    border: 1px solid #000;
+    background-color: #fff;
+}
 
 /* それぞれのボタン */
 button{
