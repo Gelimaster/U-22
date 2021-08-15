@@ -50,6 +50,7 @@ window.onload = function () {
     }
   // cssボタンの表示ON・OFF
   stylehidden();
+  inHint();
 }
 
 function dataRead1(res) {
