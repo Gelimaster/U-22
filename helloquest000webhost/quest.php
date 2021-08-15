@@ -39,13 +39,13 @@
     <div id="visualbox"></div>
     <div id="hintbox">
         <!-- ヒントのテキスト -->
-        <!-- <div id="hint_text"></div> -->
+        <div id="hint_text"></div>
         <!-- 答えの表示 -->
         <p id="answer">あなたの答えは。。。</p>
         <button onclick="checkanswer()">答え</button>
         <br>
         <!-- ステージの確認 -->
-        <p class="stage"></p>
+        <!-- <p class="stage"></p> -->
 
 
         <!-- ヒントの表示 -->
