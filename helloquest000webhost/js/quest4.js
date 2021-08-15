@@ -12,8 +12,7 @@
   var n =0
 
 //ステージ選択
-function select(obj){ 
-  localStorage.setItem("stage",10+parseInt(obj.id[5]))
+function select(){ 
   var  q1=document.getElementById("quest4")
   q1.style.opacity ="1"
 }
@@ -52,9 +51,5 @@ function closehint(){
     hint_box.style.display="none"
 }
 
-//次の町を表示する判断
-next_stage.style.display="none"
-if(Mstage[0]>4){
-  next_stage.style.display=""
-}
+
 

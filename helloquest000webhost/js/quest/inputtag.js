@@ -197,6 +197,7 @@ function roop2(target) {
         } else if (child[i].lastChild.childElementCount == 2) {
             if (child[i].lastElementChild.firstElementChild.classList.contains('imgflg') == true) {
                 html_text = html_text + child[i].lastElementChild.firstElementChild.textContent + "\" ";
+                bunsyou = bunsyou + child[i].lastElementChild.firstElementChild.textContent;
                 html_text = html_text + "id = \"" + child[i].id + "0" + "\" ";
                 html_text = html_text + html_text2[cnt];
                 if (child[i].lastElementChild.lastElementChild.childElementCount == 0) {
