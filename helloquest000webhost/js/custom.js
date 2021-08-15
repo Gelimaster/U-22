@@ -322,3 +322,7 @@ if(localStorage.getItem("user_stage")<23){
      cssreward.style.display="block"
 }
 
+
+function resetc(){
+    location.reload();
+}

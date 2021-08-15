@@ -82,7 +82,7 @@
         <div id="visualbox"></div>
         <div class="invisible"></div>
      
-        <div id="hintbox">
+        <div id="customhintbox">
             <!-- ヒントのテキスト -->
             <p>変更を保存しますか？</p>
             <form action="/config/customupload.php" id="custompgdata" method="post">
@@ -108,8 +108,8 @@
             <input type="hidden" name="htmlbox"  id="htmlbox1">
             <input type="hidden" name="cssbox"  id="cssdata">
             <button onclick="sendcustom()">はい</button>
-            <button onclick="resetcustom()">リセット</button>
         </form>
+            <button onclick="resetc()">リセット</button>
             
           
             
@@ -247,7 +247,7 @@
     <script src="js/surveillance.js"></script>
     <script src="js/scenario.js"></script>
     <script>
-        var hintbox = document.getElementById('hintbox');
+        var hintbox = document.getElementById('customhintbox');
         var sty = document.getElementById('styledialog');
         var stflf = 0;
         function inHint(){
