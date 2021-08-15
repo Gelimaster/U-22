@@ -111,7 +111,7 @@ function rewarddis() {
     const index = qestnum.indexOf(Number(now_stage));
     if (!(index === -1)) {
       // 報酬のデータを入れる
-      reward.innerHTML = "コイン×" + reward_coin[index] + "<br>" + reward_item[index];
+      reward.innerHTML = "<br>コイン×" + reward_coin[index] + "<br>" + reward_item[index];
     }
 
     let user_coin = parseInt(localStorage.getItem("user_coin"));
