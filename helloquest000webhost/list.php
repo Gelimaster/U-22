@@ -13,10 +13,10 @@ include("config/db_ini.php");
     <link rel="stylesheet" type="text/css" href="/css/list.css">
   </head>
 
-  <nav>
+  <!-- <nav>
     <button type="button" onclick="clickhtml()" id="button1">html</button>
     <button type="button" onclick="clickcss()" id="button2">css</button>
-  </nav>
+  </nav> -->
 
   <body>
     <a href="/mypage.php"><img src="/images/shop/modoru.png" alt="戻る" id="modoru"></a>
