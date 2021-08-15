@@ -174,7 +174,7 @@ function scenario_stage_clear() {
         case 12:
             scenario_sc_num = 01;
             break;
-        case 31:
+        case 22:
             scenario_sc_num = 02;
             break;
         case 43:

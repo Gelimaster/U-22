@@ -81,7 +81,7 @@ function checkanswer() {
 // クエスト選択画面へ戻る
 function moveqc() {
   var stagenumInt = parseInt(now_stage);
-  if (stagenumInt == 12 || stagenumInt == 31 || stagenumInt == 43) {
+  if (stagenumInt == 12 || stagenumInt == 22 || stagenumInt == 43) {
     // 1-3,2-2,4-3は特別なシナリオ発生
     scenario_stage_clear();
   } else {

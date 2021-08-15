@@ -753,7 +753,7 @@
     },  
     {
         "sceNo":"42",
-        "chara":"char_1.png,char_2.png",
+        "chara":"char4.png,char_2.png",
         "charClass":"leftdown,rightup",
         "charaName":"シソネル",
         "selifu":"やっぱり送れないみたい。店の転送装置は一方通行だから無理みたい"
@@ -767,7 +767,7 @@
     },  
     {
         "sceNo":"42",
-        "chara":"char_1.png,char_2.png",
+        "chara":"char4.png,char_2.png",
         "charClass":"leftdown,rightup",
         "charaName":"シソネル",
         "selifu":"どうしよ"
