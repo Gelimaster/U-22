@@ -315,7 +315,7 @@ function inputid(target) {
 
 
 //2-2クリアしたらCSS開放処理
-var cssreward = document.getElementById("stylebutton")
+var cssreward = document.getElementById("custombtncss")
 if(localStorage.getItem("user_stage")<23){
     cssreward.style.display="none"
 }else{

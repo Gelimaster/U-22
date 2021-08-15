@@ -75,8 +75,13 @@
 
 /* 入力したデータを実行するボックス */
 #stylebutton{
+    z-index: 9;
+}
+
+#custombtncss{
     z-index: 999;
 }
+
 
 #visualbox{
     width: 68%;
@@ -214,6 +219,15 @@ button#bt3{
 
 /* CSSボタン */
 button#stylebutton{
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: fixed;
+    top: 2%;
+    left: 65%;
+    border-radius: 50%;
+}
+button#custombtncss{
     width: 40px;
     height: 40px;
     display: block;

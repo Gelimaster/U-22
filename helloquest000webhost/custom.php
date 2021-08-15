@@ -23,7 +23,7 @@
     $borderlr=  $db_row["custom_BorderTopLeftRadiu"];
     $borderrr=  $db_row["custom_BorderTopRightRadius"];
     $borderbr=  $db_row["custom_BorderBottomLeftRadius"];
-
+    
 
 
 ?>
@@ -37,8 +37,7 @@
     <head>
         <meta charset="utf-8">
         <title>Hello Web Quest</title>
-        
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/box.css">
         <link rel="stylesheet" href="css/tag.css">
         <link rel="stylesheet" href="css/input.css">
@@ -67,7 +66,7 @@
         <input type="hidden" id="borderlr1" value="<?php print $borderlr ;?>">
         <input type="hidden" id="borderrr1" value="<?php print $borderrr ;?>">
         <input type="hidden" id="borderbr1" value="<?php print $borderbr ;?>">
-
+   
 
 
         <!-- シナリオ画面 -->
@@ -79,10 +78,10 @@
             </div>
         </div>
         <!-- ゲーム画面 -->
-        <button id="stylebutton" onclick="cssin()">CSS</button>
+        <button  id="custombtncss" onclick="cssin()">CSS</button>
         <div id="visualbox"></div>
         <div class="invisible"></div>
-
+     
         <div id="hintbox">
             <!-- ヒントのテキスト -->
             <p>変更を保存しますか？</p>
@@ -109,19 +108,19 @@
             <input type="hidden" name="htmlbox"  id="htmlbox1">
             <input type="hidden" name="cssbox"  id="cssdata">
             <button onclick="sendcustom()">はい</button>
-            <button onclick="resetcustom()">いいえ</button>
+            <button onclick="resetcustom()">リセット</button>
         </form>
-
-
-
+            
+          
+            
             <!-- ヒントの表示 -->
             <button id="close" onclick="closeHint()">とじる</button>
         </div>
-
+        
         <button id="bt1" onclick="inButton(1)">タグ一覧</button>
         <button id="bt2" onclick="inButton(2)">写真一覧</button>
         <button id="bt3" onclick="inButton(3)">テキスト一覧</button>
-
+        
         <div
             id="toolbox1" class="toolbox"
             ondragover="AllowDrop( event );" ondrop="Delete( event, this ); "
@@ -137,7 +136,7 @@
         <button id="tg1" onclick="inButton2(1)">タグ表記</button>
         <button id="tg2" onclick="inButton2(2)">HTML表記</button>
         <button id="tg3" onclick="inButton2(3)">CSS表記</button>
-
+        
         <!-- css適用ダイアログ -->
         <div id="styledialog">
             <div id="stylelist"></div>
@@ -188,7 +187,7 @@
                 </p>
                 <p><label>ひだり：<input type="number" name="number" max="100" min="1" onchange="idStyleOut(this)" id="left"></label></p>
                 <p><label>うえ：  <input type="number" name="number" max="100" min="1" onchange="idStyleOut(this)" id="Top"></label></p>
-
+                
             </div>
             <div id="stylebox5" class="stylebox">
                 <p>リストスタイル：
@@ -222,7 +221,7 @@
 
             </div>
         </div>
-
+        
         <div
             id="assemblybox1"
             ondrop="Drop( event, this ); "
@@ -231,12 +230,12 @@
             class="assemblybox"
         >
 
-
+        
         </div>
         <div id="assemblybox2" class="assemblybox"></div>
         <div id="assemblybox3" class="assemblybox"></div>
-
-
+        
+        
         <button id="backmypg" onclick="backmypg()">戻る</button>
         <button id="hint" onclick="inHint()">保存</button>
     </body>
@@ -277,12 +276,12 @@
             assemblybox1.style.display = "none";
             assemblybox2.style.display = "none";
             assemblybox3.style.display = "none";
-
+            
             var b = document.getElementById("assemblybox"+num);
             b.style.display = "block";
         }
 
-
-
+  
+        
       </script>
 </html> 
