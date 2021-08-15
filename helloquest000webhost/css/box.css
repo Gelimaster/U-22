@@ -128,16 +128,18 @@
     background-color: #fff;
 }
 #customhintbox{
-    width: 60%;
-    height: 70%;
+    width: 30%;
+    height: 20%;
     position: fixed;
-    top: 5%;
-    left: 5%;
+    text-align: center;
+    top: 20%;
+    left: 20%;
     display: none;
     z-index: 999;
     border: 1px solid #000;
     background-color: #fff;
 }
+
 
 /* それぞれのボタン */
 button{
@@ -189,14 +191,39 @@ button#hint{
     left: 60%;
 }
 
+button#backmypg{
+    position: fixed;
+    height: 6%;
+    top:74%;
+    border-radius: 10px 10px 0 0 ;
+    left: 49%;
+}
+
+
 /* ヒントボックス内のとじるボタン */
 button#close{
     position: fixed;
     width: 5%;
     height: 3%;
-    top: 6%;
-    left: 59%;
+    top: 21%;
+    left: 44.5%;
 }
+button#send{
+       position: fixed;
+    width: 5%;
+    height: 3%;
+    top: 26%;
+    left: 28.5%;
+}
+button#notsend{
+       position: fixed;
+    width: 5%;
+    height: 3%;
+    top: 26%;
+    left: 36.5%;
+    
+}
+
 
 /* タグ一覧ボタン */
 button#bt1{
