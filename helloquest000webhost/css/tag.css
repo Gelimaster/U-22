@@ -407,3 +407,30 @@ div.tagin{
     left: 5%;
     width: 20%;
 }
+
+
+/* <input> */
+.inputtag{
+    z-index: 3;
+    position: sticky;
+}
+.inputtag .tagname{
+    background-color: #68ff8b;
+}
+
+.inputtag .tagarea{
+    background-color: #68ff8b;
+}
+
+/* <textarea> */
+.textareatag{
+    z-index: 3;
+    position: sticky;
+}
+.textareatag .tagname{
+    background-color: #da55ff;
+}
+
+.textareatag .tagarea{
+    background-color: #da55ff;
+}
