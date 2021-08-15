@@ -35,7 +35,7 @@
         <li><a id="stage3" onclick="set(this)" onmouseover="select()" onmouseleave="unselected()" href="/quest.php" class="button">1-3</a></li>
         <li><a onclick="goback()" onmouseover="select1()" onmouseleave="unselected1()" href="/mypage.php" class="button mypage_button">マイページ</a></li>
       </ul>
-      <div onclick="openhint()" class="vill_hint">
+      <div class="vill_hint">
           <!-- <div class="vill_hint_button">
             <p>ヒント！</p>
           </div> -->
