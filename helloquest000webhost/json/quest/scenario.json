@@ -238,7 +238,7 @@
         "sceNo":"01",
         "chara":"",
         "charClass":"",
-        "charaName":"",
+        "charaName":" ",
         "selifu":"プルルルル、プルルルル"
     },   
     {
@@ -252,7 +252,7 @@
         "sceNo":"01",
         "chara":"",
         "charClass":"",
-        "charaName":"",
+        "charaName":" ",
         "selifu":"ピッ"
     } , 
     {
@@ -322,7 +322,7 @@
         "sceNo":"01",
         "chara":"",
         "charClass":"",
-        "charaName":"",
+        "charaName":"aaaa",
         "selifu":"ピッ"
     },  
     {
@@ -336,21 +336,21 @@
         "sceNo":"01",
         "chara":"",
         "charClass":"",
-        "charaName":"",
+        "charaName":" ",
         "selifu":"（ショップとカスタムが解放された）"
     },  
     {
         "sceNo":"01",
         "chara":"",
         "charClass":"",
-        "charaName":"",
+        "charaName":" ",
         "selifu":"（ショップ　カスタマイズで使用できるものをメダルで購入できるよ）"
     },  
     {
         "sceNo":"01",
         "chara":"",
         "charClass":"",
-        "charaName":"",
+        "charaName":" ",
         "selifu":"カスタマイズ　マイページをクエストで手に入れたタグやショップで購入したものを使いカスタマイズすることができる）"
     },  
     {
@@ -873,7 +873,7 @@
         "chara":"",
         "charClass":"",
         "charaName":"",
-        "selifu":"（白紙）"
+        "selifu":""
     },  
     {
         "sceNo":"03",
