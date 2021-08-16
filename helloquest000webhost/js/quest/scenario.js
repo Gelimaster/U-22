@@ -250,12 +250,13 @@ function scenario_sc_text(res) {
             if (charaName[i] == "主人公") {
                 charaName[i] = localStorage.getItem("user_name")
             }
+            console.log("名前"+ charaName[i]+i);
             x = charaName.length - sceCnt - 1 + keep_x;
             selifu[sceCnt] = res[i].selifu;
             sceCnt++;
         }
 
-
+        x = keep_x;
         scenario();
     }
 
