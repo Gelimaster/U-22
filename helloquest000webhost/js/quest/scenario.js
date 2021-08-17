@@ -21,6 +21,7 @@ var selifu = [];
 var sceCnt = 0;
 var c = 0;
 var x = 0;
+var keep_x = 0;
 var tc = 0; //チュートリアルカウント
 var scenario_sc_num = 0;
 
@@ -101,12 +102,15 @@ async function serifu() {
         for (var i = 0; i <= selifu[c].length; i++) {
             serifubox.innerHTML = charaName[x] + "<br>" + selifu[c].substr(0, i);
             await wait(3);
+
+            console.log("x"+x+"c"+c);
         }
         // serifubox.innerHTML = selifu[c];
         c++;
         x++;
     } else {
         // c = 0;
+        keep_x = x;
         scenarioIn = 0;
         // console.log("終了");
     }
@@ -129,10 +133,12 @@ function charaIn() {
         var cha = chara[c].split(',');
         var chaCls = charClass[c].split(',');
         for (var i in cha) {
-            var tag = document.createElement("img");
-            tag.classList.add(chaCls[i]);
-            tag.src = "images/" + cha[i];
-            charabox.appendChild(tag);
+            if (!(cha[i] == "")) {
+                var tag = document.createElement("img");
+                tag.classList.add(chaCls[i]);
+                tag.src = "images/" + cha[i];
+                charabox.appendChild(tag);
+            }
         }
     }
 }
@@ -210,10 +216,10 @@ function scenario_stage_clear() {
 }
 
 function scenario_sc_text(res) {
-        // chara.length = 0;
-        // charClass.length = 0;
-        // charaName.length = 0;
-        // selifu.length = 0;
+    // chara.length = 0;
+    // charClass.length = 0;
+    // charaName.length = 0;
+    // selifu.length = 0;
 
     for (var i in res) {
         if (scenario_sc_num == res[i].sceNo) {
@@ -244,12 +250,13 @@ function scenario_sc_text(res) {
             if (charaName[i] == "主人公") {
                 charaName[i] = localStorage.getItem("user_name")
             }
-            x = charaName.length - sceCnt - 1
+            console.log("名前"+ charaName[i]+i);
+            x = charaName.length - sceCnt - 1 + keep_x;
             selifu[sceCnt] = res[i].selifu;
             sceCnt++;
         }
 
-
+        x = keep_x;
         scenario();
     }
 

@@ -4,7 +4,7 @@
         "chara":"char_1.png,char_2.png",
         "charClass":"leftdown,rightup",
         "charaName":"うさぎ",
-        "selifu":"いてて。。。<br>ごめん、今急いでてうさぎのカバンから杖が落ち地面へ刺さった"
+        "selifu":"いてて。。。<br>ごめん、今急いでて"
     },
     {
         "sceNo":"11",
@@ -97,7 +97,7 @@
         "sceNo":"11",
         "chara":"char_1.png,char_2.png",
         "charClass":"leftdown,rightup",
-        "charaName":"主人公",
+        "charaName":"うさぎ",
         "selifu":"あ、やっぱり！！説明している暇はない、手伝って！！"
     },
     {
@@ -238,7 +238,7 @@
         "sceNo":"01",
         "chara":"",
         "charClass":"",
-        "charaName":"",
+        "charaName":" ",
         "selifu":"プルルルル、プルルルル"
     },   
     {
@@ -873,7 +873,7 @@
         "chara":"",
         "charClass":"",
         "charaName":"",
-        "selifu":"（白紙）"
+        "selifu":""
     },  
     {
         "sceNo":"03",
