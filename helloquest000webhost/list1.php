@@ -18,7 +18,7 @@
               <div class="confirmation1">
                 <div><img src="/images/shop/syousai.png" class="kakuninn1"></div>
                 <p>　　　　　</p>
-                <p class="itemname_k1">アイテム名</p>
+                <p id="item_des_name" class="itemname_k1"></p>
                   <div class="item_photok1"><img class="item_photok1" id="itemimg1" src="" ></div>
                   <div class="item_txt1">
                     <p id="itemdescribe" class="koin_txt1">アイテム説明</p>

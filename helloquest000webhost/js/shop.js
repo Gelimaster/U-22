@@ -52,7 +52,9 @@ function clickhtml() {
 function clickcss() {
     console.log("css クリック");
 }
-function clickPurchase(obj) {
+function clickPurchase(obj,obj2) {    
+    var shopdesname = document.getElementById("shop_item_name")
+    shopdesname.innerHTML= obj2
     var itemid = obj
     document.getElementById("itemid1").value = itemid
     

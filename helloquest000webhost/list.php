@@ -39,7 +39,7 @@ include("config/db_ini.php");
         <div class="item_box">
           <p class="item_name"><?php print $db_row["shop_name"]?></p>
           <img class="item_photo" src="/images/shop/<?php print $db_row["shop_img"]?>"></img>
-          <button class="Purchase" onclick="clickDetails(<?php print $db_row["shop_id"]?>,'<?php print $db_row["shop_des"]?>')"><img src="/images/shop/detail.png" id="Pur_bu"></button>
+          <button class="Purchase" onclick="clickDetails(<?php print $db_row["shop_id"]?>,'<?php print $db_row["shop_des"]?>','<?php print $db_row["shop_name"]?>')"><img src="/images/shop/detail.png" id="Pur_bu"></button>
         </div>
         </div>
         <?php
@@ -58,7 +58,7 @@ include("config/db_ini.php");
         <div class="item_box">
           <p class="item_name"><?php print $db_row1["reward_name"]?></p>
           <img id="rewardimg<?php print $db_row1["reward_id"]?>" class="item_photo" src="/images/shop/<?php print $db_row1["reward_img"]?>"></img>
-          <button id="btn<?php print $db_row1["reward_id"]?>" class="Purchase" onclick="clickDetails1(<?php print $db_row1["reward_id"]?>,'<?php print $db_row1["reward_des"]?>')"><img src="/images/shop/detail.png" id="Pur_bu"></button>
+          <button id="btn<?php print $db_row1["reward_id"]?>" class="Purchase" onclick="clickDetails1(<?php print $db_row1["reward_id"]?>,'<?php print $db_row1["reward_des"]?>','<?php print $db_row1["reward_name"]?>')"><img src="/images/shop/detail.png" id="Pur_bu"></button>
         </div>
         </div>
         <?php

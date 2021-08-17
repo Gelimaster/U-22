@@ -34,6 +34,7 @@ include("config/db_ini.php");
         $db_result = mysqli_query($conn,$sql1);
         $db_cnt = mysqli_num_rows($db_result);
         while($db_row= mysqli_fetch_array($db_result)){
+        $price=$db_row["shop_price"];
       
         ?>
          
@@ -48,7 +49,7 @@ include("config/db_ini.php");
             <p class="koin_number"><?php print $db_row["shop_price"]?></p>
           </div>
           <p>SOLD OUT</p>
-          <button id="shopitem<?php print $db_row["shop_id"]?>" class="Purchase" onclick="clickPurchase(<?php print $db_row["shop_id"]?>)"><img src="/images/shop/button4.png" id="Pur_bu"></button>
+          <button id="shopitem<?php print $db_row["shop_id"]?>" class="Purchase" onclick="clickPurchase(<?php print $db_row["shop_id"]?>,'<?php print $db_row["shop_name"]?>')"><img src="/images/shop/button4.png" id="Pur_bu"></button>
         </div>
     
         <?php

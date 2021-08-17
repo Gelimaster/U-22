@@ -72,7 +72,9 @@ function clickhtml() {
 function clickcss() {
     console.log("css クリック");
 }
-function clickDetails(obj,obj1) {
+function clickDetails(obj,obj1,obj2) {
+  var desname = document.getElementById("item_des_name")
+  desname.innerHTML= obj2
     var des = document.getElementById("itemdescribe")
     des.innerHTML="アイテム説明 <br>" + obj1
     var itemid = obj
@@ -83,7 +85,9 @@ function clickDetails(obj,obj1) {
     
     describe.style.display="block"
 }
-function clickDetails1(obj,obj1) {
+function clickDetails1(obj,obj1,obj2) {
+    var desname = document.getElementById("item_des_name")
+    desname.innerHTML= obj2
     var des = document.getElementById("itemdescribe")
     des.innerHTML="アイテム説明 <br>" + obj1
     var itemid = obj
