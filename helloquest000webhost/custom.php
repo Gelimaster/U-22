@@ -86,33 +86,30 @@
             <!-- ヒントのテキスト -->
             <p>変更を保存しますか？</p>
             <form action="/config/customupload.php" id="custompgdata" method="post">
-            <input type="hidden" name="user_id" id="user_id">
-            <input type="hidden" name="id_name" id="id_name2">
-            <input type="hidden" name="width" id="width2">
-            <input type="hidden" name="height" id="height2">
-            <input type="hidden" name="background_c" id="background_color2">
-            <input type="hidden" name="background_i" id="background_image2">
-            <input type="hidden" name="color" id="color2">
-            <input type="hidden" name="fonts" id="fontsize2">
-            <input type="hidden" name="textd" id="textdecoration2">
-            <input type="hidden" name="position" id="position2">
-            <input type="hidden" name="left" id="left2">
-            <input type="hidden" name="top" id="top2">
-            <input type="hidden" name="listt" id="liststyletype2">
-            <input type="hidden" name="borders" id="borderstyle2">
-            <input type="hidden" name="borderc" id="bordercolor2">
-            <input type="hidden" name="borderw" id="borderwidth2">
-            <input type="hidden" name="borderlr" id="bordertopleftradius2">
-            <input type="hidden" name="borderrr" id="bordertoprightradius2">
-            <input type="hidden" name="borderbr" id="borderbottomleftradius2">
-            <input type="hidden" name="htmlbox"  id="htmlbox1">
-            <input type="hidden" name="cssbox"  id="cssdata">
-            <button onclick="sendcustom()">はい</button>
-        </form>
-            <button onclick="resetc()">リセット</button>
-            
-          
-            
+                <input type="hidden" name="user_id" id="user_id">
+                <input type="hidden" name="id_name" id="id_name2">
+                <input type="hidden" name="width" id="width2">
+                <input type="hidden" name="height" id="height2">
+                <input type="hidden" name="background_c" id="background_color2">
+                <input type="hidden" name="background_i" id="background_image2">
+                <input type="hidden" name="color" id="color2">
+                <input type="hidden" name="fonts" id="fontsize2">
+                <input type="hidden" name="textd" id="textdecoration2">
+                <input type="hidden" name="position" id="position2">
+                <input type="hidden" name="left" id="left2">
+                <input type="hidden" name="top" id="top2">
+                <input type="hidden" name="listt" id="liststyletype2">
+                <input type="hidden" name="borders" id="borderstyle2">
+                <input type="hidden" name="borderc" id="bordercolor2">
+                <input type="hidden" name="borderw" id="borderwidth2">
+                <input type="hidden" name="borderlr" id="bordertopleftradius2">
+                <input type="hidden" name="borderrr" id="bordertoprightradius2">
+                <input type="hidden" name="borderbr" id="borderbottomleftradius2">
+                <input type="hidden" name="htmlbox"  id="htmlbox1">
+                <input type="hidden" name="cssbox"  id="cssdata">
+                <button id="send" onclick="sendcustom()">はい</button>
+            </form>
+            <button id="notsend" onclick="resetc()">リセット</button>
             <!-- ヒントの表示 -->
             <button id="close" onclick="closeHint()">とじる</button>
         </div>
@@ -279,6 +276,10 @@
             
             var b = document.getElementById("assemblybox"+num);
             b.style.display = "block";
+        }
+        
+        function backmypg(){
+            window.location.href = "/mypage.php";
         }
 
   
