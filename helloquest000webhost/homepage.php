@@ -11,7 +11,7 @@
 
     <meta charset="utf-8">
 
-    <title>HelloWeb Quest</title>
+    <title>Hello Web Quest</title>
     
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 

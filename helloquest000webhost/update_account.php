@@ -12,11 +12,11 @@ include("config/db_ini.php");
 
   //アカウント更新
   $sql = "update user_table set user_name = '$username' where user_id = $user_id";
-  $query = mysqli_query($conn,$sql);
+  $query = mysqli_query($conn,$sql); 
   $sql1 = "update user_table set user_sex = '$sex' where user_id = $user_id";
-  $query = mysqli_query($conn,$sql1);
+  $query = mysqli_query($conn,$sql1); 
   $sql2 = "update user_table set user_comment = '$comment' where user_id = $user_id";
-  $query = mysqli_query($conn,$sql2);
+  $query = mysqli_query($conn,$sql2); 
 
 ?>
 
@@ -54,3 +54,4 @@ include("config/db_ini.php");
   </body>
 
 </html>
+

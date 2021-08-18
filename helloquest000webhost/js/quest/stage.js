@@ -2,7 +2,7 @@
 //ここはコメントかお願いします。
 // localStorage.setItem('stage',11)
 
-const storedInput = localStorage.getItem('user_stage');//ローカルストレージ
+const storedInput = localStorage.getItem('stage');//ローカルストレージ
 const box = document.querySelector('.stage');//ステージの番号表示するpタグ
 // console.log(storedInput)
 //前のクエストに移動すする

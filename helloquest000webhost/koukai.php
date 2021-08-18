@@ -11,7 +11,6 @@ include("config/db_ini.php");
     
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./css/koukai.css">
-    <link rel="stylesheet" type="text/css" href="./css/button.css">
   </head>
   <body>
     <header>
@@ -43,8 +42,8 @@ if($db_cnt == 0){
           <div class="invisible"></div>
         </div>
       </div>
-       <form class="display-username" action="" method="POST">
-        <input type="hidden" value="<?php print $db_row["custom_user_id"];?>">
+       <form class="display-username" action="koukaicustom.php" method="POST">
+        <input type="hidden" name="user_id" value="<?php print $db_row["custom_user_id"];?>">
         <input  class="display-username button" type="submit" value="<?php print $db_row1["user_name"] ?>">
       </form>
     </div>

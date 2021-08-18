@@ -85,10 +85,11 @@
             id="toolbox1" class="toolbox"
         >
         </div>
-        <div class="toolbox" >
+         <div class="toolbox" >
         <p><?php print $db_row1["user_name"] ;?></p>
         <p><?php print $db_row1["user_comment"];?></p>
         </div>
+       
         <!-- タグ一覧(いちらん)をツールボックスに入れる -->
 
         <button id="tg1" onclick="inButton2(1)">タグ表記</button>
@@ -186,7 +187,7 @@
     </body>
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/drag.js"></script>
-    <script src="js/customkoukai.js"></script>
+    <script src="js/custom.js"></script>
     <script src="js/inputimage.js"></script>
     <script src="js/styleincustom.js"></script>
     <script src="js/surveillance.js"></script>
