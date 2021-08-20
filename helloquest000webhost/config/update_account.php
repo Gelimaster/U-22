@@ -37,11 +37,11 @@ $query = mysqli_query($conn, $sql2);
     if (parseInt(localStorage.getItem('user_stage')) == 11) {
       // アカウントを最初に作った場合
       localStorage.setItem("stage",11)
-      console.log("はじめて");
+      
       window.location.href = '../quest.php';
     } else if (!(parseInt(localStorage.getItem('user_stage')) == 11)) {
       // 通常
-      console.log("通常");
+      
       window.location.replace('../mypage.php');
     }
   </script>

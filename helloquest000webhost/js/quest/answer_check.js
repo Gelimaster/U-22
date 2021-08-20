@@ -29,8 +29,7 @@ function checkanswer() {
   playeranswercss = localStorage.getItem("answercss")
   cleartext = document.getElementById("cleartext")
 
-  console.log(answer)
-  console.log(playeranswer)
+  
   //正しい要素を使ってるかどうかの確認
 
   if (currentstage == 22 || currentstage == 31) {

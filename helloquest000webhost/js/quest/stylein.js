@@ -129,7 +129,7 @@ function idStyleIn(){
                         	bunsyoucss = bunsyoucss + eval(proper[c])[i] .slice(0,-3);
                         }else{
 	                        bunsyoucss = bunsyoucss + proper[c] + eval(proper[c])[i];
-                            console.log(bunsyoucss);
+                            
                             localStorage.setItem("answercss",bunsyoucss)
                         }
                     }
@@ -253,7 +253,7 @@ function idstyle(event){
 function test123(){
     id_name= id_name.toString()
     
-    console.log(id_name)
+    
     id_name=id_name.split(',')
-    console.log(id_name)
+    
 }

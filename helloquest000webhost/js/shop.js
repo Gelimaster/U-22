@@ -47,10 +47,10 @@ user_coin.innerHTML = localStorage.getItem("user_coin")
 
 
 function clickhtml() {
-    console.log("Html クリック");
+    
 }
 function clickcss() {
-    console.log("css クリック");
+    
 }
 function clickPurchase(obj,obj2) {
     var shopdesname = document.getElementById("shop_item_name")
@@ -60,7 +60,7 @@ function clickPurchase(obj,obj2) {
     
     var ximg=document.getElementById("itemimg1")
     ximg.src="../images/shop/" + itemid+".png"
-    console.log(ximg)
+    
     checkbox.style.display="block"
 
 }

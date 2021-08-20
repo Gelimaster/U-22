@@ -8,6 +8,6 @@ fetch("json/quest/hint.json")//ファイル指定
     if(typeof storedInput === undefined){
         location.reload()
     }
-   console.log(data[storedInput])//ログで確認
+   
   document.querySelector("#hint_text").innerText = data[storedInput]//クラスquestにテキストを表示する
 })

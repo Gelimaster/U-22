@@ -30,7 +30,7 @@ function clickcancel() {
 
 function clickok() {
     var itemid = "shopitem" + document.getElementById("itemid1").value
-    console.log(itemid)
+    
     localStorage.setItem(itemid,1)    
     localStorage.setItem("user_coin",calculation)
 
