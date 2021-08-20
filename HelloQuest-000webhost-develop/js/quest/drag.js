@@ -34,7 +34,7 @@ function Drag(ev) {
 function Drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
-    
+    console.log();
     if(txtflag == 1){
         if(flag == 1){
             if(ev.target.className == "textbox"){

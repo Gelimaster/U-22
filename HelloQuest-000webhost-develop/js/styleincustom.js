@@ -1,23 +1,45 @@
 // cssを適用する為の処理
-var id_name = [];
-var width = [];
-var height = [];
-var background_color = [];
-var background_image = [];
-var color = [];
-var FontSize = [];
-var TextDecoration = [];
-var position = [];
-var left = [];
-var Top = [];
-var ListStyleType = [];
-var BorderStyle = [];
-var BorderColor = [];
-var BorderWidth = [];
-var BorderTopLeftRadius = [];
-var BorderTopRightRadius = [];
-var BorderBottomLeftRadius = [];
 
+
+var id_name = document.getElementById("idname1");
+var width = document.getElementById("width1");
+var height = document.getElementById("height1");
+var background_color = document.getElementById("background_c1");
+var background_image = document.getElementById("background_i1");
+var color = document.getElementById("color1");
+var FontSize = document.getElementById("fonts1");
+var TextDecoration = document.getElementById("textd1");
+var position = document.getElementById("position1");
+var left = document.getElementById("left1");
+var Top = document.getElementById("top1");
+var ListStyleType = document.getElementById("listt1");
+var BorderStyle = document.getElementById("borders1");
+var BorderColor = document.getElementById("borderc1");
+var BorderWidth = document.getElementById("borderw1");
+var BorderTopLeftRadius = document.getElementById("borderlr1");
+var BorderTopRightRadius = document.getElementById("borderrr1");
+var BorderBottomLeftRadius = document.getElementById("borderbr1"); 
+
+
+
+id_name=id_name.value.split(',')
+width=width.value.split(',')
+height=height.value.split(',')
+background_color=background_color.value.split(',')
+background_image=background_image.value.split(',')
+color=color.value.split(',')
+FontSize=FontSize.value.split(',')
+TextDecoration=TextDecoration.value.split(',')
+position=position.value.split(',')
+left=left.value.split(',')
+Top=Top.value.split(',')
+ListStyleType=ListStyleType.value.split(',')
+BorderStyle=BorderStyle.value.split(',')
+BorderColor=BorderColor.value.split(',')
+BorderWidth=BorderWidth.value.split(',')
+BorderTopLeftRadius=BorderTopLeftRadius.value.split(',')
+BorderTopRightRadius=BorderTopRightRadius.value.split(',')
+BorderBottomLeftRadius=BorderBottomLeftRadius.value.split(',')
 
 
 
@@ -44,7 +66,7 @@ var proper = ['id_name','width','height','background_color','color','FontSize','
 var pro1 = ['#','width:','height:','background-color:','color:','font-size:','text-decoration:','position:','left:','top:','list-style-type:','border-style:','border-color:','border-width:','border-top-left-radius:','border-top-right-radius:','border-bottom-left-radius:','border-bottom-right-radius:'];
 var pro2 = [' {<br>','0px;<br>','0px;<br>',';<br>',';<br>','rem;<br>',';<br>',';<br>','0px;<br>','0px;<br>',';<br>',';<br>',';<br>','px;<br>','%;<br>','%;<br>','%;<br>','%;<br>'];
 var shortpro = ['wi','he','ba_co','ba_im','co','fosi','tede','po','le','to','lity','bost','boco','bowi','btlr','btrr','bblr','bbrr'];
-var bunsyoucss = "";
+
 
 var idsub = "";
 var idsubcnt = 0;
@@ -109,13 +131,13 @@ function tagout(event){
 
 // cssboxにcssを表記する処理
 function idStyleIn(){
-   bunsyoucss = "";
+    
     csstext ="";
-    for(var i = 0;i < idcnt2;i++){
+    for(var i = 1;i < idcnt2;i++){
         if(id_name[i] == null || id_name[i] == "null"){
         }else{
             var cnt = 1;
-            for(var c = 1;c < proper.length && eval(proper[c])[i] != null ;c++){
+            for(var c = 0;c < proper.length && eval(proper[c])[i] != null &&eval(proper[c])[i] != "" ;c++){
                 cnt++;
                 // console.log(proper[c]);
                 // console.log(eval(proper[c]));
@@ -123,22 +145,14 @@ function idStyleIn(){
             }
             if(cnt != 1){
                 for(var c = 0;c < proper.length;c++){
-                    if(eval(proper[c])[i] != null){
+                    if(eval(proper[c])[i] != null &&eval(proper[c])[i] != ""){
                         csstext = csstext + pro1[c] + eval(proper[c])[i] + pro2[c];
-                       if(c == 0){
-                        	bunsyoucss = bunsyoucss + eval(proper[c])[i] .slice(0,-3);
-                        }else{
-	                        bunsyoucss = bunsyoucss + proper[c] + eval(proper[c])[i];
-                            
-                            localStorage.setItem("answercss",bunsyoucss)
-                        }
                     }
                 }    
             csstext = csstext + "}<br>";
             }
 
         }
-        bunsyoucss = bunsyoucss + ",";
     }
 }
 
@@ -193,8 +207,8 @@ function idstyle(event){
     btrr.value = "";
     bblr.value = "";
     bbrr.value = "";
-
-    if(width[idsubcnt] != null){
+    
+    if(width[idsubcnt] != null　||  width[idsubcnt] != ""){
         wi.value = width[idsubcnt];
     }
     if(height[idsubcnt] != null){
@@ -249,11 +263,69 @@ function idstyle(event){
 }
 
 
-
-function test123(){
-    id_name= id_name.toString()
+var custompgdata = document.getElementById("custompgdata")
+function sendcustom(){
+    var user_id = document.getElementById("user_id")
+    var id_name1 = document.getElementById("id_name2");
+    var width1 = document.getElementById("width2");
+    var height1 = document.getElementById("height2");
+    var background_color1 = document.getElementById("background_color2");
+    var background_image1 =document.getElementById("background_image2");
+    var color1 = document.getElementById("color2");
+    var FontSize1 = document.getElementById("fontsize2");
+    var TextDecoration1 = document.getElementById("textdecoration2");
+    var position1 = document.getElementById("position2");
+    var left1 = document.getElementById("left2");
+    var Top1 = document.getElementById("top2");
+    var ListStyleType1 = document.getElementById("liststyletype2");
+    var BorderStyle1 =document.getElementById("borderstyle2");
+    var BorderColor1 = document.getElementById("bordercolor2");
+    var BorderWidth1 = document.getElementById("borderwidth2");
+    var BorderTopLeftRadius1 =document.getElementById("bordertopleftradius2");
+    var BorderTopRightRadius1 =document.getElementById("bordertoprightradius2");
+    var BorderBottomLeftRadius1 =document.getElementById("borderbottomleftradius2");
+    var htmldata111 = document.getElementById("htmlbox1")
+    var cssdata = document.getElementById("cssdata")
     
     
-    id_name=id_name.split(',')
-    
+    htmldata111.value = htmlbox.textContent
+    cssdata.value = cssbox.textContent
+    user_id.value= localStorage.getItem("user_id")
+    id_name1.value= id_name.toString()
+    width1.value= width.toString()
+    height1.value= height.toString()
+    background_color1.value= background_color.toString()
+    background_image1.value= background_image.toString()
+    color1.value= color.toString()
+    FontSize1.value= FontSize.toString()
+    TextDecoration1.value= TextDecoration.toString()
+    position1.value= position.toString()
+    left1.value= left.toString()
+    Top1.value= top.toString()
+    ListStyleType1.value= ListStyleType.toString()
+    BorderStyle1.value= BorderStyle.toString()
+    BorderColor1.value= BorderColor.toString()
+    BorderWidth1.value= BorderWidth.toString()
+    BorderTopLeftRadius1.value= BorderTopLeftRadius.toString()
+    BorderTopRightRadius1.value= BorderTopRightRadius.toString()
+    BorderBottomLeftRadius1.value= BorderBottomLeftRadius.toString()
+    console.log(id_name1)
+    console.log(width1)
+    console.log(height1)
+    console.log(background_color1)
+    console.log(background_image1)
+    console.log(color1)
+    console.log(FontSize1)
+    console.log(TextDecoration1)
+    console.log(position1)
+    console.log(left1)
+    console.log(Top1)
+    console.log(ListStyleType1)
+    console.log(BorderStyle1)
+    console.log(BorderColor1)
+    console.log(BorderWidth1)
+    console.log(BorderTopLeftRadius1)
+    console.log(BorderTopRightRadius1)
+    console.log(BorderBottomLeftRadius1)
+    custompgdata.submit()
 }

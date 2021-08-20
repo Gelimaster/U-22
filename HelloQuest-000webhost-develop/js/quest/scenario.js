@@ -78,7 +78,7 @@ function scenario() {
         tutorialimg.style.visibility = "hidden";
         scebox.style.display = "block";
         let stageimgnum = Math.floor(stagenum / 10);
-        
+        console.log(stageimgnum);
         let stageimg = "\"images/st_sc" + stageimgnum + ".png\"";
         document.getElementById("shadow").style.backgroundImage = "url(" + stageimg + ")";
     }
@@ -86,7 +86,7 @@ function scenario() {
 
 // 画面クリック時実行  シナリオ進行
 function move() {
-    
+    console.log("クリックした");
     if (scenarioIn == 0) {
     } else {
         serifu();
@@ -103,7 +103,7 @@ async function serifu() {
             serifubox.innerHTML = charaName[x] + "<br>" + selifu[c].substr(0, i);
             await wait(3);
 
-            
+            console.log("x"+x+"c"+c);
         }
         // serifubox.innerHTML = selifu[c];
         c++;
@@ -158,7 +158,7 @@ function tutmove() {
     tc++;
     if (stagenum == "11") {
         if (tc < 3) {
-            
+            console.log("チュートリアル");
             tutorialimgin.src = "./images/tut11" + tc + ".png";
         } else {
             tutorialimg.style.visibility = "hidden";
@@ -167,7 +167,7 @@ function tutmove() {
     // 2-1チュートリアル
     if (stagenum == "21") {
         if (tc < 4) {
-            
+            console.log("チュートリアル");
             tutorialimgin.src = "./images/tut21" + tc + ".png";
         } else {
             tutorialimg.style.visibility = "hidden";
@@ -187,7 +187,7 @@ function scenario_stage_clear() {
             scenario_sc_num = 03;
             break;
         default:
-            
+            console.log('違う');
     }
     if ((scenario_sc_num != 0)) {
 
@@ -209,7 +209,7 @@ function scenario_stage_clear() {
         scebox.style.display = "block";
         hintbox.style.zIndex = 1;
         let stageimgnum = Math.floor(stagenum / 10);
-        
+        console.log(stageimgnum);
         let stageimg = "\"images/st_sc" + stageimgnum + ".png\"";
         document.getElementById("shadow").style.backgroundImage = "url(" + stageimg + ")";
     }
@@ -250,7 +250,7 @@ function scenario_sc_text(res) {
             if (charaName[i] == "主人公") {
                 charaName[i] = localStorage.getItem("user_name")
             }
-            
+            console.log("名前"+ charaName[i]+i);
             x = charaName.length - sceCnt - 1 + keep_x;
             selifu[sceCnt] = res[i].selifu;
             sceCnt++;

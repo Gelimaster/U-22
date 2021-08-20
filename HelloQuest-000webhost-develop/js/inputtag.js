@@ -128,7 +128,7 @@ function roop(target){
     bunsyou = "";
     // console.log(target);
     roop2(target);
-    
+    console.log(bunsyou);
 }
 
 function roop2(target){

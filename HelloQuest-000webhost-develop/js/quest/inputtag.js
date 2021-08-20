@@ -105,7 +105,7 @@ function dataRead1(res) {
     // const stagenum = 43;//クエスト手動切り替え
     const qesttagnum = [110, 111, 120, 121, 130, 220, 430];
     in_num = qesttagnum.filter(item => item > stagenum * 10 - 1 && item < stagenum * 10 + 10);
-    
+    console.log(in_num);
 
     for (var num_cnt = 0; num_cnt < in_num.length; num_cnt++) {
         for (var i = 0; i < count; i++) {
@@ -144,7 +144,7 @@ function roop(target) {
     bunsyou = "";
     // console.log(target);
     roop2(target);
-    
+    console.log(bunsyou);
     localStorage.setItem("playeranswer", bunsyou)
 }
 
