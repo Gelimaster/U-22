@@ -70,7 +70,7 @@ function clickhtml() {
     
 }
 function clickcss() {
-
+    
 }
 function clickDetails(obj,obj1,obj2) {
   var desname = document.getElementById("item_des_name")
@@ -81,7 +81,7 @@ function clickDetails(obj,obj1,obj2) {
     
     var ximg=document.getElementById("itemimg1")
     ximg.src="../images/shop/" + itemid+".png"
-   
+    
     
     describe.style.display="block"
 }

@@ -167,7 +167,7 @@ function tutmove() {
     // 2-1チュートリアル
     if (stagenum == "21") {
         if (tc < 4) {
-            
+           
             tutorialimgin.src = "./images/tut21" + tc + ".png";
         } else {
             tutorialimg.style.visibility = "hidden";
@@ -187,7 +187,7 @@ function scenario_stage_clear() {
             scenario_sc_num = 03;
             break;
         default:
-            
+           
     }
     if ((scenario_sc_num != 0)) {
 
@@ -209,7 +209,7 @@ function scenario_stage_clear() {
         scebox.style.display = "block";
         hintbox.style.zIndex = 1;
         let stageimgnum = Math.floor(stagenum / 10);
-        
+       
         let stageimg = "\"images/st_sc" + stageimgnum + ".png\"";
         document.getElementById("shadow").style.backgroundImage = "url(" + stageimg + ")";
     }
