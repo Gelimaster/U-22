@@ -50,13 +50,13 @@ $sex = $db_row["user_sex"];
     <input type="hidden" id="userid" name="userid" value="<?php echo $id1 ?>">
     <input type="hidden" id="sex1"  value="<?php echo $sex ?>">
 	    <p><font size="5">ユーザー名：</font>
-	      <input id="name" type="text" name="name" value="<?php print $db_row["user_name"]?>" ></p>
+	      <input id="name" type="text" name="name" value="<?php print $db_row["user_name"]?>" maxlength = "20"></p>
       <p><font size="5">性別：</font>
         <input class="sex" type="radio" name="q1" value="男"> 男
         <input class="sex" type="radio" name="q1" value="女"> 女
       </p>
       <p><font size="5">コメント：</font>
-    	  <textarea id="comment" name="comment" cols="40" rows="8" placeholder="<?php echo $db_row["user_comment"]?>" value="<?php echo $db_row["user_comment"]?>"><?php echo $db_row["user_comment"]?></textarea >
+    	  <textarea id="comment" name="comment" cols="40" rows="8"  value="<?php echo $db_row["user_comment"]?>" maxlength = "300"><?php echo $db_row["user_comment"]?></textarea >
     	</p>
       <button type="submit" class="button1">決定</button>
       <button onclick="goback()" class="button2">戻る</button>

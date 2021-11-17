@@ -41,9 +41,6 @@
       </div>
     </div>
 
-    <footer>
-      Copyright &copy; 2021 . HelloQuest Rights Reserved.
-    </footer>
 
 
 </body>
