@@ -64,6 +64,7 @@ $sex = $db_row["user_sex"];
     </form>
     
   <script src="/js/profile.js"></script>
+  <script src="/js/disabletab.js"></script>
   <?php
   
 //情報を手放す

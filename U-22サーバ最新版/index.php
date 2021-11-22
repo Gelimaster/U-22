@@ -20,6 +20,7 @@
             window.location.replace(localStorage.getItem("path_url"));
           }
       </script>
+        <script src="/js/disabletab.js"></script>
 </body>
 
 </html>

@@ -184,14 +184,14 @@
 
 
         <button id="hint" onclick="inHint()">戻る</button>
-    </body>
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/drag.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/inputimage.js"></script>
-    <script src="js/styleincustom.js"></script>
-    <script src="js/surveillance.js"></script>
-    <script src="js/scenario.js"></script>
+    <script src="/js/jquery-1.10.2.min.js"></script>
+    <script src="/js/drag.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/js/inputimage.js"></script>
+    <script src="/js/styleincustom.js"></script>
+    <script src="/js/surveillance.js"></script>
+    <script src="/js/scenario.js"></script>
+    <script src="/js/disabletab.js"></script>
     <script>
         var sty = document.getElementById('styledialog');
         var stflf = 0;
@@ -212,4 +212,6 @@
 
 
       </script>
+    </body>
+   
 </html> 

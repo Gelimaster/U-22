@@ -235,14 +235,16 @@
         
         <button id="backmypg" onclick="backmypg()">戻る</button>
         <button id="hint" onclick="inHint()">保存</button>
-    </body>
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/drag.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/inputimage.js"></script>
-    <script src="js/styleincustom.js"></script>
-    <script src="js/surveillance.js"></script>
-    <script src="js/scenario.js"></script>
+
+
+    <script src="/js/jquery-1.10.2.min.js"></script>
+    <script src="/js/drag.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/js/inputimage.js"></script>
+    <script src="/js/styleincustom.js"></script>
+    <script src="/js/surveillance.js"></script>
+    <script src="/js/scenario.js"></script>
+    <script src="/js/disabletab.js"></script>
     <script>
         var hintbox = document.getElementById('customhintbox');
         var sty = document.getElementById('styledialog');
@@ -285,4 +287,6 @@
   
         
       </script>
+    </body>
+
 </html> 

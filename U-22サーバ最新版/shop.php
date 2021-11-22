@@ -69,5 +69,6 @@ include("config/db_ini.php");
 <script src="/js/shop.js"></script>
 <script src="/js/shop1.js"></script>
 <script src="/js/shop2.js"></script>
+<script src="/js/disabletab.js"></script>
   </body>
 </html>

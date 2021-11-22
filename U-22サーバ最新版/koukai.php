@@ -54,5 +54,7 @@ if($db_cnt == 0){
     mysqli_free_result($db_result);//clear information
     mysqli_free_result($db_result1);//clear information
     ?>
+    
+    <script src="/js/disabletab.js"></script>
   </body>
 </html>

@@ -42,9 +42,6 @@
     </div>
 
 
-
+    <script src="/js/disabletab.js"></script>
 </body>
-
-
-
 </html>

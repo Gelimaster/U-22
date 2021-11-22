@@ -72,7 +72,8 @@ $css=  $db_row["csshtml"];
 
 
 
-  <script src="js/mypage.js"></script>
+  <script src="/js/mypage.js"></script>
+  <script src="/js/disabletab.js"></script>
   </body>
 
 </html>

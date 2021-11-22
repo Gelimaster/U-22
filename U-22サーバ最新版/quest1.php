@@ -65,6 +65,7 @@
         </a>
       </div>
     </div>
-    <script src="js/quest1.js"></script>  
+    <script src="/js/quest1.js"></script>  
+    <script src="/js/disabletab.js"></script>
   </body>
 </html>

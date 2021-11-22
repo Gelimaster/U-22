@@ -39,6 +39,7 @@
         </div>
       </div>
     </body>
+    <script src="/js/disabletab.js"></script>
   </div>
   <?php
       include("shop2.php")

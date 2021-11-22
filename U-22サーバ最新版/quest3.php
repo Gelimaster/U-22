@@ -54,7 +54,8 @@
       </a>
     </div>
   </div>
-  <script src="js/quest3.js"></script>
+  <script src="/js/quest3.js"></script>
+  <script src="/js/disabletab.js"></script>
 </body>
 
 </html>

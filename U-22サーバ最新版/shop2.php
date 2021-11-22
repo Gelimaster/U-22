@@ -34,5 +34,6 @@
       </div>
   
     </body>
+    <script src="/js/disabletab.js"></script>
  </div>
 </html>

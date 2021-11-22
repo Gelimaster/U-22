@@ -76,7 +76,8 @@ include("config/db_ini.php");
     ?>
      
     
-    <script type="text/javascript" src="/js/list.js"></script>
+    <script src="/js/list.js"></script>
+    <script src="/js/disabletab.js"></script>
   </body>
 
 </html>

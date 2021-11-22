@@ -32,7 +32,8 @@
   </div>
   
    
-    <script type="text/javascript" src="/js/list1.js"></script>
+    <script src="/js/list1.js"></script>
+    <script src="js/disabletab.js"></script>
   </body>
 
 </html>
