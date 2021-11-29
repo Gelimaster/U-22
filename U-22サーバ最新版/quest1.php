@@ -48,7 +48,7 @@
     </div>
     <div class="village">
       <img src="/images/quest/stage1.png" alt="stage1" class="stage1" />
-      <div id="mypagebox1" class="mypagebox">
+      <div id="mypagebox1"　onmouseover="select1()" onmouseleave="unselected1()" class="mypagebox">
         <a href="/mypage.php">
           <div class="quest_button">
             <p>マイページ</p>
@@ -56,7 +56,7 @@
           <img src="/images/quest/house1.png" alt="house1" class="house1" />
         </a>
       </div>
-      <div id="quest1" class="q1">
+      <div id="quest1"　onmouseover="select()" onmouseleave="unselected()" class="q1">
         <a href="/quest.php">
           <div class="quest_button">
             <p>クエスト</p>

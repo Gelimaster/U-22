@@ -46,7 +46,7 @@
   </div>
   <div class="village">
     <img src="/images/quest/stage2.png" alt="stage2" class="stage2" />
-    <div id="quest2" class="q2">
+    <div id="quest2" onmouseover="select()" onmouseleave="unselected()" class="q2">
       <a href="/quest.php">
         <div class="quest_button">
           <p>クエスト</p>
