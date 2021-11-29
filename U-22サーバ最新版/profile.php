@@ -58,10 +58,9 @@ $sex = $db_row["user_sex"];
       <p><font size="5">コメント：</font>
     	  <textarea id="comment" name="comment" cols="40" rows="8"  value="<?php echo $db_row["user_comment"]?>" maxlength = "300"><?php echo $db_row["user_comment"]?></textarea >
     	</p>
-      <button type="submit" class="button1">決定</button>
-      <button onclick="goback()" class="button2">戻る</button>
-
+      <button id="sub" type="submit" class="button1">決定</button>
     </form>
+    <button onclick="goback()" class="button2">戻る</button>
     
   <script src="/js/profile.js"></script>
   <script src="/js/disabletab.js"></script>
