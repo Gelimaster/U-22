@@ -26,7 +26,7 @@
       <a href=""><img src="/images/quest/logo.png" alt="ホームページへ" /></a>
     </div>
     <div class="village_name">
-      <p>工場の町</p>
+      <p>郵便の町</p>
     </div>
     <ul>
       <li><a id="stage1" onclick="set(this)" onmouseover="select()" onmouseleave="unselected()" href="/quest.php" class="button">4-1</a></li>
