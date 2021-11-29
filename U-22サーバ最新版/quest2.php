@@ -51,7 +51,7 @@
         <div class="quest_button">
           <p>クエスト</p>
         </div>
-        <img src="/images/quest/shop1.png" alt="shop1" class="shop1" />
+        <img onclick="setstage()" src="/images/quest/shop1.png" alt="shop1" class="shop1" />
       </a>
     </div>
   </div>

@@ -25,6 +25,12 @@ function set(obj){
   localStorage.setItem("stage",20+parseInt(obj.id[5]))
 }
 
+
+  //画像の選択処理
+  function setstage(){
+    localStorage.setItem("stage",localStorage.getItem("user_stage"))
+  }
+
 //ステージの表示
 while(n< Mstage[1]){
   n++;

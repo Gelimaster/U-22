@@ -50,7 +50,7 @@
         <div class="quest_button">
           <p>クエスト</p>
         </div>
-        <img src="/images/quest/laboratory.png" alt="laboratory" class="laboratory" />
+        <img onclick="setstage()" src="/images/quest/laboratory.png" alt="laboratory" class="laboratory" />
       </a>
     </div>
   </div>

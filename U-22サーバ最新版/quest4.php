@@ -51,7 +51,7 @@
         <div class="quest_button">
           <p>クエスト</p>
         </div>
-        <img src="/images/quest/postoffice.png" alt="postoffice" class="postoffice" />
+        <img onclick="setstage()" src="/images/quest/postoffice.png" alt="postoffice" class="postoffice" />
       </a>
     </div>
   </div>
