@@ -165,12 +165,14 @@ iframe{
 }
 
 .invisible{
-  position:absolute;
-  top: 155px;
+  position:relative;
   width: 100%;
+  top: -360px;
   height: 356px;
   background-color:transparent;
+  z-index: 999;
 }
+
 
 .button {
   padding: 2px 5px;
