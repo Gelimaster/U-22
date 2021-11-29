@@ -113,11 +113,10 @@ html{
 }
 
 .display{
-  margin-bottom: 20px;
-  margin-left: 35px;
+  margin: 20px 105px;
   float: left;
   padding: 10px;
-  width: 45%;
+  width: 700px;
   height:400px;
   overflow-x:hidden;
   border:2px solid #999;
@@ -159,7 +158,7 @@ iframe{
   -moz-transform-origin:0 0;
   -ms-transform-origin:0 0;
   position:relative;
-  left:80px;
+  left:10px;
   width: 100%;
   height: 100%; 
 }
@@ -170,7 +169,6 @@ iframe{
   top: -360px;
   height: 356px;
   background-color:transparent;
-  z-index: 999;
 }
 
 
