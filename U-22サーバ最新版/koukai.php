@@ -41,11 +41,11 @@ if($db_cnt == 0){
           <iframe src="/mypagekoukai.php?user_id=<?php print $db_row["custom_user_id"];?>" frameborder="0" scrolling="no" style="transform:scale(0.55);-o-transform:scale(0.55);-webkit-transform:scale(0.55);-moz-transform:scale(0.55);-ms-transform:scale(0.55);transform-origin:0 0;-o-transform-origin:0 0;-webkit-transform-origin:0 0;-moz-transform-origin:0 0;-ms-transform-origin:0 0;"></iframe>
         </div>
       </div> 
-      <div class="invisible"></div>
        <form class="display-username" action="koukaicustom.php" method="POST">
         <input type="hidden" name="user_id" value="<?php print $db_row["custom_user_id"];?>">
         <input  class="display-username button" type="submit" value="<?php print $db_row1["user_name"] ?>">
       </form>
+      <div class="invisible"></div>
     </div>
     <!-- loop end -->
     <?php
