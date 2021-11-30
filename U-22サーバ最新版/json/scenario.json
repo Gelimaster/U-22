@@ -493,13 +493,6 @@
         "chara":"char4.png,char_2.png",
         "charClass":"leftdown,rightup",
         "charaName":"シソネル",
-        "selifu":"ちょっと今どこにいるのさ！！僕の杖はどこにあるのさ！！"
-    },  
-    {
-        "sceNo":"02",
-        "chara":"char4.png,char_2.png",
-        "charClass":"leftdown,rightup",
-        "charaName":"シソネル",
         "selifu":"もしかして、過去にいるの？"
     },  
     {
