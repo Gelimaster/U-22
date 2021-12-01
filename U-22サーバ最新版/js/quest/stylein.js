@@ -109,9 +109,9 @@ function tagout(event){
 
 // cssboxにcssを表記する処理
 function idStyleIn(){
-    bunsyoucss = "";
+    bunsyoucss = ",";
     csstext ="";
-    for(var i = 0;i < idcnt2;i++){
+    for(var i = 1;i < idcnt2;i++){
         if(id_name[i] == null || id_name[i] == "null"){
         }else{
             var cnt = 1;
