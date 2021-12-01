@@ -45,6 +45,7 @@
 /* タグ */
 #assemblybox1{
     display: block;
+    padding-bottom: 20px;
 }
 /* HTML */
 #assemblybox2{

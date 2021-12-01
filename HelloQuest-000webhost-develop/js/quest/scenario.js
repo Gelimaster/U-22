@@ -21,6 +21,11 @@ var selifu = [];
 var sceCnt = 0;
 var c = 0;
 var x = 0;
+
+//セリフの現在の表示数
+var wordcnt = 0;
+var wordflg = 0;
+
 var keep_x = 0;
 var tc = 0; //チュートリアルカウント
 var scenario_sc_num = 0;
@@ -78,17 +83,34 @@ function scenario() {
         tutorialimg.style.visibility = "hidden";
         scebox.style.display = "block";
         let stageimgnum = Math.floor(stagenum / 10);
-        console.log(stageimgnum);
+        // console.log(stageimgnum);
         let stageimg = "\"images/st_sc" + stageimgnum + ".png\"";
         document.getElementById("shadow").style.backgroundImage = "url(" + stageimg + ")";
     }
 }
 
+//シナリオのスキップ機能
+function skip(){
+    scenarioIn = 0;
+    if (scenarioIn == 0) {
+        if (scenario_sc_num == 0) {
+            shadow.style.visibility = "hidden";
+            scebox.style.display = "none";
+        } else {
+            var stagenum2 = Math.floor(stagenum / 10);
+            var stageurl = '../quest' + stagenum2 + '.php';
+            window.location.href = stageurl;
+        }
+    }
+}
+
 // 画面クリック時実行  シナリオ進行
 function move() {
-    console.log("クリックした");
+    // console.log("クリックした");
     if (scenarioIn == 0) {
     } else {
+        wordflg=0;
+        // console.log("c:"+c+"word:"+wordcnt);
         serifu();
         charaIn();
     }
@@ -99,15 +121,38 @@ async function serifu() {
     serifubox.innerHTML = "";
     // １文字ずつ表示する処理
     if (c < sceCnt) {
-        for (var i = 0; i <= selifu[c].length; i++) {
-            serifubox.innerHTML = charaName[x] + "<br>" + selifu[c].substr(0, i);
-            await wait(3);
-
-            console.log("x"+x+"c"+c);
+        if(wordcnt === 0){
+            //文章が全て表示された後にクリックして次の文章の表示
+            // console.log("次の文章");
+            for (wordcnt; wordcnt <= selifu[c].length; wordcnt++) {
+                if(wordflg == 1){
+                    // クリックを２回して全文表示した場合、処理を中止する
+                    wordcnt = 0;
+                    c++;
+                    x++;
+                    // console.log("中止");
+                    break;
+                }
+                serifubox.innerHTML = charaName[x] + "<br>" + selifu[c].substr(0, wordcnt);
+                await wait(3);
+                // console.log("x"+x+"c"+c);
+            }
+            // serifubox.innerHTML = selifu[c];
+            if(wordcnt>selifu[c].length){
+                // console.log("最後まで表示");
+                wordcnt = 0;
+                c++;
+                x++;
+            }
         }
-        // serifubox.innerHTML = selifu[c];
-        c++;
-        x++;
+        else{
+            //文章を表示している途中にクリックされた際に全文表示
+            wordflg=1;
+            // console.log("全文表示");
+            serifubox.innerHTML = charaName[x] + "<br>" + selifu[c];
+            // console.log(serifubox.innerHTML = charaName[x] + "<br>" + selifu[c]);
+            // wordcnt = 0;
+        }
     } else {
         // c = 0;
         keep_x = x;

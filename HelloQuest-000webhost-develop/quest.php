@@ -50,6 +50,9 @@
 
         <!-- ヒントの表示 -->
         <button id="close" onclick="closeHint()">とじる</button>
+        <br>
+        <br>
+        <button id="resetQ" onclick="resetQue()">リセット</button>
 
         <!-- 報酬、クリア画面 -->
         <div id="clearbox" onclick="moveqc()">
@@ -94,15 +97,15 @@
         <!-- それぞれの中身 -->
         <div id="stylebox1" class="stylebox">
             <p>サイズ</p>
-            <p><label>横幅：<input type="number" name="number" max="100" min="1" onchange="idStyleOut(this)" id="width"></label></p>
-            <p><label>高さ：<input type="number" name="number" max="100" min="1" onchange="idStyleOut(this)" id="height"></label></p>
+            <p><label>横幅：<input type="number" name="number" max="100" min="1" oninput="lengthCheck(this)" id="width"></label></p>
+            <p><label>高さ：<input type="number" name="number" max="100" min="1" oninput="lengthCheck(this)" id="height"></label></p>
         </div>
         <div id="stylebox2" class="stylebox">
             <p>文字</p>
-            <p><label>サイズ：<input type="number" name="number" max="100" min="0" onchange="idStyleOut(this)" id="FontSize"></label></p>
-            <p><label>色：<input type="color" name="color" onchange="idStyleOut(this)" id="color"></label></p>
+            <p><label>サイズ：<input type="number" name="number" max="100" min="0" oninput="lengthCheck(this)" id="FontSize"></label></p>
+            <p><label>色：<input type="color" name="color" oninput="idStyleOut(this)" id="color"></label></p>
             <p>スタイル：
-                <select name="select" id="TextDecoration" onchange="idStyleOut(this)">
+                <select name="select" id="TextDecoration" oninput="idStyleOut(this)">
                     <option value="">デフォルト</option>
                     <option value="none">なし</option>
                     <option value="underline">下線</option>
@@ -114,25 +117,25 @@
         </div>
         <div id="stylebox3" class="stylebox">
             <p>背景</p>
-            <input type="color" name="color" onchange="idStyleOut(this)" id="background_color">
+            <input type="color" name="color" oninput="idStyleOut(this)" id="background_color">
         </div>
         <div id="stylebox4" class="stylebox">
             <p>配置</p>
             <p>ポジション：
-                <select name="position" id="position" onchange="idStyleOut(this)">
+                <select name="position" id="position" oninput="idStyleOut(this)">
                     <option value="static">デフォルト</option>
                     <option value="absolute">絶対配置</option>
                     <option value="relative">相対配置</option>
                     <option value="fixed">ブラウザに固定</option>
                 </select>
             </p>
-            <p><label>ひだり：<input type="number" name="number" max="100" min="1" onchange="idStyleOut(this)" id="left"></label></p>
-            <p><label>うえ： <input type="number" name="number" max="100" min="1" onchange="idStyleOut(this)" id="Top"></label></p>
+            <p><label>ひだり：<input type="number" name="wid" max="100" min="1" oninput="lengthCheck(this)" id="left"></label></p>
+            <p><label>うえ： <input type="number" name="hei" max="100" min="1" oninput="lengthCheck(this)" id="Top"></label></p>
 
         </div>
         <div id="stylebox5" class="stylebox">
             <p>リストスタイル：
-                <select name="liststyle" id="ListStyleType" onchange="idStyleOut(this)">
+                <select name="liststyle" id="ListStyleType" oninput="idStyleOut(this)">
                     <option value="">デフォルト</option>
                     <option value="none">なし</option>
                     <option value="disc">黒丸</option>
@@ -143,7 +146,7 @@
         </div>
         <div id="stylebox6" class="stylebox">
             <p>外枠</p>
-            <p>スタイル：<select name="borderstyle" id="BorderStyle" onchange="idStyleOut(this)">
+            <p>スタイル：<select name="borderstyle" id="BorderStyle" oninput="idStyleOut(this)">
                     <option value="none">なし</option>
                     <option value="solid">実線</option>
                     <option value="double">二重線</option>
@@ -151,14 +154,14 @@
                     <option value="dotted">点線</option>
                 </select>
             </p>
-            <p><label>色：<input type="color" name="color" onchange="idStyleOut(this)" id="BorderColor"></label></p>
-            <p>太さ：<input type="number" name="number" max="100" min="1" onchange="idStyleOut(this)" id="BorderWidth"></p>
+            <p><label>色：<input type="color" name="color" oninput="idStyleOut(this)" id="BorderColor"></label></p>
+            <p>太さ：<input type="number" name="borwid" max="100" min="1" oninput="lengthCheck(this)" id="BorderWidth"></p>
             <label>角丸</label>
-            <p>左上：<input type="number" name="number" max="100" min="1" onchange="idStyleOut(this)" id="BorderTopLeftRadius">
-                右上：<input type="number" name="number" max="100" min="1" onchange="idStyleOut(this)" id="BorderTopRightRadius"></p>
+            <p>左上：<input type="number" name="bortrl" max="100" min="1" oninput="lengthCheck(this)" id="BorderTopLeftRadius">
+                右上：<input type="number" name="botrr" max="100" min="1" oninput="lengthCheck(this)" id="BorderTopRightRadius"></p>
 
-            <p>左下：<input type="number" name="number" max="100" min="1" onchange="idStyleOut(this)" id="BorderBottomLeftRadius">
-                右上：<input type="number" name="number" max="100" min="1" onchange="idStyleOut(this)" id="BorderBottomRightRadius"></p>
+            <p>左下：<input type="number" name="borblr" max="100" min="1" oninput="lengthCheck(this)" id="BorderBottomLeftRadius">
+                右下：<input type="number" name="borbrr" max="100" min="1" oninput="lengthCheck(this)" id="BorderBottomRightRadius"></p>
 
         </div>
     </div>
@@ -203,6 +206,28 @@
             sty.style.display = "none";
             stflf = 0;
         }
+    }
+
+    function lengthCheck(cheval){
+    
+        // console.log(cheval);
+
+        if(cheval.value == ""){
+        }
+        else if(cheval.value < 1){
+            // console.log("小さい");
+            cheval.value = cheval.min;
+        }
+        else if(cheval.value > 100){
+            // console.log(cheval.value +">"+ cheval.max);
+            // console.log(cheval.value);
+            // console.log(cheval.max);
+            // console.log("大きい");
+            cheval.value = cheval.max;
+        }
+
+
+        idStyleOut(cheval);
     }
 
     function inButton(num) {
