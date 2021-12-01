@@ -109,37 +109,29 @@ function tagout(event){
 
 // cssboxにcssを表記する処理
 function idStyleIn(){
-   bunsyoucss = "";
+    bunsyoucss = "";
     csstext ="";
     for(var i = 0;i < idcnt2;i++){
         if(id_name[i] == null || id_name[i] == "null"){
         }else{
             var cnt = 1;
-            for(var c = 1;c < proper.length && eval(proper[c])[i] != null ;c++){
-                cnt++;
-                // console.log(proper[c]);
-                // console.log(eval(proper[c]));
-                // console.log(cnt);
-            }
-            if(cnt != 1){
-                for(var c = 0;c < proper.length;c++){
-                    if(eval(proper[c])[i] != null){
-                        csstext = csstext + pro1[c] + eval(proper[c])[i] + pro2[c];
-                       if(c == 0){
-                        	bunsyoucss = bunsyoucss + eval(proper[c])[i] .slice(0,-3);
-                        }else{
-	                        bunsyoucss = bunsyoucss + proper[c] + eval(proper[c])[i];
-                            
-                            localStorage.setItem("answercss",bunsyoucss)
-                        }
+            for(var c = 0;c < proper.length;c++){
+                if(eval(proper[c])[i] != null && eval(proper[c])[i] != ""){
+                    csstext = csstext + pro1[c] + eval(proper[c])[i] + pro2[c];
+                   if(c == 0){
+                        bunsyoucss = bunsyoucss + eval(proper[c])[i] .slice(0,-3);
+                    }else{
+                        bunsyoucss = bunsyoucss + proper[c] + eval(proper[c])[i];
+                        console.log(bunsyoucss);
+                        localStorage.setItem("answercss",bunsyoucss)
                     }
-                }    
-            csstext = csstext + "}<br>";
-            }
-
+                }
+            }    
+          csstext = csstext + "}<br>";
         }
         bunsyoucss = bunsyoucss + ",";
     }
+    
 }
 
 // 
@@ -150,8 +142,8 @@ function idStyleOut(out){
     // console.log(eval(out.id));
     // console.log(cssbox.textContent);
     eval(out.id)[idsubcnt] = out.value;
-    idStyleIn();
     // console.log(csstext);
+    idStyleIn();
     cssbox.innerHTML = csstext;
     style.innerHTML =cssbox.textContent;
 }
@@ -253,7 +245,7 @@ function idstyle(event){
 function test123(){
     id_name= id_name.toString()
     
-    
+    console.log(id_name)
     id_name=id_name.split(',')
-    
+    console.log(id_name)
 }

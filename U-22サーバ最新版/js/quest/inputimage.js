@@ -47,7 +47,7 @@ function inputImages(res) {
 function imgin(get) {
     // console.log(get);
     if (get == null) {
-        // console.log("空");
+        console.log("空");
         return "";
     } else {
         return textin(get.id);
@@ -57,7 +57,8 @@ function imgin(get) {
 function textin(get) {
     // console.log(get);
     var cnt2 = 0;
-    for (var c = 0; c < count2 && get != image_id[c]; c++) {
+    var imgid = get.slice(0, -2);
+    for (var c = 0; c < count2 && imgid != image_id[c]; c++) {
         cnt2++;
 
     }

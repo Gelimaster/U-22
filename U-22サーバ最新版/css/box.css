@@ -45,6 +45,7 @@
 /* タグ */
 #assemblybox1{
     display: block;
+    padding-bottom: 20px;
 }
 /* HTML */
 #assemblybox2{
@@ -113,6 +114,13 @@
     
 
 }
+.invisible2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 900;
+    background-color:transparent;
+  }
 
 /* ヒント表示時のボックス */
 

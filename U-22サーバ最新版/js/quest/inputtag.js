@@ -24,6 +24,8 @@ var stylebutton = document.getElementById('stylebutton');
 // もとからassemblybox1に入れておくタグのtag_num
 var in_num = [];
 
+var questdef;
+
 window.onload = function () {
     // imageの取得
     $.ajax({
@@ -54,6 +56,7 @@ window.onload = function () {
 }
 
 function dataRead1(res) {
+    questdef = res;
     const stagenum = localStorage.getItem('stage');//ローカルストレージ
     const user_stagenum = localStorage.getItem('user_stage');//ローカルストレージ
     for (var i in res) {
@@ -105,7 +108,7 @@ function dataRead1(res) {
     // const stagenum = 43;//クエスト手動切り替え
     const qesttagnum = [110, 111, 120, 121, 130, 220, 430];
     in_num = qesttagnum.filter(item => item > stagenum * 10 - 1 && item < stagenum * 10 + 10);
-    
+    // console.log(in_num);
 
     for (var num_cnt = 0; num_cnt < in_num.length; num_cnt++) {
         for (var i = 0; i < count; i++) {
@@ -144,7 +147,7 @@ function roop(target) {
     bunsyou = "";
     // console.log(target);
     roop2(target);
-    
+    console.log(bunsyou);
     localStorage.setItem("playeranswer", bunsyou)
 }
 
@@ -240,10 +243,15 @@ function inputid(target) {
     var inchild = document.getElementById(target);
     var newc;
     if (inchild.tagName == "IMG") {
-        for (var c = 0; c < count2 && target.slice(0, -2) != image_id[c]; c++) {
+        // console.log(image_cnt);
+        for (var c = 0; c < count2 && target != image_id[c]; c++) {
             cou++;
+            // console.log(image_id[c]+":::::"+ target)
         }
         newc = inchild.cloneNode(true);
+        newc.id = target + ("0" + image_cnt[cou]).slice(-2);
+        // console.log(newc.id);
+        // console.log(target.slice(0, -2)+"::::::"+image_cnt[cou]+":::::"+cou);
         image_cnt[cou]++;
         return newc;
     }
@@ -260,6 +268,7 @@ function inputid(target) {
     newc.lastChild.classList.add('tagin');
     newc.addEventListener('dragstart', Drag, false);
     tagcnt[cou]++;
+    // console.log(newc);
     // console.log(tagcnt[cou]);
     return newc;
 }
@@ -269,4 +278,58 @@ function stylehidden(){
     if(localStorage.getItem('user_stage') < 22){
         stylebutton.style.visibility = "hidden";
     }
+}
+
+
+function resetQue(){
+    document.getElementById("toolbox1").innerHTML = "";
+    document.getElementById("assemblybox1").innerHTML = "";
+    document.getElementById("assemblybox2").innerHTML = "";
+    document.getElementById("assemblybox3").innerHTML = "";
+
+    document.getElementById("width").value="";
+    document.getElementById("height").value="";
+    document.getElementById("background_color").value="";
+    document.getElementById("color").value="";
+    document.getElementById("FontSize").value="";
+    document.getElementById("TextDecoration").value="";
+    document.getElementById("position").value="";
+    document.getElementById("left").value="";
+    document.getElementById("Top").value="";
+    document.getElementById("ListStyleType").value="";
+    document.getElementById("BorderStyle").value="";
+    document.getElementById("BorderColor").value="";
+    document.getElementById("BorderWidth").value="";
+    document.getElementById("BorderTopLeftRadius").value="";
+    document.getElementById("BorderTopRightRadius").value="";
+    document.getElementById("BorderBottomLeftRadius").value="";
+    document.getElementById("BorderBottomRightRadius").value="";
+
+    id_name = [];
+    width = [];
+    height = [];
+    background_color = [];
+    background_image = [];
+    color = [];
+    FontSize = [];
+    TextDecoration = [];
+    position = [];
+    left = [];
+    Top = [];
+    ListStyleType = [];
+    BorderStyle = [];
+    BorderColor = [];
+    BorderWidth = [];
+    BorderTopLeftRadius = [];
+    BorderTopRightRadius = [];
+    BorderBottomLeftRadius = [];
+
+    count = 0;
+    html_text = "";
+    idlist = "visualbox";
+    bunsyou = "";
+
+    dataRead1(questdef);
+    
+    // in_num = [];
 }
