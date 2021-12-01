@@ -3,6 +3,7 @@
 var flag = 2;
 var txtflag = 0;
 var imgflag = 0;
+var target = document.getElementById('assemblybox1');
 
 
 function AllowDrop(ev) {
@@ -129,5 +130,6 @@ function Delete(ev){
         delid(data);
         del.remove();
     }
+    roop(target);
     // flag = 2;
 }
