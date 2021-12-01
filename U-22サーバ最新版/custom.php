@@ -83,6 +83,7 @@
         <div class="invisible"></div>
      
         <div id="customhintbox">
+        <div class="invisible2"></div>
             <!-- ヒントのテキスト -->
             <p>変更を保存しますか？</p>
             <form action="/config/customupload.php" id="custompgdata" method="post">
