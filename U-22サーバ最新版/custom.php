@@ -83,7 +83,6 @@
         <div class="invisible"></div>
      
         <div id="customhintbox">
-        <div class="invisible2"></div>
             <!-- ヒントのテキスト -->
             <p>変更を保存しますか？</p>
             <form action="/config/customupload.php" id="custompgdata" method="post">
@@ -112,8 +111,9 @@
             </form>
             <button id="notsend" onclick="resetc()">リセット</button>
             <!-- ヒントの表示 -->
-            <button id="close" onclick="closeHint()">とじる</button>
+            <button id="close" onclick="closeHint()">とじる</button>  
         </div>
+        <div id="invisible2"  style="display: none;" ></div>
         
         <button id="bt1" onclick="inButton(1)">タグ一覧</button>
         <button id="bt2" onclick="inButton(2)">写真一覧</button>
@@ -215,7 +215,7 @@
                     右上：<input type="number" name="number" max="100" min="1" onchange="idStyleOut(this)" id="BorderTopRightRadius"></p>
 
                 <p>左下：<input type="number" name="number" max="100" min="1" onchange="idStyleOut(this)" id="BorderBottomLeftRadius">
-                    右上：<input type="number" name="number" max="100" min="1" onchange="idStyleOut(this)" id="BorderBottomRightRadius"></p>
+                    右下：<input type="number" name="number" max="100" min="1" onchange="idStyleOut(this)" id="BorderBottomRightRadius"></p>
 
             </div>
         </div>
@@ -249,12 +249,17 @@
     <script>
         var hintbox = document.getElementById('customhintbox');
         var sty = document.getElementById('styledialog');
+        var invbox = document.getElementById('invisible2');
         var stflf = 0;
         function inHint(){
             hintbox.style.display = "block";
+            invbox.style.display = "block";
+
+
         }
         function closeHint(){
             hintbox.style.display = "none";
+            invbox.style.display = "none";
         }
         function cssin(){
             if(stflf == 0){
