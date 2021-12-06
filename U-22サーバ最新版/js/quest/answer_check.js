@@ -25,8 +25,8 @@ parseInt(currentstage)
 
 //答えの比較処理
 function checkanswer() {
-  playeranswer = localStorage.getItem("playeranswer")
-  playeranswercss = localStorage.getItem("answercss")
+  playeranswer = bunsyou
+  playeranswercss = bunsyoucss
   cleartext = document.getElementById("cleartext")
 
   
