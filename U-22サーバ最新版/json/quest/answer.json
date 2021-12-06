@@ -3,8 +3,8 @@
   "12":"bookimgimages/book_watoji.png,titledivpあいうえお,",
   "13":"nextstagediva次の町,",
   "21":"imgimages/fruit_ringo.png,",
-  "22":",appleimgwidth22",
-  "31":",divwidth50height50background_color#ff0000",
+  "22":",appleimgwidth22,",
+  "31":",divwidth50height50background_color#ff0000,",
   "41":"inputtext,",
   "42":"textarea,",
   "43":"qest3textarea,inputsubmit送信,"
